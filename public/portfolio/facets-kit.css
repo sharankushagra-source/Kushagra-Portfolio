@@ -1,0 +1,139 @@
+/* ============================================================
+   FACETS — UI KIT
+   Layout + documentation styling for the Facets component kit.
+   Pulls tokens & components from facets.css; this file only
+   handles the reference-sheet scaffolding around them.
+   ============================================================ */
+
+body.kit{
+  margin:0; background:var(--ink); color:var(--paper);
+  font-family:var(--sans); font-weight:500; font-size:17px; line-height:1.5; letter-spacing:-0.01em;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+.kit .wrap{ width:100%; max-width:1500px; margin-inline:auto; padding-inline:var(--edge); }
+
+/* ---- KIT MASTHEAD ---- */
+.kh{ position:relative; padding:clamp(72px,12vh,150px) 0 clamp(46px,7vh,92px); border-bottom:1.5px solid rgba(241,238,231,.14); }
+.kh__eye{ display:inline-flex; align-items:center; gap:11px; color:var(--acid); margin-bottom:26px; }
+.kh__eye .d{ width:9px; height:9px; border-radius:50%; background:var(--acid); }
+.kh__title{ font-family:var(--disp); font-weight:700; letter-spacing:-0.04em; line-height:0.84; margin:0;
+  font-size:clamp(56px,12vw,190px); }
+.kh__title em{ font-family:var(--quote); font-style:italic; font-weight:400; color:var(--magenta); }
+.kh__meta{ display:flex; flex-wrap:wrap; gap:40px; margin-top:38px; }
+.kh__meta div{ max-width:34ch; }
+.kh__meta .lab{ display:block; color:var(--acid); margin-bottom:10px; }
+.kh__meta p{ margin:0; font-size:15px; line-height:1.55; opacity:.78; }
+
+/* ---- SECTION SHELL ---- */
+.sec{ padding:clamp(56px,9vh,120px) 0; border-bottom:1.5px solid rgba(241,238,231,.12); }
+.sec__head{ display:flex; align-items:baseline; gap:20px; margin-bottom:clamp(38px,5vw,66px); flex-wrap:wrap; }
+.sec__n{ font-family:var(--sans); font-weight:800; font-size:13px; letter-spacing:0.16em; color:var(--acid); }
+.sec__t{ font-family:var(--disp); font-weight:700; font-size:clamp(30px,5vw,66px); line-height:0.92; letter-spacing:-0.035em; margin:0; }
+.sec__t em{ font-family:var(--quote); font-style:italic; font-weight:400; color:var(--magenta); }
+.sec__note{ font-size:14px; opacity:.6; max-width:40ch; margin-left:auto; }
+
+/* subsection label */
+.subh{ display:flex; align-items:center; gap:14px; margin:0 0 24px; }
+.subh h3{ font-family:var(--sans); font-weight:700; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; margin:0; opacity:.82; }
+.subh .rule{ height:1.5px; flex:1; background:rgba(241,238,231,.14); }
+.subh__hint{ font-size:12px; opacity:.42; font-weight:600; }
+.block{ margin-bottom:clamp(46px,6vw,78px); }
+.block:last-child{ margin-bottom:0; }
+
+/* generic swatch of a live component sitting on the dark canvas */
+.demo{ display:flex; flex-wrap:wrap; gap:18px; align-items:center; }
+.demo--col{ flex-direction:column; align-items:flex-start; }
+.panel{ background:#171310; border:1.5px solid rgba(241,238,231,.14); border-radius:8px; padding:clamp(24px,3vw,40px); }
+.panel--paper{ background:var(--paper); color:var(--ink); }
+.panel--paper .subh h3{ color:var(--ink); }
+
+/* ---- COLOR ---- */
+.swgrid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:16px; }
+.sw{ border-radius:8px; overflow:hidden; border:1.5px solid rgba(241,238,231,.12); background:#171310; }
+.sw__chip{ height:120px; display:flex; align-items:flex-end; padding:12px; }
+.sw__chip .role{ font-family:var(--sans); font-weight:800; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; }
+.sw__meta{ padding:12px 13px 14px; background:#171310; }
+.sw__name{ font-family:var(--disp); font-weight:700; font-size:16px; letter-spacing:-0.01em; }
+.sw__hex{ font-family:var(--sans); font-size:12px; font-weight:600; opacity:.55; margin-top:3px; text-transform:uppercase; letter-spacing:0.04em; font-variant-numeric:tabular-nums; }
+.sw__use{ font-size:12px; opacity:.6; margin-top:8px; line-height:1.4; }
+
+/* per-facet world cards */
+.worlds{ display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:18px; }
+.world{ border-radius:10px; overflow:hidden; border:1.5px solid rgba(241,238,231,.1); background:#171310; display:flex; flex-direction:column; }
+.world__wall{ flex:1 1 auto; padding:26px 22px 24px; min-height:150px; display:flex; flex-direction:column; justify-content:flex-start; gap:18px; }
+.world__chap{ font-family:var(--sans); font-weight:800; font-size:12px; letter-spacing:0.14em; }
+.world__q{ font-family:var(--quote); font-style:italic; font-size:30px; line-height:1; }
+.world__q b{ font-weight:400; }
+.world__foot{ display:flex; gap:8px; }
+.world__foot i{ width:26px; height:26px; border-radius:50%; border:1.5px solid currentColor; }
+.world__meta{ background:#171310; padding:14px 18px 16px; display:flex; justify-content:space-between; align-items:baseline; gap:12px; }
+.world__meta .nm{ font-family:var(--disp); font-weight:700; font-size:15px; }
+.world__meta .hx{ font-size:11px; opacity:.5; font-family:var(--sans); font-weight:600; letter-spacing:0.04em; text-transform:uppercase; }
+
+/* ---- TYPE ---- */
+.families{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+.fam{ background:#171310; border:1.5px solid rgba(241,238,231,.12); border-radius:8px; padding:28px 26px; }
+.fam__glyph{ font-size:78px; line-height:1; margin-bottom:20px; }
+.fam__name{ font-family:var(--disp); font-weight:700; font-size:22px; letter-spacing:-0.02em; }
+.fam__role{ font-size:13px; opacity:.6; margin:6px 0 16px; }
+.fam__weights{ font-size:13px; opacity:.7; font-weight:600; letter-spacing:0.02em; }
+.fam--disp .fam__glyph{ font-family:var(--disp); font-weight:700; }
+.fam--quote .fam__glyph{ font-family:var(--quote); font-style:italic; }
+.fam--sans .fam__glyph{ font-family:var(--sans); font-weight:700; }
+
+.scale{ display:flex; flex-direction:column; gap:2px; }
+.scale__row{ display:grid; grid-template-columns:118px 1fr; gap:24px; align-items:baseline; padding:16px 0; border-top:1px solid rgba(241,238,231,.1); }
+.scale__row:first-child{ border-top:0; }
+.scale__spec{ font-family:var(--sans); font-size:12px; font-weight:700; opacity:.5; letter-spacing:0.04em; text-transform:uppercase; padding-top:8px; }
+.scale__spec b{ display:block; color:var(--acid); opacity:1; font-size:13px; margin-bottom:4px; }
+.scale__ex{ line-height:1; overflow:hidden; }
+.ex-h1{ font-family:var(--disp); font-weight:700; font-size:clamp(48px,7vw,104px); letter-spacing:-0.04em; }
+.ex-h1 em{ font-family:var(--quote); font-style:italic; font-weight:400; color:var(--magenta); }
+.ex-q{ font-family:var(--quote); font-style:normal; font-size:clamp(40px,6vw,84px); line-height:1; }
+.ex-q em{ font-style:italic; color:var(--acid); }
+.ex-h2{ font-family:var(--disp); font-weight:700; font-size:clamp(30px,4vw,54px); letter-spacing:-0.03em; }
+.ex-lead{ font-family:var(--disp); font-weight:700; font-size:26px; letter-spacing:-0.02em; }
+.ex-body{ font-family:var(--sans); font-weight:500; font-size:19px; line-height:1.55; max-width:52ch; }
+.ex-body b{ color:var(--acid); }
+.ex-lab{ font-family:var(--sans); font-weight:700; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; }
+
+/* ---- FRAMED PRINT tile in kit ---- */
+.printrow{ display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:22px; }
+.printrow .print{ aspect-ratio:2/3; }
+.printcap{ margin-top:12px; font-family:var(--sans); font-weight:700; font-size:12px; letter-spacing:0.04em; opacity:.55; }
+
+/* obs tag demo needs relative host */
+.tagstage{ position:relative; width:min(300px,60%); }
+.tagstage .print{ aspect-ratio:2/3; }
+.tagstage .obs__tag{ left:-6%; }
+
+/* ---- WORK ROW demo tweaks (self-contained, no cursor float) ---- */
+.kit .worklist{ border-top:1.5px solid rgba(241,238,231,.22); }
+
+/* ---- NAV / INDEX demo framing ---- */
+.frame-demo{ position:relative; background:#0A0810; border:1.5px solid rgba(241,238,231,.12); border-radius:12px; overflow:hidden; min-height:150px; }
+.frame-demo .nav{ position:relative; mix-blend-mode:normal; color:var(--paper); }
+.frame-demo .index{ position:absolute; right:22px; top:50%; transform:translateY(-50%); mix-blend-mode:normal; }
+.frame-demo .index__i{ color:var(--paper); }
+
+/* ---- STICKY MINI-NAV for the kit itself ---- */
+.kitnav{ position:fixed; top:0; left:0; right:0; z-index:200; display:flex; align-items:center; justify-content:space-between;
+  padding:14px var(--edge); background:rgba(16,13,8,.82); backdrop-filter:blur(10px); border-bottom:1.5px solid rgba(241,238,231,.1); }
+.kitnav__brand{ display:flex; align-items:center; gap:11px; font-family:var(--disp); font-weight:700; font-size:15px; }
+.kitnav__brand .mk{ width:30px; height:30px; border-radius:50%; border:2px solid var(--acid); color:var(--acid); display:grid; place-items:center; font-family:var(--sans); font-weight:800; font-size:11px; }
+.kitnav__links{ display:flex; gap:22px; }
+.kitnav__links a{ font-family:var(--sans); font-weight:700; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; opacity:.66; transition:.25s; }
+.kitnav__links a:hover{ opacity:1; color:var(--acid); }
+@media (max-width:760px){ .kitnav__links{ display:none; } }
+.kit .kh{ padding-top:clamp(120px,16vh,200px); }
+
+/* spec caption under demos */
+.cap{ font-size:12.5px; opacity:.5; margin-top:16px; line-height:1.5; max-width:60ch; }
+.cap code{ font-family:'Archivo',monospace; background:rgba(241,238,231,.08); padding:2px 7px; border-radius:5px; font-size:12px; color:var(--acid); letter-spacing:0.01em; }
+
+/* footer */
+.kfoot{ padding:60px 0 70px; display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap;
+  font-family:var(--sans); font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; opacity:.5; }
+.kfoot a{ border-bottom:1px solid var(--acid); }
+
+@media (prefers-reduced-motion:reduce){ .mq__t{ animation:none !important; } }

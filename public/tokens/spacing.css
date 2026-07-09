@@ -1,0 +1,54 @@
+/* Accessible Foundations — Spacing, radius & sizing tokens
+ * 8px layout grid · 4px component rhythm.
+ * Hard minimums: control height 36px · touch target 44px.
+ */
+
+:root {
+  /* ============================================================
+     SPACING SCALE — 4 · 8 · 12 · 16 · 20 · 24 · 28 · 32 · 40 · 48 · 64 · 80
+     ============================================================ */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* Component rhythm aliases */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+
+  /* Field padding */
+  --field-pad-h: 14px;
+  --field-pad-v: 6px;
+
+  /* Layout gaps (keep on the 8px rhythm) */
+  --layout-sm: 16px;
+  --layout-md: 24px;
+  --layout-lg: 32px;
+
+  /* ============================================================
+     RADIUS
+     ============================================================ */
+  --radius-sm: 4px;       /* icon containers */
+  --radius-item: 6px;     /* nav sub-items, small buttons */
+  --radius-btn: 6px;      /* buttons, tabs, cards — tightened from 10px */
+  --radius-lg: 14px;      /* search fields, modals */
+  --radius-pill: 8px;     /* status / tier pills — softened rectangle, not a capsule */
+  --radius-full: 9999px;  /* toggles, avatars — fully circular only */
+
+  /* ============================================================
+     SIZING MINIMUMS — accessibility floor
+     ============================================================ */
+  --control-min-h: 36px;  /* minimum control height (compact / opt-in) */
+  --control-h: 44px;      /* default interactive height — equalised to the touch target */
+  --field-h: 48px;        /* input / search height */
+  --touch-min: 44px;      /* minimum touch target */
+}

@@ -1,0 +1,31 @@
+/* Accessible Foundations — Base layer
+ * Minimal global defaults that apply the tokens. Consumers get these for free.
+ * Font does NOT inherit on <button> — declare it explicitly here.
+ */
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-body);
+  background: var(--surface-canvas);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button, input, select, textarea {
+  font-family: var(--font-sans);
+}
+
+/* Visible 2px focus ring on every interactive element (accessibility floor). */
+:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

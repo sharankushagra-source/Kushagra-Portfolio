@@ -1,0 +1,35 @@
+/* Accessible Foundations — Elevation & motion tokens
+ * Avoid mixing multiple elevation levels in the same view.
+ * Always gate non-essential motion behind prefers-reduced-motion.
+ */
+
+:root {
+  /* ============================================================
+     ELEVATION
+     ============================================================ */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);                                 /* hover lift */
+  --shadow-md: 0 1px 4px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);    /* buttons, containers */
+  --shadow-lg: 0 6px 20px rgba(0,0,0,0.08);                               /* modals, overlays */
+  --shadow-modal: 0 8px 40px rgba(0,0,0,0.18);                            /* dialog cards */
+
+  /* ============================================================
+     MOTION
+     ============================================================ */
+  --t-fast: 100ms ease;          /* @kind other */
+  --t-normal: 200ms ease;        /* @kind other */
+  --t-slow: 300ms ease-in-out;   /* @kind other */
+  --ease-emphasized: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+
+  /* Focus ring spec */
+  --focus-ring-width: 2px;   /* @kind spacing */
+  --focus-ring-offset: 2px;  /* @kind spacing */
+
+  /* ============================================================
+     Z-INDEX
+     ============================================================ */
+  --z-sidebar: 20;        /* @kind other */
+  --z-flyout: 100;        /* @kind other */
+  --z-menu: 200;          /* @kind other */
+  --z-modal: 300;         /* @kind other */
+  --z-modal-danger: 400;  /* @kind other */
+}

@@ -1,0 +1,11 @@
+/* ============================================================
+   Accessible Foundations — Design System
+   Global CSS entry point. Consumers link THIS one file.
+   Keep this file as @import lines only.
+   ============================================================ */
+
+@import url('tokens/typography.css');   /* @font-face / Google Sans Flex + type scale */
+@import url('tokens/colors.css');        /* brand, neutrals, status, semantic aliases */
+@import url('tokens/spacing.css');       /* spacing, radius, sizing minimums */
+@import url('tokens/elevation.css');     /* shadows, motion, z-index */
+@import url('base.css');                 /* base element defaults + focus ring */

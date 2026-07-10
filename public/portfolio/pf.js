@@ -38,7 +38,7 @@
     (function jump() {
       numEl.textContent = stops[i];
       if (++i < stops.length) setTimeout(jump, HOLD);
-      else setTimeout(endLoader, 360);
+      else setTimeout(endLoader, 400);
     })();
   }
 

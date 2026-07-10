@@ -26,19 +26,28 @@
   }
   /* absolute fail-safe: never leave the page scroll-locked, even if the
      stepped-loader timers are throttled (background tab, slow paint, etc.) */
-  setTimeout(endLoader, 4200);
-  window.addEventListener('load', function () { setTimeout(endLoader, 800); });
+  setTimeout(endLoader, 4500);
+  var _reached100 = false;
+  /* the `load` fallback must NOT preempt the stepped counter — otherwise it
+     ends the loader before 100 is ever shown/held. Only let it end once the
+     counter has actually landed on 100. */
+  window.addEventListener('load', function () {
+    setTimeout(function () { if (_reached100) endLoader(); }, 400);
+  });
   if (reduce || !numEl) {
     if (numEl) numEl.textContent = '100';
     setTimeout(endLoader, 200);
   } else {
-    /* 9 fixed, jumpy stops — first 0, last 100, held long enough to read */
-    var stops = [0, 46, 13, 72, 34, 91, 58, 84, 100];
-    var i = 0, HOLD = 175;
+    /* 8 fixed, jumpy stops leading to a clearly-held 100 */
+    var stops = [0, 46, 13, 72, 34, 91, 58, 84];
+    var i = 0, HOLD = 185;
     (function jump() {
       numEl.textContent = stops[i];
-      if (++i < stops.length) setTimeout(jump, HOLD);
-      else setTimeout(endLoader, 400);
+      if (++i < stops.length) { setTimeout(jump, HOLD); return; }
+      /* land on 100 and hold it long enough to read before rolling out */
+      numEl.textContent = 100;
+      _reached100 = true;
+      setTimeout(endLoader, 232);
     })();
   }
 

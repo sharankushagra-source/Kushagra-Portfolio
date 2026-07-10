@@ -142,7 +142,7 @@ export default function App() {
           <div className="sechead">
             <div className="sechead__l">
               <div className="chap"><span className="chap__n">01</span><span className="chap__rule"></span><span className="chap__t">What I do</span></div>
-              <h2 className="sechead__title" data-lines>What I<br />do.</h2>
+              <h2 className="sechead__title" data-lines>How I<br />work.</h2>
             </div>
             <p className="lab" style={{ maxWidth: '38ch' }}>Two-plus years taking features from problem framing through flows, polished UI, and developer handoff — most recently leading end-to-end design for Factile (2M+ users) and the Vesta real-estate platform.</p>
           </div>
@@ -174,7 +174,7 @@ export default function App() {
           <div className="sechead">
             <div className="sechead__l">
               <div className="chap"><span className="chap__n">02</span><span className="chap__rule"></span><span className="chap__t">Selected work</span></div>
-              <h2 className="sechead__title" data-lines>Selected<br />work.</h2>
+              <h2 className="sechead__title" data-lines>What I’ve<br />shipped.</h2>
             </div>
             <p className="lab" style={{ maxWidth: '28ch' }}>One flagship case study I shipped end to end — plus a few explorations on Behance.</p>
           </div>
@@ -254,7 +254,7 @@ export default function App() {
                 <h3 className="jstep__role">Senior UX/UI Designer</h3>
                 <span className="jstep__org">Deligence Technologies</span>
                 <ul className="jstep__keys">
-                  <li>End-to-end design</li><li>Problem framing</li><li>Dev-ready specs</li><li>+13–14% new users</li><li>~10% revenue</li><li>WCAG AA / AAA</li><li>Vesta · 23→15 steps</li>
+                  <li>End-to-end design</li><li>Problem framing</li><li>Dev-ready specs</li><li>Factile · +13–14% new users</li><li>~10% revenue</li><li>WCAG AA / AAA</li><li>Vesta · 23→15 steps</li>
                 </ul>
               </li>
             </ol>
@@ -273,7 +273,7 @@ export default function App() {
           <div className="sechead">
             <div className="sechead__l">
               <div className="chap"><span className="chap__n">04</span><span className="chap__rule"></span><span className="chap__t">Sketchbook</span></div>
-              <h2 className="sechead__title" data-lines>From the<br />sketchbook.</h2>
+              <h2 className="sechead__title" data-lines>The other<br />half.</h2>
             </div>
             <p className="lab" style={{ maxWidth: '36ch' }}>The other half of the practice — illustration and poster art. Deal the pile, then build your own collage inside the frame: drag and resize the pieces, and when it feels yours, hit capture for a little surprise.</p>
           </div>
@@ -297,6 +297,7 @@ export default function App() {
               <button type="button" data-zoom="in" aria-label="Enlarge" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="7" /><line x1="16.5" y1="16.5" x2="21" y2="21" /><line x1="8" y1="11" x2="14" y2="11" /><line x1="11" y1="8" x2="11" y2="14" /></svg></button>
             </div>
             <button className="gallery__reset" type="button">Restack</button>
+            <a className="gallery__insta" href="https://www.instagram.com/drawanyday?igsh=MW1keXhscTdpeXZndg==" target="_blank" rel="noopener" data-view="Instagram" aria-label="@drawanyday — sketchbook on Instagram" title="@drawanyday — sketchbook on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" /><circle cx="12" cy="12" r="4.4" /><circle cx="17.6" cy="6.4" r="1.15" fill="currentColor" stroke="none" /></svg></a>
             <div className="console" data-console aria-label="Live ASCII preview of your collage">
               <div className="console__bar"><i></i><i></i><i></i><span>collage.tty — live ascii</span></div>
               <pre className="console__pre" aria-hidden="true">&gt; collage.tty ready

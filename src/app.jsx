@@ -127,9 +127,8 @@ export default function App() {
               <a className="btn btn--ghost" href="#work">See the work</a>
             </div>
           </div>
-        </div>
-        <div className="hero__scrollcue">Scroll <i></i></div>
-      </header>
+        <div className="hero__scrollcue">Scroll <i></i></div></div>
+        </header>
 
       {/* marquee */}
       <div className="mq" aria-hidden="true">

@@ -540,11 +540,17 @@ body.loading{ overflow:hidden; }
 }
 .console__cap:disabled{ opacity:.45; cursor:default; filter:none; }
 
-/* DESKTOP ONLY: lift the scroll cue so the scroll-line→marquee gap equals the
-   marquee→"What I do" gap (which is the section's top padding). Mobile keeps
-   the cue pinned near the bottom-right (rule above). */
+/* DESKTOP ONLY: full-height hero — content block sits at the viewport bottom,
+   so the marquee is pushed below the first fold and reads as the start of the
+   next section. Scroll cue stays on the shared content baseline. Mobile
+   (max-width:680) keeps its own marquee-in-fold treatment above, untouched. */
 @media (min-width:681px){
-  .hero__scrollcue{ bottom:clamp(80px,13vh,180px); }
+  .hero{ min-height:100svh; }
+  /* body .hero beats the inline `.hero{ padding:130px 0 20vh }` in the page head,
+     so the content block sits near the viewport bottom. */
+  body .hero{ padding-bottom:28px; }
+  .hero__side{ padding-bottom:0; }
+  .hero__scrollcue{ bottom:0; }
 }
 .collage-flash{ position:absolute; inset:0; z-index:80; pointer-events:none; background:#fff; opacity:0; }
 .collage-flash.go{ animation:collageFlash .45s ease-out; }

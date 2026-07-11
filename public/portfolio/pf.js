@@ -206,7 +206,7 @@
     tr.innerHTML += tr.innerHTML;
     var x = 0, w = tr.scrollWidth / 2, dir = tr.getAttribute('data-dir') === 'r' ? 1 : -1;
     (function tick() {
-      x += 0.5 * dir;
+      x += 0.75 * dir;
       if (dir < 0 && x <= -w) x = 0;
       if (dir > 0 && x >= 0) x = -w;
       tr.style.transform = 'translateX(' + x + 'px)';

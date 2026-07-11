@@ -528,15 +528,14 @@ body.loading{ overflow:hidden; }
   /* stack the collage controls vertically: zoom (top) → download → capture (bottom) */
   .gallery__zoom{ left:50%; bottom:130px; }
   .collage-dl{ left:10px; right:10px; bottom:72px; text-align:center; }
-  /* pull the hero up so the marquee ticker lands inside the first fold */
-  .hero{ min-height:calc(100svh - 112px); }
-  /* drop the hero text block to the bottom — bottom padding matches the scroll
-     cue's 26px offset, and zeroing the side padding lets the block bottom line up
-     exactly with the scroll line, both the same gap above the marquee. */
+  /* full-height hero so the marquee sits below the first fold (like desktop) */
+  .hero{ min-height:100svh; }
   body .hero{ padding-bottom:26px; }
   .hero__side{ padding-bottom:0; }
-  /* move the scroll cue to the right edge so it clears the CTA buttons */
-  .hero__scrollcue{ left:auto; right:12px; transform:none; }
+  /* scroll cue: drop the label, keep only the animated vertical line, and match
+     its height + baseline to the CTA buttons on the right edge. */
+  .hero__scrollcue{ left:auto; right:12px; bottom:0; transform:none; font-size:0; gap:0; }
+  .hero__scrollcue i{ height:53px; }
 }
 .console__cap:disabled{ opacity:.45; cursor:default; filter:none; }
 
@@ -550,7 +549,7 @@ body.loading{ overflow:hidden; }
      so the content block sits near the viewport bottom. */
   body .hero{ padding-bottom:28px; }
   .hero__side{ padding-bottom:0; }
-  .hero__scrollcue{ bottom:0; }
+  .hero__scrollcue{ bottom:0; font-size:0; }
 }
 .collage-flash{ position:absolute; inset:0; z-index:80; pointer-events:none; background:#fff; opacity:0; }
 .collage-flash.go{ animation:collageFlash .45s ease-out; }

@@ -37,9 +37,9 @@
   /* ============================================================
      RADIUS
      ============================================================ */
-  --radius-sm: 4px;       /* icon containers */
-  --radius-item: 6px;     /* nav sub-items, small buttons */
-  --radius-btn: 6px;      /* buttons, tabs, cards — tightened from 10px */
+  --radius-sm: 4px;       /* icon containers, status dots */
+  --radius-item: 6px;     /* small interactive sub-elements: nav sub-items, tabs, chips, inline/small buttons */
+  --radius-btn: 10px;     /* buttons, tabs container, cards — one step softer than item */
   --radius-lg: 14px;      /* search fields, modals */
   --radius-pill: 8px;     /* status / tier pills — softened rectangle, not a capsule */
   --radius-full: 9999px;  /* toggles, avatars — fully circular only */

@@ -7,10 +7,10 @@
   /* ============================================================
      ELEVATION
      ============================================================ */
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);                                 /* hover lift */
-  --shadow-md: 0 1px 4px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);    /* buttons, containers */
-  --shadow-lg: 0 6px 20px rgba(0,0,0,0.08);                               /* modals, overlays */
-  --shadow-modal: 0 8px 40px rgba(0,0,0,0.18);                            /* dialog cards */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);                                 /* controls: toggle knob, input/select hover */
+  --shadow-md: 0 1px 4px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);    /* cards on hover, tabs bar, field focus (buttons stay flat) */
+  --shadow-lg: 0 6px 20px rgba(0,0,0,0.08);                               /* menus, tooltips, toasts */
+  --shadow-modal: 0 8px 40px rgba(0,0,0,0.18);                            /* dialogs */
 
   /* ============================================================
      MOTION

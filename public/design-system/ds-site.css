@@ -191,6 +191,11 @@ a { color: inherit; text-decoration: none; }
 .dss-radii .r { display: flex; flex-direction: column; align-items: center; gap: 8px; }
 .dss-radii .box { width: 70px; height: 56px; background: var(--surface-active); border: 1.5px solid var(--brand-700); }
 .dss-radii .lab { font-size: 11px; font-family: ui-monospace,monospace; color: var(--neutral-500); }
+.dss-elev { display: flex; gap: 22px; flex-wrap: wrap; padding: 8px 4px 4px; }
+.dss-elev .e { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.dss-elev .card { width: 150px; height: 72px; background: var(--white); border: 1px solid var(--neutral-200); border-radius: var(--radius-btn); }
+.dss-elev .lab { font-size: 12px; font-family: ui-monospace,monospace; color: var(--neutral-700); }
+.dss-elev .use { font-size: 11px; color: var(--neutral-500); }
 .dss-sizes { display: flex; align-items: flex-end; gap: 18px; flex-wrap: wrap; }
 .dss-sizes .s { display: flex; flex-direction: column; align-items: center; gap: 8px; }
 .dss-sizes .blk { width: 84px; background: var(--surface-active); border: 1.5px dashed var(--brand-700); border-radius: var(--radius-btn); }
@@ -230,4 +235,8 @@ body.dss-locked { overflow: hidden; }
   .dss-toggle { display: inline-flex; align-items: center; gap: 8px; position: fixed; top: 14px; left: 14px; z-index: 40; background: var(--neutral-950); color: #fff; border: none; padding: 10px 14px; border-radius: 10px; font-size: 13px; cursor: pointer; box-shadow: var(--shadow-md); }
   .dss-scrim { position: fixed; inset: 0; background: rgba(26,26,46,.4); z-index: 25; opacity: 0; pointer-events: none; transition: opacity .2s; }
   .dss-scrim.is-open { opacity: 1; pointer-events: auto; }
+  body.dss-nav-open .dss-toggle { display: none; }
+  .dss-navclose { display: none; position: fixed; top: 16px; right: 16px; z-index: 41; width: 44px; height: 44px; align-items: center; justify-content: center; border: none; border-radius: var(--radius-full); background: transparent; color: #fff; cursor: pointer; }
+  .dss-navclose svg { width: 26px; height: 26px; }
+  body.dss-nav-open .dss-navclose { display: inline-flex; }
 }

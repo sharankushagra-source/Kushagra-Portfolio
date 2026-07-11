@@ -15,6 +15,7 @@
 
 <button class="dss-toggle" aria-label="Open navigation">☰ Menu</button>
 <div class="dss-scrim"></div>
+<button class="dss-navclose" aria-label="Close navigation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
 
 <div class="dss-shell">
   <nav class="dss-nav" aria-label="Documentation">
@@ -24,6 +25,14 @@
       <a class="dss-link is-active" href="#overview">Overview</a>
       <div class="dss-nav__label">Foundations</div>
       <a class="dss-link" href="#foundations">Color, type &amp; scale</a>
+      <div class="dss-navsub is-open">
+        <a href="#f-color">Color &amp; type</a>
+        <a href="#f-spacing">Spacing</a>
+        <a href="#f-radius">Radius</a>
+        <a href="#f-elevation">Elevation</a>
+        <a href="#f-sizing">Sizing</a>
+        <a href="#f-focus">Focus &amp; motion</a>
+      </div>
       <div class="dss-nav__label">Components</div>
       <a class="dss-link" href="#components">Component library</a>
       <div class="dss-navsub is-open" id="dss-navsub">
@@ -41,7 +50,7 @@
       <a class="dss-link" href="#products">Products</a>
       <a class="dss-link" href="#start">Handoff</a>
     </div>
-    <div class="dss-nav__foot"><a class="dss-back" href="../index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Kushagra Sharan</a></div>
+    <div class="dss-nav__foot"><a class="dss-back" href="../Portfolio - Facets Kit v2.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Kushagra Sharan</a></div>
   </nav>
 
   <main class="dss-main">
@@ -79,7 +88,7 @@
       <p class="dss-lede">Color, type, spacing, radius and elevation as variables — change one, and it ripples everywhere, accessibly.</p>
       <div class="dss-fgrid">
 
-        <div class="dss-fcard dss-fcard--wide">
+        <div class="dss-fcard dss-fcard--wide" id="f-color">
           <div class="dss-fcard__h">Color</div>
           <div class="dss-csub">Brand · the only interactive hue</div>
           <div class="dss-cgrid">
@@ -118,7 +127,7 @@
           </div>
         </div>
 
-        <div class="dss-fcard dss-fcard--wide">
+        <div class="dss-fcard dss-fcard--wide" id="f-spacing">
           <div class="dss-fcard__h">Spacing · 4px base grid</div>
           <div class="dss-bars">
             <div class="b"><i style="height:4px"></i><span>4</span></div>
@@ -133,9 +142,10 @@
           </div>
         </div>
 
-        <div class="dss-fcard dss-fcard--wide">
+        <div class="dss-fcard dss-fcard--wide" id="f-radius">
           <div class="dss-fcard__h">Radius</div>
           <div class="dss-radii">
+            <div class="r"><div class="box" style="border-radius:var(--radius-sm)"></div><span class="lab">sm · 4</span></div>
             <div class="r"><div class="box" style="border-radius:var(--radius-item)"></div><span class="lab">item · 6</span></div>
             <div class="r"><div class="box" style="border-radius:var(--radius-btn)"></div><span class="lab">btn · 10</span></div>
             <div class="r"><div class="box" style="border-radius:var(--radius-lg)"></div><span class="lab">lg · 14</span></div>
@@ -143,7 +153,17 @@
           </div>
         </div>
 
-        <div class="dss-fcard dss-fcard--wide">
+        <div class="dss-fcard dss-fcard--wide" id="f-elevation">
+          <div class="dss-fcard__h">Elevation</div>
+          <div class="dss-elev">
+            <div class="e"><div class="card" style="box-shadow:var(--shadow-sm)"></div><span class="lab">shadow-sm</span><span class="use">controls, hover</span></div>
+            <div class="e"><div class="card" style="box-shadow:var(--shadow-md)"></div><span class="lab">shadow-md</span><span class="use">cards &amp; tabs, field focus</span></div>
+            <div class="e"><div class="card" style="box-shadow:var(--shadow-lg)"></div><span class="lab">shadow-lg</span><span class="use">menus, tooltips, toasts</span></div>
+            <div class="e"><div class="card" style="box-shadow:var(--shadow-modal)"></div><span class="lab">shadow-modal</span><span class="use">dialogs</span></div>
+          </div>
+        </div>
+
+        <div class="dss-fcard dss-fcard--wide" id="f-sizing">
           <div class="dss-fcard__h">Sizing · touch</div>
           <div class="dss-sizes">
             <div class="s"><div class="blk" style="height:36px"></div><span class="lab">min · 36</span></div>
@@ -152,7 +172,7 @@
           </div>
         </div>
 
-        <div class="dss-fcard dss-fcard--wide">
+        <div class="dss-fcard dss-fcard--wide" id="f-focus">
           <div class="dss-fcard__h">Focus &amp; motion</div>
           <div class="dss-fm">
             <button class="dss-focusbtn" type="button">Focused</button>
@@ -209,10 +229,12 @@
 
 <script>
   (function(){
-    var nav = document.querySelector('.dss-nav'), scrim = document.querySelector('.dss-scrim');
-    function setNav(o){ nav.classList.toggle('is-open',o); scrim.classList.toggle('is-open',o); }
+    var nav = document.querySelector('.dss-nav'), scrim = document.querySelector('.dss-scrim'), navClose = document.querySelector('.dss-navclose');
+    function setNav(o){ nav.classList.toggle('is-open',o); scrim.classList.toggle('is-open',o); document.body.classList.toggle('dss-nav-open',o); }
     document.querySelector('.dss-toggle').addEventListener('click', function(){ setNav(true); });
     scrim.addEventListener('click', function(){ setNav(false); });
+    if (navClose) navClose.addEventListener('click', function(){ setNav(false); });
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape' && nav.classList.contains('is-open')) setNav(false); });
     var cl = document.getElementById('dss-complink'), sub = document.getElementById('dss-navsub');
     if (cl) { cl.addEventListener('click', function(e){ e.preventDefault(); var open = !sub.classList.contains('is-open'); sub.classList.toggle('is-open', open); cl.classList.toggle('is-expanded', open); cl.setAttribute('aria-expanded', String(open)); if (open) { links.forEach(function(l){ l.classList.toggle('is-active', l === cl); }); } }); }
     [].slice.call(document.querySelectorAll('.dss-navsub a')).forEach(function(a){ a.addEventListener('click', function(){ if(window.innerWidth<=980) setNav(false); }); });

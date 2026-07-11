@@ -81,7 +81,7 @@ body.pfcursor,body.pfcursor a,body.pfcursor button{ cursor:none; }
 .themebtn button{ pointer-events:auto; font-family:var(--sans); font-weight:700; font-size:11px; letter-spacing:0.1em; text-transform:uppercase;
   padding:8px 15px; border:none; border-radius:100px; background:none; color:color-mix(in srgb, var(--fg) 58%, transparent); transition:color .25s, background .25s; }
 .themebtn button.on{ background:var(--hot); color:#fff; }
-@media (max-width:760px){ .themebtn{ top:auto; bottom:14px; right:14px; } }
+@media (max-width:760px){ .themebtn{ top:var(--edge); bottom:auto; right:var(--edge); } }
 
 /* ============================================================
    CURSOR — difference blend inverts over any surface
@@ -418,7 +418,7 @@ body.loading{ overflow:hidden; }
 .foot__kit:hover .foot__kit-t{ opacity:.68; }
 .foot a{ color:rgba(241,238,231,.78); border-bottom:1px solid #E01E8F; }
 /* keep footer text clear of the fixed theme toggle on mobile */
-@media (max-width:760px){ .foot{ padding-bottom:84px; } }
+@media (max-width:760px){ .foot{ padding-bottom:40px; } }
 
 /* ============================================================
    REVEALS
@@ -550,6 +550,10 @@ body.loading{ overflow:hidden; }
   body .hero{ padding-bottom:28px; }
   .hero__side{ padding-bottom:0; }
   .hero__scrollcue{ bottom:0; font-size:0; }
+  /* align the block base to the "Sharan." glyph baseline (not the font line-box):
+     the last line has no descender, so hugging it drops the empty descent space
+     and lets the CTA + scroll sit on the visible glyph baseline. */
+  .hero__title .ln:last-child{ margin-bottom:0; padding-bottom:0; }
 }
 .collage-flash{ position:absolute; inset:0; z-index:80; pointer-events:none; background:#fff; opacity:0; }
 .collage-flash.go{ animation:collageFlash .45s ease-out; }
@@ -654,5 +658,5 @@ body.loading{ overflow:hidden; }
   /* restack pill was buried under the stacked collage controls — move it to the top */
   .gallery__reset{ top:14px; bottom:auto; }
   /* footer text sits above the fixed theme toggle */
-  .foot{ flex-direction:column; align-items:flex-start; gap:12px; padding-bottom:96px; }
+  .foot{ flex-direction:column; align-items:flex-start; gap:12px; padding-bottom:40px; }
 }

@@ -539,6 +539,13 @@ body.loading{ overflow:hidden; }
   .hero__scrollcue{ left:auto; right:12px; transform:none; }
 }
 .console__cap:disabled{ opacity:.45; cursor:default; filter:none; }
+
+/* DESKTOP ONLY: lift the scroll cue so the scroll-line→marquee gap equals the
+   marquee→"What I do" gap (which is the section's top padding). Mobile keeps
+   the cue pinned near the bottom-right (rule above). */
+@media (min-width:681px){
+  .hero__scrollcue{ bottom:clamp(80px,13vh,180px); }
+}
 .collage-flash{ position:absolute; inset:0; z-index:80; pointer-events:none; background:#fff; opacity:0; }
 .collage-flash.go{ animation:collageFlash .45s ease-out; }
 @keyframes collageFlash{ 0%{opacity:.85} 100%{opacity:0} }

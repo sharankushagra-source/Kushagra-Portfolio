@@ -212,6 +212,14 @@ a { color: inherit; text-decoration: none; }
 .dss-product.is-full iframe { height: auto; flex: 1; min-height: 0; }
 body.dss-locked { overflow: hidden; }
 
+/* The compiled _ds_bundle.js auto-injects the portfolio's custom cursor
+   (dot canvas + ring/label, and llcursor). The docs site doesn't want it:
+   hide every artifact and restore the native cursor. */
+#dotcanvas, .cur-dot, .cur-ring, .cur-lab { display: none !important; }
+body.dotcursor, body.llcursor, body.cur { cursor: auto !important; }
+body.dotcursor a, body.dotcursor button, body.llcursor a, body.llcursor button,
+body.cur a, body.cur button, .dss-link, .dss-navsub a, .dss-iconbtn { cursor: pointer !important; }
+
 .dss-code { font-family: ui-monospace,'SFMono-Regular',monospace; font-size: 13.5px; line-height: 1.85; background: var(--neutral-950); color: #E7E7F0; border-radius: var(--radius-lg); padding: 24px 26px; overflow-x: auto; margin-top: 30px; }
 .dss-code .c { color: #8A8FA3; } .dss-code .t { color: #BBA8FF; } .dss-code .s { color: #9FE0B8; }
 .dss-rules { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin-top: 26px; }

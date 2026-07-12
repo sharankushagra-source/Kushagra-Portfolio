@@ -28,6 +28,8 @@ const DiagArrow = (props) => (
 
 export default function App() {
   useEffect(() => {
+    // Soft Grid tuning: gentler skill hover growth
+    window.KS_SKILL_GROW = 0.41;
     // 1) load the interaction scripts sequentially against the mounted DOM
     const scripts = [
       '/portfolio/pf.js',
@@ -88,6 +90,10 @@ export default function App() {
   return (
     <>
       {/* full-page morphing grid background */}
+      <style>{`
+        .bgmorph{ opacity:0.75; transition:opacity .45s ease; }
+        body:has(:is(h1,h2,h3,h4,p,li,a,span,.lab,.hero__title,.hero__lead,.sechead,.skill,.jrow):hover) .bgmorph{ opacity:0.32; }
+      `}</style>
       <div className="bgmorph" data-morph aria-hidden="true"><canvas></canvas></div>
 
       {/* loader */}

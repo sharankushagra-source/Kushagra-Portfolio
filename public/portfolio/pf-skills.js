@@ -22,7 +22,7 @@
   }).filter(function (s) { return s.t; });
   if (!skills.length) return;
 
-  var R = 300, TEX = 26, GROW = 0.55, PUSH = 30;
+  var R = 300, TEX = 26, GROW = (typeof window.KS_SKILL_GROW === 'number' ? window.KS_SKILL_GROW : 0.55), PUSH = 30;
   var px = -99999, py = -99999, visible = true;
 
   host.addEventListener('pointermove', function (e) { px = e.clientX; py = e.clientY; });

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kushagra Sharan — Product Designer · Soft Grid</title>
+<meta name="description" content="Kushagra Sharan — senior product designer turning complex workflows into clear, usable products." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" />
+<link rel="stylesheet" href="portfolio/pf-facets.css" />
+<script>(function(){try{if(localStorage.getItem('pf-facets-theme')==='light'){document.documentElement.classList.add('theme-light');}}catch(e){}})();</script>
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+    <rect width="400" height="400" fill="#100D08"/>
+    <circle cx="200" cy="180" r="70" fill="none" stroke="#7CF03A" stroke-width="10"/>
+    <circle cx="255" cy="235" r="16" fill="#E01E8F"/>
+    <text x="200" y="330" text-anchor="middle" font-family="Georgia,serif" font-size="42" font-style="italic" fill="#F1EEE7">KS</text>
+  </svg>
+</template>
+<style>
+  /* v2: full-page morphing grid background */
+  /* Soft Grid variant: the full-page morph is dialled back for calmer contrast,
+     and dims further while the pointer is over readable content so text stays legible. */
+  .bgmorph{ position:fixed; inset:0; z-index:0; pointer-events:none; color:var(--fg);
+    opacity:0.75; transition:opacity .45s ease; }
+  /* dim ONLY while hovering actual readable content — not empty section space */
+  body:has(:is(h1,h2,h3,h4,p,li,a,span,.lab,.hero__title,.hero__lead,.sechead,.skill,.jrow):hover) .bgmorph{ opacity:0.32; }
+  .bgmorph canvas{ position:absolute; inset:0; }
+  .hero, .mq, .section, .contact{ position:relative; z-index:1; }
+  body{ --grid-line:transparent; background-image:none; }
+  .hero{ padding:130px 0 20vh; }
+  .sketch{ background:transparent; color:var(--fg); }
+  .sketch .sechead__title{ color:var(--fg); }
+  .sketch .lab{ color:color-mix(in srgb, var(--fg) 62%, transparent); }
+  .collage-frame{ background:transparent; box-shadow:none; z-index:0; }
+  .gallery__stack{ z-index:1; }
+  .themebtn .kitlink{ display:inline-flex; align-items:center; font-family:var(--sans); font-weight:800; font-size:11px; letter-spacing:0.14em; text-transform:uppercase;
+    padding:8px 15px; border-radius:100px; color:color-mix(in srgb, var(--fg) 70%, transparent); text-decoration:none; transition:color .25s, background .25s; }
+  .themebtn .kitlink:hover{ background:color-mix(in srgb, var(--fg) 10%, transparent); color:var(--fg); }
+</style>
+</head>
+<body class="loading">
+
+<!-- full-page morphing grid background -->
+<div class="bgmorph" data-morph aria-hidden="true"><canvas></canvas></div>
+
+<!-- loader -->
+<div class="loader">
+  <div class="loader__num">0</div>
+  <div class="loader__word">KUSHAGRA SHARAN — <b>PRODUCT DESIGNER</b></div>
+</div>
+
+<!-- cursor -->
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor__ring" aria-hidden="true"></div>
+<div class="cursor__lab" aria-hidden="true"></div>
+
+<!-- nav -->
+<header class="nav">
+  <a class="nav__logo" href="#top" aria-label="Kushagra Sharan"><span class="mk">KS</span></a>
+  <nav class="hindex" aria-label="Sections">
+    <button class="hindex__i" data-goto="services" type="button"><span class="dot"></span><span class="txt">What I do</span></button>
+    <button class="hindex__i" data-goto="work" type="button"><span class="dot"></span><span class="txt">Work</span></button>
+    <button class="hindex__i" data-goto="experience" type="button"><span class="dot"></span><span class="txt">Experience</span></button>
+    <button class="hindex__i" data-goto="sketchbook" type="button"><span class="dot"></span><span class="txt">Sketchbook</span></button>
+    <button class="hindex__i" data-goto="contact" type="button"><span class="dot"></span><span class="txt">Contact</span></button>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="wrap hero__inner">
+    <div class="hero__lead">
+      <span class="hero__eyebrow lab"><span class="d"></span> Product Designer &amp; Illustrator · Est. 2023</span>
+      <h1 class="hero__title"><span class="ln"><span>Kushagra</span></span><span class="ln"><span><em>Sharan.</em></span></span></h1>
+    </div>
+    <div class="hero__side">
+      <p class="hero__sub">UX-led product design, shipped end to end. I make complex workflows feel obvious.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#services">Enter
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="btn btn--ghost" href="#work">See the work</a>
+      </div>
+    </div>
+    <div class="hero__scrollcue">Scroll <i></i></div>
+  </div>
+</header>
+
+<!-- marquee -->
+<div class="mq" aria-hidden="true">
+  <div class="mq__t"><span>UX Design</span><span>Design Systems</span><span>Product Strategy</span><span>Accessibility — AAA</span><span>Rapid Execution</span><span>Problem Framing</span></div>
+</div>
+
+<!-- ============ SERVICES / WHAT I DO ============ -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sechead">
+      <div class="sechead__l">
+        <div class="chap"><span class="chap__n">01</span><span class="chap__rule"></span><span class="chap__t">What I do</span></div>
+        <h2 class="sechead__title" data-lines>How I<br>work.</h2>
+      </div>
+      <p class="lab" style="max-width:38ch">Two-plus years taking features from problem framing through flows, polished UI, and developer handoff — most recently leading end-to-end design for Factile (2M+ users) and the Vesta real-estate platform.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="svc">
+      <svg class="svc-filters" aria-hidden="true"><defs>
+        <filter id="warp1" x="-40%" y="-90%" width="180%" height="280%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.009 0.02" numOctaves="1" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter>
+        <filter id="warp2" x="-40%" y="-90%" width="180%" height="280%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.011 0.018" numOctaves="1" seed="19" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter>
+        <filter id="warp3" x="-40%" y="-90%" width="180%" height="280%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.008 0.024" numOctaves="1" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter>
+        <filter id="warp4" x="-40%" y="-90%" width="180%" height="280%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.019" numOctaves="1" seed="42" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter>
+        <filter id="warp5" x="-40%" y="-90%" width="180%" height="280%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.01 0.022" numOctaves="1" seed="11" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter>
+        <filter id="warp6" x="-40%" y="-90%" width="180%" height="280%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.009 0.021" numOctaves="1" seed="27" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter>
+      </defs></svg>
+      <p class="svc__intro"><i></i> Hover a strength</p>
+      <div class="skill" data-skill style="left:22%; top:5%"> <span class="skill__n">01</span><h3 class="skill__t" style="filter:url(#warp1)" tabindex="0">UX Design</h3><span class="skill__desc">Flows so clear the interface feels inevitable.</span></div>
+      <div class="skill" data-skill style="left:42%; top:21%"> <span class="skill__n">02</span><h3 class="skill__t" style="filter:url(#warp2)" tabindex="0">Design Systems</h3><span class="skill__desc">One system — every screen consistent, faster to build.</span></div>
+      <div class="skill" data-skill style="left:18%; top:37%"> <span class="skill__n">03</span><h3 class="skill__t" style="filter:url(#warp3)" tabindex="0">Problem Framing</h3><span class="skill__desc">The real problem, found before the first screen.</span></div>
+      <div class="skill" data-skill style="left:40%; top:53%"> <span class="skill__n">04</span><h3 class="skill__t" style="filter:url(#warp4)" tabindex="0">Accessibility</h3><span class="skill__desc">Software that welcomes the people it usually intimidates.</span></div>
+      <div class="skill" data-skill style="left:22%; top:69%"> <span class="skill__n">05</span><h3 class="skill__t" style="filter:url(#warp5)" tabindex="0">Rapid Execution</h3><span class="skill__desc">High craft, shipped fast when the timeline is tight.</span></div>
+      <div class="skill" data-skill style="left:40%; top:85%"> <span class="skill__n">06</span><h3 class="skill__t" style="filter:url(#warp6)" tabindex="0">Communication</h3><span class="skill__desc">Narrating the “why” so product, design and eng move as one.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SELECTED WORK ============ -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="sechead">
+      <div class="sechead__l">
+        <div class="chap"><span class="chap__n">02</span><span class="chap__rule"></span><span class="chap__t">Selected work</span></div>
+        <h2 class="sechead__title" data-lines>What I've<br>shipped.</h2>
+      </div>
+      <p class="lab" style="max-width:28ch">One flagship case study I shipped end to end — plus a few explorations on Behance.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <a class="workfeat" href="design-system/index.html" data-view="Explore">
+      <div class="workfeat__media"><span class="workfeat__art" role="img" aria-label="Abstract illustration — tokens combining into components and full screens"></span></div>
+      <div class="workfeat__body">
+        <span class="workfeat__badge"><i></i> Flagship · Case study</span>
+        <h3 class="workfeat__title">Accessible<br>Foundations</h3>
+        <p class="workfeat__desc">An end-to-end design system for a WCAG AA/AAA product — tokens, components and patterns that keep every screen consistent and welcoming to a non-technical audience.</p>
+        <span class="workfeat__tags"><span class="work__tag">Design System</span><span class="work__tag">Accessibility</span><span class="work__tag">WCAG AA / AAA</span></span>
+        <span class="workfeat__cta">Explore the system <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+      </div>
+    </a>
+    <div class="work">
+      <a class="work__row" href="https://www.behance.net/gallery/234598321/Good-Grammar-AI-A-Dashboard-for-Smarter-Communication" target="_blank" rel="noopener" data-img="portfolio/img/good-grammar.png" data-view="Behance">
+        <span class="work__l"><span class="work__n">01</span><span class="work__name">Good Grammar AI</span></span>
+        <span class="work__meta">
+          <span class="work__tags"><span class="work__tag">Product</span><span class="work__tag">Dashboard</span></span>
+          <span class="work__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+        </span>
+      </a>
+      <a class="work__row" href="https://www.behance.net/gallery/222268639/Health-Wellness-Website-Design" target="_blank" rel="noopener" data-img="portfolio/img/supplement.png" data-view="Behance">
+        <span class="work__l"><span class="work__n">02</span><span class="work__name">The Supplement</span></span>
+        <span class="work__meta">
+          <span class="work__tags"><span class="work__tag">Web</span><span class="work__tag">E-commerce</span></span>
+          <span class="work__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+        </span>
+      </a>
+      <a class="work__row" href="https://www.behance.net/gallery/233657339/Bento-Wireframing-Mini-Kit" target="_blank" rel="noopener" data-img="portfolio/img/mini-kit.png" data-view="Behance">
+        <span class="work__l"><span class="work__n">03</span><span class="work__name">Bento Mini Kit</span></span>
+        <span class="work__meta">
+          <span class="work__tags"><span class="work__tag">UI Kit</span><span class="work__tag">Wireframes</span></span>
+          <span class="work__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+        </span>
+      </a>
+    </div>
+    <div class="work__float" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section jrny" id="experience">
+  <div class="wrap">
+    <div class="sechead">
+      <div class="sechead__l">
+        <div class="chap"><span class="chap__n">03</span><span class="chap__rule"></span><span class="chap__t">The journey</span></div>
+        <h2 class="sechead__title" data-lines>Where I've<br>been.</h2>
+      </div>
+      <p class="lab" style="max-width:36ch">A path, not a résumé — from first principles to shipping product. Scroll to travel the route.</p>
+    </div>
+    <div class="jrny__map" data-journey>
+      <svg class="jrny__trail" aria-hidden="true"><defs><linearGradient id="jgrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6522E0"/><stop offset="1" stop-color="#E01E8F"/></linearGradient></defs><path class="jrny__trail-base"></path><path class="jrny__trail-prog"></path></svg>
+      <ol class="jrny__list">
+        <li class="jstep" data-step>
+          <div class="jstep__pin">01</div>
+          <div class="jstep__when">Before 2023 · Foundations</div>
+          <h3 class="jstep__role">First principles</h3>
+          <span class="jstep__org">IIIT Jabalpur · CUSAT</span>
+          <ul class="jstep__keys">
+            <li>Sketching</li><li>Close observation</li><li>Art &amp; crafts</li><li>First-principles thinking</li><li>Curiosity</li>
+          </ul>
+        </li>
+        <li class="jstep" data-step>
+          <div class="jstep__pin">02</div>
+          <div class="jstep__when">Aug 2023 — Oct 2025</div>
+          <h3 class="jstep__role">UX/UI Designer</h3>
+          <span class="jstep__org">SimplePlan Media</span>
+          <ul class="jstep__keys">
+            <li>Flows &amp; wireframes</li><li>Hi-fi UI</li><li>E-commerce</li><li>Healthcare</li><li>Logistics</li><li>BundleSuite · Shopify</li><li>Concept → handoff</li><li>Dev collaboration</li>
+          </ul>
+        </li>
+        <li class="jstep" data-step>
+          <div class="jstep__pin">03</div>
+          <div class="jstep__when">Oct 2025 — Present · Now</div>
+          <h3 class="jstep__role">Senior UX/UI Designer</h3>
+          <span class="jstep__org">Deligence Technologies</span>
+          <ul class="jstep__keys">
+            <li>End-to-end design</li><li>Problem framing</li><li>Dev-ready specs</li><li>Factile · +13–14% new users</li><li>~10% revenue</li><li>WCAG AA / AAA</li><li>Vesta · 23→15 steps</li>
+          </ul>
+        </li>
+      </ol>
+      <div class="jrny__more" aria-hidden="true">
+        <span class="jrny__more-line"></span>
+        <span class="jrny__more-dot"></span>
+        <p>The journey is still on — more adventures ahead</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKETCHBOOK ============ -->
+<section class="section sketch" id="sketchbook">
+  <div class="wrap">
+    <div class="sechead">
+      <div class="sechead__l">
+        <div class="chap"><span class="chap__n">04</span><span class="chap__rule"></span><span class="chap__t">Sketchbook</span></div>
+        <h2 class="sechead__title" data-lines>The other<br>half.</h2>
+      </div>
+      <p class="lab" style="max-width:36ch">The other half of the practice — illustration and poster art. Deal the pile, then build your own collage inside the frame: drag and resize the pieces, and when it feels yours, hit capture for a little surprise.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="gallery" data-gallery>
+      <div class="collage-frame" aria-hidden="true"></div>
+      <div class="gallery__stack">
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-knight2.jpg" alt="A Knight of the Seven Kingdoms — poster illustration" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-onepiece.jpg" alt="One Piece — Zoro" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-peaky2.jpg" alt="Peaky Blinders — The Immortal Man" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-surfer.jpg" alt="Silver Surfer" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-mj.png" alt="Michael Jackson" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-frieren2.jpg" alt="Frieren — Beyond Journey's End" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-rivers.jpg" alt="Festival — three rivers" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-canyoudo2.jpg" alt="Can you do — portrait study" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-weak.jpg" alt="Weak? — graffiti study" loading="lazy" /></figure>
+      </div>
+      <div class="gallery__zoom" aria-label="Resize selected piece">
+        <button type="button" data-zoom="out" aria-label="Shrink" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/><line x1="8" y1="11" x2="14" y2="11"/></svg></button>
+        <button type="button" data-zoom="in" aria-label="Enlarge" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg></button>
+      </div>
+      <button class="gallery__reset" type="button">Restack</button>
+      <a class="gallery__insta" href="https://www.instagram.com/drawanyday?igsh=MW1keXhscTdpeXZndg==" target="_blank" rel="noopener" data-view="Instagram" aria-label="@drawanyday — sketchbook on Instagram" title="@drawanyday — sketchbook on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.6" cy="6.4" r="1.15" fill="currentColor" stroke="none"/></svg></a>
+      <div class="console" data-console aria-label="Live ASCII preview of your collage">
+        <div class="console__bar"><i></i><i></i><i></i><span>collage.tty — live ascii</span></div>
+        <pre class="console__pre" aria-hidden="true">&gt; collage.tty ready
+&gt; deal the pile to begin _</pre>
+        <button class="console__cap" type="button" data-capture disabled>Capture · ASCII</button>
+      </div>
+      <button class="collage-dl" type="button" data-download disabled>Download · Collage</button>
+      <div class="collage-flash" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="lab">Get started</span>
+    <h2 class="contact__big" data-lines>Let's make<br>something <em>different</em>.</h2>
+    <a class="contact__mail" href="mailto:sharan.kushagra@gmail.com" data-view="Email">
+      <span class="circ"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      sharan.kushagra@gmail.com
+    </a>
+    <div class="contact__grid">
+      <div class="contact__col">
+        <span class="lab">Elsewhere</span>
+        <a href="https://www.linkedin.com/in/sharan-kushagra" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://www.behance.net/superchargedINK" target="_blank" rel="noopener">Behance ↗</a>
+      </div>
+      <div class="contact__col">
+        <span class="lab">Direct</span>
+        <a href="tel:+919305664633">+91 93056 64633</a>
+        <a href="portfolio/Kushagra-Sharan-Resume.pdf" target="_blank" rel="noopener">Résumé (PDF) ↓</a>
+      </div>
+      <div class="contact__col">
+        <span class="lab">Based in</span>
+        <a href="#top">New Delhi, India</a>
+        <a href="#top">Available for roles</a>
+      </div>
+    </div>
+    <a class="foot__kit" href="Facets UI Kit.html" data-view="Explore">
+      <span class="foot__kit-t">UI Facets Kit <span aria-hidden="true">↗</span></span>
+      <span class="foot__kit-d">The tokens, components and interaction patterns this entire site is built from — open the kit to see the parts.</span>
+    </a>
+    <div class="foot">
+      <span>© <span id="year">2025</span> Kushagra Sharan</span>
+      <span class="madewith">Made with Claude Design <svg class="pxheart" width="14" height="12" viewBox="0 0 14 12" shape-rendering="crispEdges" fill="#7CF03A" aria-hidden="true"><rect x="2" y="0" width="2" height="2"></rect><rect x="4" y="0" width="2" height="2"></rect><rect x="8" y="0" width="2" height="2"></rect><rect x="10" y="0" width="2" height="2"></rect><rect x="0" y="2" width="14" height="2"></rect><rect x="0" y="4" width="14" height="2"></rect><rect x="2" y="6" width="10" height="2"></rect><rect x="4" y="8" width="6" height="2"></rect><rect x="6" y="10" width="2" height="2"></rect></svg></span>
+    </div>
+  </div>
+</section>
+
+<!-- theme toggle -->
+<div class="themebtn" role="group" aria-label="Theme">
+  <button type="button" data-theme-set="dark">Dark</button>
+  <button type="button" data-theme-set="light">Light</button>
+</div>
+
+<script>window.KS_SKILL_GROW = 0.41;</script>
+<script src="portfolio/pf.js"></script>
+<script src="portfolio/pf-facets.js"></script>
+<script src="portfolio/pf-collage.js"></script>
+<script src="portfolio/pf-morph.js"></script>
+<script src="portfolio/pf-skills.js"></script>
+<script src="portfolio/pf-journey.js"></script>
+<script>(function(){
+  var host = document.querySelector('.bgmorph');
+  if (!host) return;
+  window.addEventListener('pointermove', function (e) {
+    host.dispatchEvent(new PointerEvent('pointermove', { clientX: e.clientX, clientY: e.clientY }));
+  });
+})();</script>
+<script>(function(){
+  var wrap = document.querySelector('.themebtn'); if(!wrap) return;
+  function apply(t){
+    document.documentElement.classList.toggle('theme-light', t==='light');
+    wrap.querySelectorAll('button').forEach(function(b){ b.classList.toggle('on', b.getAttribute('data-theme-set')===t); });
+    try{ localStorage.setItem('pf-facets-theme', t); }catch(e){}
+  }
+  apply(document.documentElement.classList.contains('theme-light') ? 'light' : 'dark');
+  wrap.querySelectorAll('button').forEach(function(b){
+    b.addEventListener('click', function(){ apply(b.getAttribute('data-theme-set')); });
+  });
+})();</script>
+</body>
+</html>

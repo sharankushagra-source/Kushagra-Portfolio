@@ -73,6 +73,7 @@
   }
   window.addEventListener('pointermove', function (e) {
     if (!on) { lastX = e.clientX; lastY = e.clientY; return; }
+    if (document.querySelector('.enter:not(.hide)')) { lastX = e.clientX; lastY = e.clientY; return; }   // no grass on the Enter gate
     if (lastX != null) {
       acc += Math.hypot(e.clientX - lastX, e.clientY - lastY);
       var now = performance.now();
@@ -137,6 +138,7 @@
 
   document.addEventListener('pointerover', function (e) {
     if (!on || !e.target.closest) return;
+    if (e.target.closest('.enter')) return;   // no SFX on the Enter gate
     var sk = e.target.closest(SKILL_SEL);
     if (sk) {
       if (sk !== leafEl) { leafEl = sk; morphAmt = Math.max(morphAmt, 0.35); startLeaf(); }
@@ -194,6 +196,7 @@
   /* ---------- CLICK: bird-flutter on press of interactive elements ---------- */
   document.addEventListener('pointerdown', function (e) {
     if (!on) return;
+    if (e.target.closest && e.target.closest('.enter')) return;   // no click SFX on the Enter gate
     var t = e.target.closest && e.target.closest('a,button,[role="button"],.workrow,.index__i,.sfxbtn,.themebtn button');
     if (!t) return;
     play('click', 0.95, 0.08, 0.6);

@@ -30,26 +30,33 @@ export default function App() {
   useEffect(() => {
     // Soft Grid tuning: gentler skill hover growth
     window.KS_SKILL_GROW = 0.41;
-    // yawn-synced loader: count crawls on the inhale, sprints to 100 on the exhale.
+    window.KS_LOADER_HOLD = true;   // hold loader until the Enter tap (unlocks audio)
+    // yawn-synced loader — starts on the Enter tap so the yawn is always audible
     (function(){
       var num = document.querySelector('.loader__num');
       var INHALE_END = 1500, EXHALE_END = 2420, N = 3;
       window.KS_LOADER_MIN_MS = EXHALE_END;
       var audio = new Audio('/portfolio/sfx/yawn.wav'); audio.preload='auto'; audio.volume=0.9;
-      function playYawn(){ try{audio.currentTime=0;}catch(e){} var q=audio.play(); if(q&&q.catch)q.catch(function(){}); }
-      playYawn();
-      function gate(){ if(document.body.classList.contains('loading') && audio.paused) playYawn(); window.removeEventListener('pointerdown', gate); }
-      window.addEventListener('pointerdown', gate);
-      audio.addEventListener('ended', function(){ window.removeEventListener('pointerdown', gate); });
-      if(num){ var easeOut=function(x){return 1-Math.pow(1-x,2);}; var t0=performance.now();
-        (function frame(now){ var t=now-t0, val;
-          if(t<=INHALE_END) val=Math.round(easeOut(t/INHALE_END)*N);
-          else if(t<=EXHALE_END) val=Math.round(N+easeOut((t-INHALE_END)/(EXHALE_END-INHALE_END))*(100-N));
-          else val=100;
-          num.textContent=val;
-          if(t<EXHALE_END) requestAnimationFrame(frame); else num.textContent=100;
-        })(t0);
+      var gateEl = document.getElementById('enterGate');
+      var btn = document.getElementById('enterBtn');
+      var easeOut = function(x){ return 1 - Math.pow(1 - x, 2); };
+      var started = false;
+      function begin(){
+        if(started) return; started = true;
+        try{ audio.currentTime = 0; }catch(e){} var q=audio.play(); if(q&&q.catch)q.catch(function(){});
+        if(gateEl) gateEl.classList.add('hide');
+        if(typeof window.KS_releaseLoader === 'function') window.KS_releaseLoader(); else window.KS_LOADER_HOLD = false;
+        if(num){ var t0=performance.now();
+          (function frame(now){ var t=now-t0, val;
+            if(t<=INHALE_END) val=Math.round(easeOut(t/INHALE_END)*N);
+            else if(t<=EXHALE_END) val=Math.round(N+easeOut((t-INHALE_END)/(EXHALE_END-INHALE_END))*(100-N));
+            else val=100;
+            num.textContent=val;
+            if(t<EXHALE_END) requestAnimationFrame(frame); else num.textContent=100;
+          })(t0);
+        }
       }
+      if(btn) btn.addEventListener('click', begin);
     })();
     // 1) load the interaction scripts sequentially against the mounted DOM
     const scripts = [
@@ -145,6 +152,14 @@ export default function App() {
         html.sfx-on .sfxbtn{ color:#fff; background:var(--hot); border-color:transparent; }
         html.sfx-on .sfxbtn .i-on{ display:block; } html.sfx-on .sfxbtn .i-off{ display:none; }
         .hero__scrollcue i::after{ background:#E01E8F !important; }
+        .enter{ position:fixed; inset:0; z-index:11000; background:#100D08; color:#F1EEE7; display:flex; align-items:center; justify-content:center; text-align:center; transition:opacity .5s ease; cursor:auto; }
+        .enter *{ cursor:inherit; } .enter__btn{ cursor:pointer; }
+        .enter.hide{ opacity:0; pointer-events:none; }
+        .enter__inner{ display:flex; flex-direction:column; align-items:center; gap:26px; padding:24px; }
+        .enter__btn{ display:inline-flex; align-items:center; gap:14px; font-family:var(--disp); font-weight:700; font-size:clamp(34px,7vw,64px); letter-spacing:-0.03em; color:#100D08; background:#F1EEE7; border:none; border-radius:100px; padding:clamp(16px,2.4vw,26px) clamp(34px,5vw,58px); cursor:pointer; transition:background .25s, color .25s, transform .25s; }
+        .enter__btn:hover{ background:#E01E8F; color:#fff; transform:translateY(-2px); }
+        .enter__btn svg{ width:0.7em; height:0.7em; }
+        .enter__note{ font-family:var(--sans); font-weight:600; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(241,238,231,.4); }
         @media (max-width:760px){
           .workfeat.is-armed{ outline:2px solid var(--hot); outline-offset:2px; box-shadow:0 0 0 1px var(--hot), 0 24px 60px -24px color-mix(in srgb, var(--hot) 60%, transparent); }
           .workfeat.is-armed .workfeat__cta{ color:#fff; background:var(--hot); border-radius:100px; padding:10px 18px; }
@@ -153,6 +168,17 @@ export default function App() {
         body:has(:is(h1,h2,h3,h4,p,li,a,span,.lab,.hero__title,.hero__lead,.sechead,.skill,.jrow):hover) .bgmorph{ opacity:0.32; }
       `}</style>
       <div className="bgmorph" data-morph aria-hidden="true"><canvas></canvas></div>
+
+      {/* ENTER gate — a single tap unlocks audio, then loader + yawn begin */}
+      <div className="enter" id="enterGate">
+        <div className="enter__inner">
+          <button className="enter__btn" type="button" id="enterBtn">
+            Enter
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+          </button>
+          <span className="enter__note">Best with sound on</span>
+        </div>
+      </div>
 
       {/* loader */}
       <div className="loader">

@@ -18,8 +18,17 @@
   document.body.classList.add('loading');
   var _ended = false;
   var _loaderStart = (window.performance && performance.now) ? performance.now() : Date.now();
+  /* optional page-scoped HOLD: if a page sets window.KS_LOADER_HOLD = true, the loader
+     waits (no auto-rollout) until KS_releaseLoader() is called — used by an Enter gate
+     so the loader/audio start on a real user gesture. Backwards-compatible: pages that
+     never set it behave exactly as before. */
+  window.KS_releaseLoader = function () {
+    window.KS_LOADER_HOLD = false;
+    _loaderStart = (window.performance && performance.now) ? performance.now() : Date.now();
+  };
   function endLoader() {
     if (_ended) return;
+    if (window.KS_LOADER_HOLD) { setTimeout(endLoader, 60); return; }
     /* optional page-scoped minimum loader time (used to sync the rollout with an
        audio cue). Backwards-compatible: no-op unless a page sets the global. */
     var minMs = window.KS_LOADER_MIN_MS;

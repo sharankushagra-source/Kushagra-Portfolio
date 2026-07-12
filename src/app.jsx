@@ -105,6 +105,21 @@ export default function App() {
         window.KSSound.initial(); sync();
         sbtn.addEventListener('click', () => { window.KSSound.toggle(); sync(); });
       }
+      // mobile: arm-then-go for the featured case-study card
+      const card = document.querySelector('.workfeat');
+      if (card) {
+        const isMobile = () => window.matchMedia('(max-width:760px)').matches;
+        card.addEventListener('click', (ev) => {
+          if (!isMobile()) return;
+          if (card.classList.contains('is-armed')) return;
+          if (ev.target.closest('.workfeat__cta')) return;
+          ev.preventDefault();
+          card.classList.add('is-armed');
+        });
+        document.addEventListener('click', (ev) => {
+          if (card.classList.contains('is-armed') && !card.contains(ev.target)) card.classList.remove('is-armed');
+        });
+      }
     }
 
     loadNext(0);
@@ -130,6 +145,11 @@ export default function App() {
         html.sfx-on .sfxbtn{ color:#fff; background:var(--hot); border-color:transparent; }
         html.sfx-on .sfxbtn .i-on{ display:block; } html.sfx-on .sfxbtn .i-off{ display:none; }
         .hero__scrollcue i::after{ background:#E01E8F !important; }
+        @media (max-width:760px){
+          .workfeat.is-armed{ outline:2px solid var(--hot); outline-offset:2px; box-shadow:0 0 0 1px var(--hot), 0 24px 60px -24px color-mix(in srgb, var(--hot) 60%, transparent); }
+          .workfeat.is-armed .workfeat__cta{ color:#fff; background:var(--hot); border-radius:100px; padding:10px 18px; }
+          .workfeat.is-armed .workfeat__cta svg{ stroke:#fff; }
+        }
         body:has(:is(h1,h2,h3,h4,p,li,a,span,.lab,.hero__title,.hero__lead,.sechead,.skill,.jrow):hover) .bgmorph{ opacity:0.32; }
       `}</style>
       <div className="bgmorph" data-morph aria-hidden="true"><canvas></canvas></div>

@@ -30,6 +30,27 @@ export default function App() {
   useEffect(() => {
     // Soft Grid tuning: gentler skill hover growth
     window.KS_SKILL_GROW = 0.41;
+    // yawn-synced loader: count crawls on the inhale, sprints to 100 on the exhale.
+    (function(){
+      var num = document.querySelector('.loader__num');
+      var INHALE_END = 1500, EXHALE_END = 2420, N = 3;
+      window.KS_LOADER_MIN_MS = EXHALE_END;
+      var audio = new Audio('/portfolio/sfx/yawn.wav'); audio.preload='auto'; audio.volume=0.9;
+      function playYawn(){ try{audio.currentTime=0;}catch(e){} var q=audio.play(); if(q&&q.catch)q.catch(function(){}); }
+      playYawn();
+      function gate(){ if(document.body.classList.contains('loading') && audio.paused) playYawn(); window.removeEventListener('pointerdown', gate); }
+      window.addEventListener('pointerdown', gate);
+      audio.addEventListener('ended', function(){ window.removeEventListener('pointerdown', gate); });
+      if(num){ var easeOut=function(x){return 1-Math.pow(1-x,2);}; var t0=performance.now();
+        (function frame(now){ var t=now-t0, val;
+          if(t<=INHALE_END) val=Math.round(easeOut(t/INHALE_END)*N);
+          else if(t<=EXHALE_END) val=Math.round(N+easeOut((t-INHALE_END)/(EXHALE_END-INHALE_END))*(100-N));
+          else val=100;
+          num.textContent=val;
+          if(t<EXHALE_END) requestAnimationFrame(frame); else num.textContent=100;
+        })(t0);
+      }
+    })();
     // 1) load the interaction scripts sequentially against the mounted DOM
     const scripts = [
       '/portfolio/pf.js',
@@ -38,6 +59,7 @@ export default function App() {
       '/portfolio/pf-morph.js',
       '/portfolio/pf-skills.js',
       '/portfolio/pf-journey.js',
+      '/portfolio/pf-sfx.js',
     ];
     const added = [];
     let cancelled = false;
@@ -76,6 +98,13 @@ export default function App() {
           b.addEventListener('click', () => apply(b.getAttribute('data-theme-set')));
         });
       }
+      // sound toggle (pf-sfx.js exposes window.KSSound)
+      const sbtn = document.querySelector('.sfxbtn');
+      if (sbtn && window.KSSound) {
+        const sync = () => sbtn.setAttribute('aria-pressed', window.KSSound.isOn() ? 'true' : 'false');
+        window.KSSound.initial(); sync();
+        sbtn.addEventListener('click', () => { window.KSSound.toggle(); sync(); });
+      }
     }
 
     loadNext(0);
@@ -92,6 +121,15 @@ export default function App() {
       {/* full-page morphing grid background */}
       <style>{`
         .bgmorph{ opacity:0.75; transition:opacity .45s ease; }
+        .topbar{ position:fixed; top:var(--edge); right:var(--edge); left:auto; z-index:130; display:inline-flex; align-items:stretch; gap:8px; }
+        .topbar .themebtn{ position:static; top:auto; right:auto; left:auto; }
+        .sfxbtn{ flex:0 0 auto; width:39px; height:39px; align-self:center; padding:0; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; cursor:pointer; background:color-mix(in srgb, var(--bg) 72%, transparent); border:1.5px solid color-mix(in srgb, var(--fg) 20%, transparent); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); color:color-mix(in srgb, var(--fg) 62%, transparent); transition:color .25s, background .25s, border-color .25s; }
+        .sfxbtn:hover{ color:var(--fg); }
+        .sfxbtn svg{ width:16px; height:16px; display:block; }
+        .sfxbtn .i-on{ display:none; } .sfxbtn .i-off{ display:block; }
+        html.sfx-on .sfxbtn{ color:#fff; background:var(--hot); border-color:transparent; }
+        html.sfx-on .sfxbtn .i-on{ display:block; } html.sfx-on .sfxbtn .i-off{ display:none; }
+        .hero__scrollcue i::after{ background:#E01E8F !important; }
         body:has(:is(h1,h2,h3,h4,p,li,a,span,.lab,.hero__title,.hero__lead,.sechead,.skill,.jrow):hover) .bgmorph{ opacity:0.32; }
       `}</style>
       <div className="bgmorph" data-morph aria-hidden="true"><canvas></canvas></div>
@@ -352,10 +390,23 @@ export default function App() {
         </div>
       </section>
 
-      {/* theme toggle */}
-      <div className="themebtn" role="group" aria-label="Theme">
-        <button type="button" data-theme-set="dark">Dark</button>
-        <button type="button" data-theme-set="light">Light</button>
+      {/* sound + theme toolbar */}
+      <div className="topbar">
+        <button className="sfxbtn" type="button" aria-label="Toggle sound effects" aria-pressed="false">
+          <svg className="i-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor" stroke="none" />
+            <line x1="22" y1="9" x2="16" y2="15" /><line x1="16" y1="9" x2="22" y2="15" />
+          </svg>
+          <svg className="i-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor" stroke="none" />
+            <path d="M15.5 8.5a5 5 0 0 1 0 7" /><path d="M18.5 5.5a9 9 0 0 1 0 13" />
+          </svg>
+        </button>
+        {/* theme toggle */}
+        <div className="themebtn" role="group" aria-label="Theme">
+          <button type="button" data-theme-set="dark">Dark</button>
+          <button type="button" data-theme-set="light">Light</button>
+        </div>
       </div>
     </>
   );

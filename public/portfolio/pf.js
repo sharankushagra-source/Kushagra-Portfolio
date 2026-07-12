@@ -17,8 +17,18 @@
   var numEl = document.querySelector('.loader__num');
   document.body.classList.add('loading');
   var _ended = false;
+  var _loaderStart = (window.performance && performance.now) ? performance.now() : Date.now();
   function endLoader() {
-    if (_ended) return; _ended = true;
+    if (_ended) return;
+    /* optional page-scoped minimum loader time (used to sync the rollout with an
+       audio cue). Backwards-compatible: no-op unless a page sets the global. */
+    var minMs = window.KS_LOADER_MIN_MS;
+    if (typeof minMs === 'number' && minMs > 0) {
+      var now = (window.performance && performance.now) ? performance.now() : Date.now();
+      var el = now - _loaderStart;
+      if (el < minMs) { setTimeout(endLoader, minMs - el); return; }
+    }
+    _ended = true;
     document.body.classList.remove('loading');
     if (loader) loader.classList.add('done');
     var hero = document.querySelector('.hero'); if (hero) hero.classList.add('in');

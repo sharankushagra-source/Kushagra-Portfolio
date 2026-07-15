@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Factile Customization — Case Study · Kushagra Sharan</title>
+<meta name="description" content="Preserve familiarity, remove friction — and know the difference between debt you fix and debt you expose. A product-design case study on Factile's customization experience." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Archivo:wght@400;450;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" />
+<link rel="stylesheet" href="factile/case.css" />
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+    <rect width="400" height="400" fill="#FCFBF8"/>
+    <rect x="52" y="150" width="150" height="16" rx="8" fill="#1F5FA6"/>
+    <rect x="52" y="184" width="120" height="16" rx="8" fill="#B0710A"/>
+    <rect x="52" y="218" width="96" height="16" rx="8" fill="#B21E63"/>
+    <text x="52" y="112" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="46" fill="#191A1F">Factile</text>
+    <text x="52" y="300" font-family="DM Mono,monospace" font-size="19" fill="#78797F">CASE STUDY</text>
+  </svg>
+</template>
+</head>
+<body>
+
+<div class="topmask"></div>
+<div class="topbar"><div class="fill"></div></div>
+<a class="badge-home" href="/#work"><svg class="bh-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg><b>Factile</b> · Customize — case study</a>
+
+<!-- sticky debt rail -->
+<nav class="rail" aria-label="Debt layers">
+  <a href="#l1" data-l="1"><span class="rdot"></span><span class="rtxt">UI debt</span></a>
+  <a href="#l2" data-l="2"><span class="rdot"></span><span class="rtxt">Interaction debt</span></a>
+  <a href="#l3" data-l="3"><span class="rdot"></span><span class="rtxt">Product-model debt</span></a>
+</nav>
+
+<!-- sticky section rail (after debt zone) -->
+<nav class="rail rail2" aria-label="Sections">
+  <a href="#approach"><span class="rdot"></span><span class="rtxt">Approach</span></a>
+  <a href="#iteration"><span class="rdot"></span><span class="rtxt">Iteration</span></a>
+  <a href="#outcomes"><span class="rdot"></span><span class="rtxt">Outcomes</span></a>
+  <a href="#reflection"><span class="rdot"></span><span class="rtxt">Reflection</span></a>
+  <a href="#future"><span class="rdot"></span><span class="rtxt">Future direction</span></a>
+  <a href="#closing"><span class="rdot"></span><span class="rtxt">Closing</span></a>
+</nav>
+
+<!-- ============ 01 · HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker rise">Case study · Product design</div>
+    <h1 class="rise">Customization was powerful. Using it was the hard part.</h1>
+    <p class="thesis rise">Preserve what users know. Remove what slows them down. And tell the difference between debt you <b>fix</b> — and debt you <b>expose</b>.</p>
+    <div class="metarow rise">
+      <div class="m"><span class="k">Role</span><span class="v">Product designer — end-to-end UX &amp; UI</span></div>
+      <div class="m"><span class="k">Surface</span><span class="v">Factile · the Customize experience</span></div>
+      <div class="m"><span class="k">Context</span><span class="v">Mature product · older &amp; long-term users</span></div>
+      <div class="m"><span class="k">Focus</span><span class="v">Diagnosis · interaction · product model</span></div>
+    </div>
+    <div class="honesty rise">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+      <p>The screens here are <b>pre-release iterations</b> from my design process — I'm not authorized to show Factile's shipped production build. So this case study is about the <b>reasoning and the iterations</b> behind the work, not a claim on final shipped pixels.</p>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 02 · CONSTRAINT ============ -->
+<section>
+  <div class="wrap">
+    <div class="split img-right">
+      <div class="colw rise">
+        <div class="kicker">The constraint</div>
+        <h2 style="margin-top:12px">A cleaner interface couldn't cost users their <em class="hl">familiarity</em>.</h2>
+        <div class="plist" style="margin-top:28px">
+          <div class="pli"><span class="pb"></span><div><b>Older &amp; long-term users.</b> Relocating familiar controls carries real relearning cost.</div></div>
+          <div class="pli"><span class="pb"></span><div><b>Four learned zones stay put</b> — top nav, settings sidebar, scope controls, and the workspace.</div></div>
+          <div class="pli"><span class="pb"></span><div>So the brief wasn't &ldquo;redesign it.&rdquo; It was <b>improve the experience inside a structure people already trust.</b></div></div>
+        </div>
+      </div>
+      <div class="colw rise">
+        <div class="frame"><img src="factile/img/before-branding.png" alt="Factile's original Customize screen" /></div>
+        <div class="cap"><span class="tag it">Starting point</span> The Customize screen I began from</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RAIL ZONE: DIAGNOSIS + 3 LAYERS ============ -->
+<div data-railzone>
+
+<!-- 03 · DIAGNOSIS -->
+<section>
+  <div class="wrap">
+    <div class="sechead rise">
+      <div class="kicker">Diagnosis · the spine of this case study</div>
+      <h2>The interface carried three different kinds of <em class="hl">debt</em>.</h2>
+      <p class="dek">Not one broken thing — three layers, each demanding a different response. This framework organizes everything that follows.</p>
+    </div>
+    <div class="debtgrid">
+      <div class="dcard l1 rise">
+        <span class="dchip"><span class="dot"></span>01 · UI debt</span>
+        <div class="dt">Visual language</div>
+        <div class="dd">Consistency &amp; readability — the surface layer.</div>
+        <ul><li><span>Inconsistent icons &amp; radii</span></li><li><span>Weak type hierarchy</span></li><li><span>Flat elevation &amp; contrast</span></li></ul>
+      </div>
+      <div class="dcard l2 rise">
+        <span class="dchip"><span class="dot"></span>02 · Interaction debt</span>
+        <div class="dt">Everyday friction</div>
+        <div class="dd">Small interruptions inside high-frequency tasks.</div>
+        <ul><li><span>Overloaded navigation</span></li><li><span>Toast overload</span></li><li><span>Ambiguous fields</span></li></ul>
+      </div>
+      <div class="dcard l3 rise">
+        <span class="dchip"><span class="dot"></span>03 · Product-model debt</span>
+        <div class="dt">Mental model</div>
+        <div class="dd">How customization itself is structured.</div>
+        <ul><li><span>Scope decided too early</span></li><li><span>Global vs. game confusion</span></li><li><span>Overrides before intent</span></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · LAYER 1 — UI DEBT -->
+<section class="l1" id="l1" data-layer="l1">
+  <div class="wrap">
+    <div class="layerhead rise"><span class="layernum">01</span><div><div class="dchip"><span class="dot"></span>UI debt</div></div></div>
+    <div class="sechead rise" style="margin-top:20px">
+      <h2>The product worked — but its visual language grew without a <em class="hl">system</em>.</h2>
+      <p class="dek">Built successfully without a dedicated designer, components evolved independently. The result was accumulated inconsistency that quietly raised the effort of reading the page.</p>
+    </div>
+    <div class="annot rise" style="margin-top:44px">
+      <img src="factile/img/before-branding.png" alt="Original Customize screen with problem areas marked" />
+      <span class="ring" style="left:1.2%;top:22%;width:5.4%;height:40%"></span><span class="pin" style="left:4%;top:20%">1</span>
+      <span class="ring" style="left:16.6%;top:28%;width:31%;height:9.5%"></span><span class="pin" style="left:15%;top:32.5%">2</span>
+      <span class="ring" style="left:20%;top:41%;width:35%;height:26%"></span><span class="pin" style="left:19%;top:41%">3</span>
+    </div>
+    <p class="cap rise" style="margin-top:18px">Tap the image to enlarge · the three marked areas below</p>
+    <div class="ptrs rise" style="margin-top:26px;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,44px)">
+      <div class="ptr"><span class="pn">1</span><div><div class="ptt">Inconsistent icons</div><div class="ptd">Sidebar glyphs vary in weight &amp; corner radius — no shared grid.</div></div></div>
+      <div class="ptr"><span class="pn">2</span><div><div class="ptt">Weak type hierarchy</div><div class="ptd">Heading &amp; helper text sit at nearly the same weight.</div></div></div>
+      <div class="ptr"><span class="pn">3</span><div><div class="ptt">Flat elevation &amp; contrast</div><div class="ptd">Cards read as one plane — hard to tell surface from control.</div></div></div>
+    </div>
+    <div class="zoomrow rise" style="margin-top:48px">
+      <div class="zc"><div class="zi"><img src="factile/img/detail/icons.png" alt="Sidebar icons up close" /></div><div class="zb"><div class="zt">Icons</div><div class="zd">Thin, filled &amp; outline glyphs down one list.</div></div></div>
+      <div class="zc"><div class="zi"><img src="factile/img/detail/type.png" alt="Type hierarchy up close" /></div><div class="zb"><div class="zt">Type hierarchy</div><div class="zd">Heading &amp; helper text at nearly one weight.</div></div></div>
+      <div class="zc"><div class="zi"><img src="factile/img/detail/cards.png" alt="Cards up close" /></div><div class="zb"><div class="zt">Elevation</div><div class="zd">Dashed, solid &amp; filled cards on identical greys.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · LAYER 2 — INTERACTION DEBT -->
+<section class="l2" id="l2" data-layer="l2">
+  <div class="wrap">
+    <div class="layerhead rise"><span class="layernum">02</span><div><div class="dchip"><span class="dot"></span>Interaction debt</div></div></div>
+    <div class="sechead rise" style="margin-top:20px">
+      <h2>Routine actions demanded more attention than they <em class="hl">deserved</em>.</h2>
+      <p class="dek">Each friction point was small. But customization is a high-frequency, settings-heavy workflow — so small interruptions compound.</p>
+    </div>
+    <div class="plist rise" style="margin-top:44px;max-width:none;display:grid;grid-template-columns:1fr 1fr;gap:22px 56px">
+      <div class="pli"><span class="pb" style="background:var(--l2)"></span><div><b>Overloaded navigation.</b> 11+ ungrouped sidebar items to scan every visit.</div></div>
+      <div class="pli"><span class="pb" style="background:var(--l2)"></span><div><b>Weak active state.</b> The current section relied mostly on colour alone.</div></div>
+      <div class="pli"><span class="pb" style="background:var(--l2)"></span><div><b>Repeated toasts.</b> Every save &amp; reset fired its own interruption.</div></div>
+      <div class="pli"><span class="pb" style="background:var(--l2)"></span><div><b>Ambiguous fields.</b> Game selection &amp; settings search looked nearly identical.</div></div>
+      <div class="pli"><span class="pb" style="background:var(--l2)"></span><div><b>Unclear scope.</b> Global / Game-Specific state was easy to miss.</div></div>
+      <div class="pli"><span class="pb" style="background:var(--l2)"></span><div><b>Unrestricted colour.</b> A raw picker placed contrast risk on the user.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 · LAYER 3 — PRODUCT-MODEL DEBT -->
+<section class="l3" id="l3" data-layer="l3">
+  <div class="wrap">
+    <div class="layerhead rise"><span class="layernum">03</span><div><div class="dchip"><span class="dot"></span>Product-model debt</div></div></div>
+    <div class="sechead rise" style="margin-top:20px">
+      <h2>The hardest problem hit <em class="hl" style="color:var(--l3)">before</em> a setting ever changed.</h2>
+      <p class="dek">Before touching anything, the model forces one branching decision — <b>scope</b> — and hides three extra steps behind one of the answers.</p>
+    </div>
+    <div class="rise vflow" style="margin-top:52px">
+      <div class="fnode" style="border-color:#C9D9E8">User wants to change one setting</div>
+      <div class="vconn g"></div>
+      <div class="fdiamond">Global or Game-Specific?</div>
+      <div class="vconn"></div>
+      <div class="vsplit">
+        <div class="vcol">
+          <span class="fcond g1">If Global</span>
+          <div class="vconn"></div>
+          <div class="fnode">Find the setting</div>
+          <div class="vconn"></div>
+          <div class="fnode end">Change it</div>
+          <span class="fsteps few vsteps-b">2 steps</span>
+        </div>
+        <div class="vcol">
+          <span class="fcond g2">If Game-Specific</span>
+          <div class="vconn"></div>
+          <div class="fnode">Choose a game</div>
+          <div class="vconn"></div>
+          <div class="fnode">Enable override</div>
+          <div class="vconn"></div>
+          <div class="fnode">Find the setting</div>
+          <div class="vconn"></div>
+          <div class="fnode end">Change it</div>
+          <span class="fsteps many vsteps-b">4 steps</span>
+        </div>
+      </div>
+    </div>
+    <div class="plist rise" style="margin-top:48px;max-width:80ch;margin-inline:auto;align-items:center;text-align:center">
+      <div class="pli" style="justify-content:center"><span class="pb" style="background:var(--l3)"></span><div><b>Asked too early.</b> The scope question comes before the user has any intent.</div></div>
+      <div class="pli" style="justify-content:center"><span class="pb" style="background:var(--l3)"></span><div><b>The branch is invisible.</b> Nothing warns that &ldquo;Game-Specific&rdquo; hides three extra steps.</div></div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /railzone -->
+
+<!-- ============ 07 · APPROACH ============ -->
+<section class="tight" id="approach" data-nav>
+  <div class="wrap">
+    <div class="sechead rise" style="max-width:70ch">
+      <div class="kicker">The approach</div>
+      <h2>Improve what could safely change. Preserve what users already knew.</h2>
+    </div>
+    <div class="split rise" style="margin-top:44px;align-items:start">
+      <div class="colw">
+        <h3 style="color:var(--accent)">Preserve</h3>
+        <p class="dek" style="margin-top:12px">Overall layout · navigation location · the customization structure people had already learned.</p>
+      </div>
+      <div class="colw">
+        <h3 style="color:var(--l2)">Improve</h3>
+        <p class="dek" style="margin-top:12px">Hierarchy · grouping · feedback · affordances · accessibility · consistency — everything that could change without moving the furniture.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 · INTERVENTIONS ============ -->
+<section id="iteration" data-nav>
+  <div class="wrap">
+    <div class="sechead rise">
+      <div class="kicker">What I changed · iterations</div>
+      <h2>Six moves, each inside the familiar frame.</h2>
+    </div>
+    <div class="intv" style="margin-top:clamp(48px,7vh,90px)">
+
+      <!-- 1 scan -->
+      <div class="rise">
+        <h3>1 · Make a dense interface easier to <em class="hl">scan</em>.</h3>
+        <p class="dek" style="margin-top:12px;max-width:70ch">Grouping cuts repeated scanning; the selected state no longer leans on colour alone. Drag to compare — the iteration is on the left.</p>
+        <div class="baframe" style="margin-top:26px">
+          <div class="ba"><img src="factile/img/before-branding.png" alt="Before — ungrouped sidebar" /><div class="after-lyr"><img src="factile/img/after-branding.png" alt="Iteration — grouped sidebar" /></div><div class="handle"><span class="arr"><span>‹</span><span>›</span></span></div></div>
+          <div class="balabels"><div class="cap"><span class="tag a">Iteration</span> Grouped: Appearance · Game Rules · Advanced</div><div class="cap"><span class="tag b">Before</span> Flat, ungrouped list</div></div>
+        </div>
+      </div>
+
+      <!-- 2 differentiate -->
+      <div class="rise">
+        <h3>2 · Make different actions look <em class="hl">different</em>.</h3>
+        <div class="split img-right" style="margin-top:24px;align-items:center">
+          <div class="colw">
+            <div class="baframe">
+              <div class="frame"><img src="factile/img/detail/old-fields-both.png" alt="Before — game selector and settings search shared one look" /></div>
+              <div class="cap"><span class="tag b">Before</span> Select-game field &amp; Search-settings bar — near-identical</div>
+              <div class="frame crop" style="margin-top:14px"><img src="factile/img/after-search.png" alt="Iteration — distinct selector and search" /></div>
+              <div class="cap"><span class="tag a">Iteration</span> &ldquo;Choose a game&rdquo; + its own Search field &amp; button</div>
+            </div>
+          </div>
+          <div class="colw">
+            <div class="wn">
+              <div class="wn-row"><span class="wl bad">Ambiguous grammar</span><p class="dek">Game selection &amp; settings search shared one look — users couldn't tell which did what.</p></div>
+              <div class="wn-row"><span class="wl good">Distinct families</span><p class="dek">Selection reads as selection; search gets a dedicated field and an explicit <b>Search</b> button.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 sequence -->
+      <div class="rise">
+        <h3>3 · Turn a hidden dependency into a <em class="hl">visible</em> sequence.</h3>
+        <div class="split" style="margin-top:24px;align-items:center">
+          <div class="colw">
+            <div class="wn">
+              <div class="wn-row"><span class="wl bad">Why it confused</span>
+                <div class="plist" style="margin-top:4px"><div class="pli"><span class="pb" style="background:var(--bad)"></span><div>Three steps depended on each other — but nothing said so, or in what order.</div></div><div class="pli"><span class="pb" style="background:var(--bad)"></span><div>The game field looked pre-filled, so users couldn't tell if they'd chosen anything.</div></div></div>
+              </div>
+              <div class="wn-row"><span class="wl good">What got clearer</span>
+                <div class="plist" style="margin-top:4px"><div class="pli"><span class="pb" style="background:var(--ok)"></span><div>The three steps became an explicit, numbered sequence.</div></div><div class="pli"><span class="pb" style="background:var(--ok)"></span><div>Each control stays <b>disabled until the previous step makes it relevant</b>.</div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="colw">
+            <div class="vflow" style="margin-bottom:22px">
+              <div class="fnode end" style="max-width:300px">1 · Game Specific</div>
+              <div class="vconn a"></div>
+              <div class="fnode end" style="max-width:300px">2 · Choose a game</div>
+              <div class="vconn a"></div>
+              <div class="fnode end" style="max-width:300px">3 · Enable settings</div>
+            </div>
+            <div class="frame"><img src="factile/img/after-branding.png" alt="Iteration — the redesigned Customize with grouped nav and guided scope controls" /></div>
+            <div class="cap"><span class="tag a">Iteration</span> Redesigned Customize — scope now a guided, sequential toggle</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 feedback -->
+      <div class="rise">
+        <h3>4 · Make feedback <em class="hl">ambient</em>, not interruptive.</h3>
+        <div class="split img-right" style="margin-top:24px;align-items:center">
+          <div class="colw">
+            <div class="baframe">
+              <div class="frame"><img src="factile/img/crop-old-toast.jpg" alt="Before — a toast on every change" /></div>
+              <div class="cap"><span class="tag b">Before</span> A toast fired on every single change</div>
+              <div class="frame" style="margin-top:14px"><img src="factile/img/crop-new-status.jpg" alt="Iteration — one quiet status line" /></div>
+              <div class="cap"><span class="tag a">Iteration</span> One quiet status line, built into the header</div>
+            </div>
+          </div>
+          <div class="colw">
+            <div class="wn">
+              <div class="wn-row"><span class="wl bad">Interruptive</span>
+                <div class="plist" style="margin-top:4px"><div class="pli"><span class="pb" style="background:var(--bad)"></span><div>Every save or reset popped its own toast.</div></div><div class="pli"><span class="pb" style="background:var(--bad)"></span><div>Each dismissed with an &ldquo;unloading&rdquo; bar — training people to swat them away.</div></div></div>
+              </div>
+              <div class="wn-row"><span class="wl good">Ambient &amp; in place</span>
+                <div class="plist" style="margin-top:4px"><div class="pli"><span class="pb" style="background:var(--ok)"></span><div>A <b>persistent status strip</b> under the scope controls.</div></div><div class="pli"><span class="pb" style="background:var(--ok)"></span><div>Its dot shifts <em class="hl" style="color:var(--l2)">Saving…</em> → <em class="hl" style="color:var(--ok)">All changes saved</em>.</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 color -->
+      <div class="rise">
+        <h3>5 · Guide safer colour choices <em class="hl">before</em> unlimited choice.</h3>
+        <p class="dek" style="margin-top:12px;max-width:70ch">The old flow put contrast responsibility on the user. The iteration makes curated, safer choices the default path — advanced customization still available. Drag to compare.</p>
+        <div class="baframe" style="margin-top:26px">
+          <div class="ba"><img src="factile/img/before-colors.png" alt="Before — one swatch, then a raw picker" /><div class="after-lyr"><img src="factile/img/after-colors.png" alt="Iteration — curated swatches" /></div><div class="handle"><span class="arr"><span>‹</span><span>›</span></span></div></div>
+          <div class="balabels"><div class="cap"><span class="tag a">Iteration</span> Accessible swatch pairings + &ldquo;More&rdquo;</div><div class="cap"><span class="tag b">Before</span> One swatch → raw colour picker</div></div>
+        </div>
+      </div>
+
+      <!-- 6 system -->
+      <div class="rise">
+        <h3>6 · Make it a <em class="hl">system</em> that scales past one screen.</h3>
+        <p class="dek" style="margin-top:12px;max-width:70ch">I standardized the visual &amp; interaction language so the work could become reusable infrastructure — not a set of one-off mockups.</p>
+        <div class="dsboard">
+          <div class="tile"><div class="tl">Type scale</div><div class="tydemo"><b>Aa</b><small>Bricolage · Archivo</small></div></div>
+          <div class="tile"><div class="tl">Colour</div><div class="swrow"><i style="background:#1F5FA6"></i><i style="background:#0D5172"></i><i style="background:#B0710A"></i><i style="background:#B21E63"></i></div></div>
+          <div class="tile"><div class="tl">Radii</div><div class="raddemo"><i style="border-radius:4px"></i><i style="border-radius:8px"></i><i style="border-radius:12px"></i></div></div>
+          <div class="tile"><div class="tl">Buttons</div><div class="btnrow"><span class="bd p">Save</span><span class="bd s">Reset</span></div></div>
+          <div class="tile"><div class="tl">Status</div><div class="stdemo"><span class="d"></span>All changes saved</div></div>
+          <div class="tile"><div class="tl">Segmented</div><div style="display:inline-flex;align-items:center;background:#fff;border:1.5px solid var(--line);border-radius:99px;padding:4px;gap:2px"><span style="display:inline-flex;align-items:center;background:#14243B;color:#fff;font-weight:700;font-size:15px;padding:9px 18px;border-radius:99px">Global</span><span style="display:inline-flex;align-items:center;color:var(--ink);font-weight:600;font-size:15px;padding:9px 18px">Game</span></div></div>
+          <div class="tile"><div class="tl">Field</div><div style="display:flex;align-items:center;gap:9px;height:44px;padding:0 14px;border:1.5px solid var(--line);border-radius:10px;color:var(--muted);font-size:15px;overflow:hidden;white-space:nowrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex:none"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search settings…</div></div>
+          <div class="tile"><div class="tl">Icons</div><div class="btnrow" style="color:var(--ink)"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/></svg><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18"/></svg></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 · WHERE THE ITERATIONS LANDED ============ -->
+<section id="outcomes" data-nav>
+  <div class="wrap">
+    <div class="sechead rise">
+      <div class="kicker">Where the iterations landed</div>
+      <h2>Still recognizable — but requiring less <em class="hl">interpretation</em>.</h2>
+      <p class="dek">The work didn't replace the product's mental map. It reduced the effort to navigate it, understand it, and make repeated changes.</p>
+    </div>
+    <div class="pills rise">
+      <span class="chip">Easier scanning</span><span class="chip">Clearer state</span><span class="chip">Quieter feedback</span><span class="chip">Safer defaults</span><span class="chip">Consistent components</span>
+    </div>
+    <div class="metrics rise">
+      <div class="metric"><div class="n">3</div><div class="l">layers of debt named, separated, and each given its own kind of fix</div></div>
+      <div class="metric"><div class="n">6</div><div class="l">targeted interventions — all inside the structure users already knew</div></div>
+      <div class="metric"><div class="n">1</div><div class="l">reusable component language, so the work scales past one screen</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 · REFLECTION ============ -->
+<section id="reflection" data-nav>
+  <div class="wrap">
+    <div class="sechead rise">
+      <div class="kicker">Honest reflection</div>
+      <h2>Improving the current model didn't make it the <em class="hl" style="color:var(--l3)">best</em> model.</h2>
+      <p class="dek">The constraint justified preserving the current model for this pass — it didn't put that model beyond criticism. Grouped by the layer each one lives in:</p>
+    </div>
+    <div class="reflect">
+      <div class="rc l3 rise"><div class="rtag">Product-model</div><div class="rt">Scope, still too early</div><div class="rd">Users still choose Global vs. Game-Specific before changing anything — ideally they'd change first, then choose where it applies.</div></div>
+      <div class="rc l1 rise"><div class="rtag">UI</div><div class="rt">Both panels on white</div><div class="rd">Sidebar &amp; workspace still share a white background — weak zoning for a first-time older user.</div></div>
+      <div class="rc l2 rise"><div class="rtag">Interaction</div><div class="rt">No outcome preview</div><div class="rd">Abstract settings still change without showing their effect immediately.</div></div>
+      <div class="rc l1 rise"><div class="rtag">UI · Accessibility</div><div class="rt">Unproven colour safety</div><div class="rd">Curated swatches aren't yet validated as contrast-safe <i>pairs</i>.</div></div>
+      <div class="rc l2 rise"><div class="rtag">Interaction</div><div class="rt">Undefined failure states</div><div class="rd">Autosave failure &amp; offline behaviour remain unspecified.</div></div>
+      <div class="rc l3 rise"><div class="rtag">Product-model</div><div class="rt">The override is a gate, not a result</div><div class="rd">To customize one game, users must first switch on &ldquo;game-specific settings&rdquo; before changing anything. Ideally, editing a setting for that game would create the exception on its own — the override should follow intent, not precede it.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11 · FUTURE DIRECTION ============ -->
+<section id="future" data-nav style="padding-bottom:clamp(96px,14vh,180px)">
+  <div class="wrap">
+    <div class="sechead rise">
+      <div class="kicker">Future direction · hypothesis, not shipped</div>
+      <h2>What if users customized <em class="hl">first</em> — and chose scope only when it mattered?</h2>
+      <p class="dek">Delay the scope decision until there's something to apply. It should be validated with existing users before it replaces the familiar model.</p>
+    </div>
+    <div class="rise" style="margin-top:44px;display:flex;flex-direction:column;gap:34px">
+      <div><div class="cap" style="margin-bottom:12px;color:var(--muted)">Today · scope-first</div>
+        <div class="flow"><div class="step">Choose scope</div><div class="arrow">→</div><div class="step">Choose game</div><div class="arrow">→</div><div class="step">Enable override</div><div class="arrow">→</div><div class="step">Find setting</div><div class="arrow">→</div><div class="step">Change</div></div>
+      </div>
+      <div><div class="cap" style="margin-bottom:12px"><span class="tag a">Proposed</span> Task-first</div>
+        <div class="flow after"><div class="step">Find setting</div><div class="arrow">→</div><div class="step">Change &amp; preview</div><div class="arrow">→</div><div class="step">Choose where it applies</div><div class="arrow">→</div><div class="step" style="opacity:.6">Select game (only if needed)</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12 · CLOSING ============ -->
+<section class="closing" id="closing" data-nav>
+  <div class="wrap">
+    <div class="rise">
+      <div class="kicker" style="color:#8FB6DC">Closing</div>
+      <h2 style="margin-top:14px;max-width:20ch">Preserve familiarity. Remove friction. Know the difference.</h2>
+      <div class="tracks" style="margin-top:40px">
+        <div class="tk l1"><span class="dot"></span>UI debt → systematized</div>
+        <div class="tk l2"><span class="dot"></span>Interaction debt → reduced</div>
+        <div class="tk l3"><span class="dot"></span>Product-model debt → identified &amp; exposed</div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap"><div class="foot"><span>© 2026 Kushagra Sharan</span><span>Factile · Customize — case study</span></div></div>
+</section>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox"><button class="lbx" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button><img alt="" /></div>
+
+<script src="factile/case.js"></script>
+</body>
+</html>

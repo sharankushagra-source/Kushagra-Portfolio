@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"AccessibleFoundationsDesignSystem_87ff79","components":[{"name":"Button","sourcePath":"components/buttons/Button.jsx"},{"name":"IconButton","sourcePath":"components/buttons/IconButton.jsx"},{"name":"Chip","sourcePath":"components/chips/Chip.jsx"},{"name":"Accordion","sourcePath":"components/disclosure/Accordion.jsx"},{"name":"Modal","sourcePath":"components/feedback/Modal.jsx"},{"name":"Progress","sourcePath":"components/feedback/Progress.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"RadioGroup","sourcePath":"components/forms/Radio.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Toggle","sourcePath":"components/forms/Toggle.jsx"},{"name":"List","sourcePath":"components/lists/List.jsx"},{"name":"ListItem","sourcePath":"components/lists/List.jsx"},{"name":"Icon","sourcePath":"components/media/Icon.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"MenuItem","sourcePath":"components/overlays/Menu.jsx"},{"name":"Menu","sourcePath":"components/overlays/Menu.jsx"},{"name":"Tooltip","sourcePath":"components/overlays/Tooltip.jsx"},{"name":"TierPill","sourcePath":"components/status/TierPill.jsx"},{"name":"Card","sourcePath":"components/surfaces/Card.jsx"},{"name":"Divider","sourcePath":"components/surfaces/Divider.jsx"}],"sourceHashes":{"assets/icons.js":"0adaee824e24","components/buttons/Button.jsx":"716d592ce026","components/buttons/IconButton.jsx":"cb8f44feffc4","components/chips/Chip.jsx":"455653fa2c77","components/disclosure/Accordion.jsx":"254fedda242f","components/feedback/Modal.jsx":"83b70538ea36","components/feedback/Progress.jsx":"bc8143d66d5a","components/feedback/Toast.jsx":"3fbbfec6a148","components/forms/Checkbox.jsx":"d009567e4a85","components/forms/Input.jsx":"aebefd2ca4df","components/forms/Radio.jsx":"98dcd384fbba","components/forms/Select.jsx":"f42880b636ae","components/forms/Toggle.jsx":"41edfedfdb56","components/lists/List.jsx":"f89c6d241a86","components/media/Icon.jsx":"154e092fc780","components/navigation/Tabs.jsx":"234d9adc4676","components/overlays/Menu.jsx":"2fffce2e5f4f","components/overlays/Tooltip.jsx":"06c2445c12ea","components/status/TierPill.jsx":"35f0b019e41e","components/surfaces/Card.jsx":"ec7bf07789ee","components/surfaces/Divider.jsx":"d5748bd027a6","design-system/gallery.jsx":"17267c7b2f97","portfolio/cursor-dots.js":"9c0a3a3947f2","portfolio/facets.js":"d889b4b3a681","portfolio/image-slot.js":"9309434cb09c","portfolio/ll-cursor.js":"36d81d56d00a","portfolio/ll.js":"fd1d9c5e7c80","portfolio/motion.js":"75f3200dd915","portfolio/pf-collage.js":"b8936a4ec7be","portfolio/pf-facets.js":"acd24f813118","portfolio/pf-hero-ascii.js":"2aa89ca366b9","portfolio/pf-journey.js":"5f496f930246","portfolio/pf-morph.js":"62a5efdc2cb5","portfolio/pf-skills.js":"18100c49ae77","portfolio/pf.js":"c6d9929009ce","portfolio/portfolio-v3.js":"18efe3d1c3df","portfolio/portfolio.js":"623cf3171ced","portfolio/scenes.js":"52f2dde141fe","ui_kits/my-library/App.jsx":"1c61e2e2b127","ui_kits/my-library/ItemGrid.jsx":"6e72364ab045","ui_kits/my-library/LibraryHeader.jsx":"9ff8d1b94c50","ui_kits/my-library/SettingsPanel.jsx":"40ec9df767c1","ui_kits/my-library/Sidebar.jsx":"f564832236e9","ui_kits/my-library/WelcomeScreen.jsx":"c9a12fbae6ba"},"inlinedExternals":[],"unexposedExports":[{"name":"iconNames","sourcePath":"components/media/Icon.jsx"}]} */
+/* @ds-bundle: {"format":4,"namespace":"AccessibleFoundationsDesignSystem_87ff79","components":[{"name":"Button","sourcePath":"components/buttons/Button.jsx"},{"name":"IconButton","sourcePath":"components/buttons/IconButton.jsx"},{"name":"Chip","sourcePath":"components/chips/Chip.jsx"},{"name":"Accordion","sourcePath":"components/disclosure/Accordion.jsx"},{"name":"Modal","sourcePath":"components/feedback/Modal.jsx"},{"name":"Progress","sourcePath":"components/feedback/Progress.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"RadioGroup","sourcePath":"components/forms/Radio.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Toggle","sourcePath":"components/forms/Toggle.jsx"},{"name":"List","sourcePath":"components/lists/List.jsx"},{"name":"ListItem","sourcePath":"components/lists/List.jsx"},{"name":"Icon","sourcePath":"components/media/Icon.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"MenuItem","sourcePath":"components/overlays/Menu.jsx"},{"name":"Menu","sourcePath":"components/overlays/Menu.jsx"},{"name":"Tooltip","sourcePath":"components/overlays/Tooltip.jsx"},{"name":"TierPill","sourcePath":"components/status/TierPill.jsx"},{"name":"Card","sourcePath":"components/surfaces/Card.jsx"},{"name":"Divider","sourcePath":"components/surfaces/Divider.jsx"}],"sourceHashes":{"assets/icons.js":"0adaee824e24","components/buttons/Button.jsx":"716d592ce026","components/buttons/IconButton.jsx":"cb8f44feffc4","components/chips/Chip.jsx":"455653fa2c77","components/disclosure/Accordion.jsx":"254fedda242f","components/feedback/Modal.jsx":"83b70538ea36","components/feedback/Progress.jsx":"bc8143d66d5a","components/feedback/Toast.jsx":"3fbbfec6a148","components/forms/Checkbox.jsx":"d009567e4a85","components/forms/Input.jsx":"aebefd2ca4df","components/forms/Radio.jsx":"98dcd384fbba","components/forms/Select.jsx":"f42880b636ae","components/forms/Toggle.jsx":"41edfedfdb56","components/lists/List.jsx":"f89c6d241a86","components/media/Icon.jsx":"154e092fc780","components/navigation/Tabs.jsx":"234d9adc4676","components/overlays/Menu.jsx":"2fffce2e5f4f","components/overlays/Tooltip.jsx":"06c2445c12ea","components/status/TierPill.jsx":"35f0b019e41e","components/surfaces/Card.jsx":"ec7bf07789ee","components/surfaces/Divider.jsx":"d5748bd027a6","design-system/gallery.jsx":"1efb1b1b4845","factile/case.js":"a8b5b9ea018a","factile/deck.js":"6090f929b22a","portfolio/cursor-dots.js":"9c0a3a3947f2","portfolio/facets.js":"d889b4b3a681","portfolio/image-slot.js":"0394ad34f685","portfolio/ll-cursor.js":"36d81d56d00a","portfolio/ll.js":"fd1d9c5e7c80","portfolio/motion.js":"75f3200dd915","portfolio/pf-collage.js":"b8936a4ec7be","portfolio/pf-facets.js":"acd24f813118","portfolio/pf-hero-ascii.js":"2aa89ca366b9","portfolio/pf-journey.js":"5f496f930246","portfolio/pf-morph.js":"62a5efdc2cb5","portfolio/pf-sfx.js":"96801431727f","portfolio/pf-skills.js":"054d3c5420bb","portfolio/pf.js":"fb768a216ad4","portfolio/portfolio-v3.js":"18efe3d1c3df","portfolio/portfolio.js":"623cf3171ced","portfolio/scenes.js":"52f2dde141fe","ui_kits/my-library/App.jsx":"1c61e2e2b127","ui_kits/my-library/ItemGrid.jsx":"6e72364ab045","ui_kits/my-library/LibraryHeader.jsx":"9ff8d1b94c50","ui_kits/my-library/SettingsPanel.jsx":"40ec9df767c1","ui_kits/my-library/Sidebar.jsx":"f564832236e9","ui_kits/my-library/WelcomeScreen.jsx":"c9a12fbae6ba"},"inlinedExternals":[],"unexposedExports":[{"name":"iconNames","sourcePath":"components/media/Icon.jsx"}]} */
 
 (() => {
 
@@ -2015,7 +2015,7 @@ function Gallery() {
     id: "g-buttons",
     title: "Buttons",
     count: "Button \xB7 IconButton",
-    specs: [['Height', '44px (lg) · 36px (sm)'], ['Radius', '--radius-btn · 6px'], ['Variants', 'primary · secondary · outline · tertiary · danger'], ['Font', '15–16px / 600–700']],
+    specs: [['Height', '44px (lg) · 36px (sm)'], ['Radius', '--radius-btn · 10px'], ['Variants', 'primary · secondary · outline · tertiary · danger'], ['Font', '15–16px / 600–700']],
     a11y: [['44px touch target', 'The default control height equals the touch-target minimum — no reliance on invisible padding.'], ['Visible focus', 'A 2px brand ring with 2px offset on every button.'], ['Icon-only buttons', 'IconButton requires an aria-label so screen readers announce the action.']]
   }, /*#__PURE__*/React.createElement("div", {
     className: "dss-panel"
@@ -2159,7 +2159,7 @@ function Gallery() {
     id: "g-surfaces",
     title: "Surfaces",
     count: "Card \xB7 Divider \xB7 List",
-    specs: [['Card radius', '--radius-btn · 6px'], ['Border', '1px --neutral-300, no shadow at rest'], ['List row', '≥56px when interactive']],
+    specs: [['Card radius', '--radius-btn · 10px'], ['Border', '1px --neutral-300, no shadow at rest'], ['Elevation', 'flat at rest → --shadow-md on hover'], ['List row', '≥56px when interactive']],
     a11y: [['Roles', 'List uses role="list" / "listitem".'], ['Hit area', 'Interactive rows are full-width buttons ≥44px tall.'], ['Focus', 'Cards and rows show the focus ring when interactive.']]
   }, /*#__PURE__*/React.createElement("div", {
     className: "dss-panel"
@@ -2376,6 +2376,328 @@ function Cell({
   root.render(/*#__PURE__*/React.createElement(Gallery, null));
 })();
 })(); } catch (e) { __ds_ns.__errors.push({ path: "design-system/gallery.jsx", error: String((e && e.message) || e) }); }
+
+// factile/case.js
+try { (() => {
+/* Factile scroll case study — interactions */
+(function () {
+  'use strict';
+
+  /* progress bar */
+  var fill = document.querySelector('.topbar .fill');
+  function prog() {
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    fill.style.width = (max > 0 ? h.scrollTop / max * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', prog, {
+    passive: true
+  });
+  prog();
+
+  /* reveal on scroll */
+  var io = new IntersectionObserver(function (en) {
+    en.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, {
+    rootMargin: '0px 0px -8% 0px',
+    threshold: .08
+  });
+  document.querySelectorAll('.rise').forEach(function (el) {
+    io.observe(el);
+  });
+
+  /* rails: debt (rail1) and section (rail2) — mutually exclusive, driven by one scroll fn */
+  var rail = document.querySelector('.rail');
+  var rail2 = document.querySelector('.rail2');
+  var railZone = document.querySelector('[data-railzone]');
+  var closing = document.getElementById('closing');
+  var layers = [].slice.call(document.querySelectorAll('[data-layer]'));
+  var navs = [].slice.call(document.querySelectorAll('[data-nav]'));
+  if (rail && layers.length) {
+    var links = [].slice.call(rail.querySelectorAll('a'));
+    var rio = new IntersectionObserver(function (en) {
+      en.forEach(function (e) {
+        if (e.isIntersecting) {
+          var id = e.target.getAttribute('data-layer');
+          links.forEach(function (a) {
+            a.classList.toggle('on', a.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, {
+      rootMargin: '-45% 0px -45% 0px'
+    });
+    layers.forEach(function (l) {
+      rio.observe(l);
+    });
+  }
+  var links2 = rail2 ? [].slice.call(rail2.querySelectorAll('a')) : [];
+  function activeNav() {
+    if (!navs.length || !links2.length) return;
+    var line = window.innerHeight * 0.4,
+      cur = null;
+    navs.forEach(function (n) {
+      if (n.getBoundingClientRect().top <= line) cur = n.id;
+    });
+    links2.forEach(function (a) {
+      a.classList.toggle('on', a.getAttribute('href') === '#' + cur);
+    });
+  }
+  function rails() {
+    var vh = window.innerHeight;
+    /* rail1: while the debt zone occupies the viewport center */
+    var inZone = false;
+    if (railZone) {
+      var z = railZone.getBoundingClientRect();
+      inZone = z.top < vh * 0.5 && z.bottom > vh * 0.35;
+    }
+    /* rail2: debt zone scrolled above the 35% line, and not on the closing canvas */
+    var onClosing = false;
+    if (closing) {
+      var c = closing.getBoundingClientRect();
+      onClosing = c.top < vh * 0.6 && c.bottom > 0;
+    }
+    var passed = railZone ? railZone.getBoundingClientRect().bottom < vh * 0.35 : false;
+    if (rail) rail.classList.toggle('show', inZone && !onClosing);
+    if (rail2) rail2.classList.toggle('show', passed && !inZone && !onClosing);
+  }
+  window.addEventListener('scroll', function () {
+    rails();
+    activeNav();
+  }, {
+    passive: true
+  });
+  window.addEventListener('resize', function () {
+    rails();
+    activeNav();
+  });
+  rails();
+  activeNav();
+
+  /* before/after sliders */
+  document.querySelectorAll('.ba').forEach(function (el) {
+    var after = el.querySelector('.after-lyr'),
+      handle = el.querySelector('.handle'),
+      aimg = after.querySelector('img');
+    function size() {
+      aimg.style.width = el.clientWidth + 'px';
+    }
+    function set(px) {
+      var r = el.getBoundingClientRect();
+      var p = Math.max(0, Math.min(1, (px - r.left) / r.width));
+      after.style.width = p * 100 + '%';
+      handle.style.left = p * 100 + '%';
+    }
+    var drag = false;
+    function down(e) {
+      drag = true;
+      set(e.touches ? e.touches[0].clientX : e.clientX);
+      e.preventDefault();
+    }
+    function move(e) {
+      if (!drag) return;
+      set(e.touches ? e.touches[0].clientX : e.clientX);
+      if (e.cancelable) e.preventDefault();
+    }
+    function up() {
+      drag = false;
+    }
+    el.addEventListener('mousedown', down);
+    window.addEventListener('mousemove', move);
+    window.addEventListener('mouseup', up);
+    el.addEventListener('touchstart', down, {
+      passive: false
+    });
+    window.addEventListener('touchmove', move, {
+      passive: false
+    });
+    window.addEventListener('touchend', up);
+    size();
+    window.addEventListener('resize', size);
+  });
+
+  /* lightbox */
+  var lb = document.getElementById('lightbox');
+  if (lb) {
+    var lbimg = lb.querySelector('img');
+    function open(src, alt) {
+      lbimg.src = src;
+      lbimg.alt = alt || '';
+      lb.classList.add('open');
+    }
+    function close() {
+      lb.classList.remove('open');
+      lbimg.removeAttribute('src');
+    }
+    document.querySelectorAll('.frame img,.annot img,.zc .zi img').forEach(function (im) {
+      im.addEventListener('click', function (e) {
+        e.stopPropagation();
+        open(im.currentSrc || im.src, im.alt);
+      });
+    });
+    lb.addEventListener('click', function (e) {
+      if (e.target === lb || e.target.closest('.lbx')) close();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lb.classList.contains('open')) close();
+    });
+  }
+})();
+})(); } catch (e) { __ds_ns.__errors.push({ path: "factile/case.js", error: String((e && e.message) || e) }); }
+
+// factile/deck.js
+try { (() => {
+/* Factile case study deck — manual engine (no autoplay) */
+(function () {
+  'use strict';
+
+  var canvas = document.querySelector('.canvas');
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var n = slides.length;
+  var i = 0;
+  var counter = document.querySelector('.counter');
+  var fsBtn = document.querySelector('.ctrl.fs');
+  var hint = document.querySelector('.hint');
+  function fit() {
+    var s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+    canvas.style.transform = 'scale(' + s + ')';
+  }
+  window.addEventListener('resize', fit);
+  fit();
+  function render() {
+    slides.forEach(function (sl, idx) {
+      sl.classList.toggle('active', idx === i);
+    });
+    counter.textContent = String(i + 1).padStart(2, '0') + ' / ' + String(n).padStart(2, '0');
+  }
+  function go(idx) {
+    i = (idx + n) % n;
+    render();
+  }
+  function next() {
+    go(i + 1);
+  }
+  function prev() {
+    go(i - 1);
+  }
+  function toggleFs() {
+    var el = document.documentElement;
+    var rf = el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen;
+    var xf = document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen;
+    try {
+      if (document.fullscreenElement || document.webkitFullscreenElement) {
+        if (xf) xf.call(document);
+      } else if (rf) {
+        var r = rf.call(el);
+        if (r && r.catch) r.catch(function () {});
+      }
+    } catch (e) {}
+  }
+
+  /* before/after sliders */
+  function initBA(el) {
+    var after = el.querySelector('.after-lyr');
+    var handle = el.querySelector('.handle');
+    var afterImg = after.querySelector('img');
+    function sizeAfter() {
+      afterImg.style.width = el.clientWidth + 'px';
+    }
+    function set(px) {
+      var r = el.getBoundingClientRect();
+      var pct = Math.max(0, Math.min(1, (px - r.left) / r.width));
+      after.style.width = pct * 100 + '%';
+      handle.style.left = pct * 100 + '%';
+    }
+    var drag = false;
+    function down(e) {
+      drag = true;
+      move(e);
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    function move(e) {
+      if (!drag) return;
+      var x = e.touches ? e.touches[0].clientX : e.clientX;
+      set(x);
+      if (e.cancelable) e.preventDefault();
+    }
+    function up() {
+      drag = false;
+    }
+    el.addEventListener('mousedown', down);
+    window.addEventListener('mousemove', move);
+    window.addEventListener('mouseup', up);
+    el.addEventListener('touchstart', down, {
+      passive: false
+    });
+    window.addEventListener('touchmove', move, {
+      passive: false
+    });
+    window.addEventListener('touchend', up);
+    sizeAfter();
+    window.addEventListener('resize', sizeAfter);
+  }
+  document.querySelectorAll('.ba').forEach(initBA);
+  document.querySelector('.ctrl.prev').addEventListener('click', function () {
+    prev();
+  });
+  document.querySelector('.ctrl.next').addEventListener('click', function () {
+    next();
+  });
+  if (fsBtn) fsBtn.addEventListener('click', toggleFs);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight' || e.key === ' ') {
+      e.preventDefault();
+      next();
+    } else if (e.key === 'ArrowLeft') {
+      prev();
+    } else if (e.key.toLowerCase() === 'f') {
+      e.preventDefault();
+      toggleFs();
+    } else if (e.key === 'Home') {
+      go(0);
+    } else if (e.key === 'End') {
+      go(n - 1);
+    }
+  });
+  setTimeout(function () {
+    if (hint) hint.classList.add('hidden');
+  }, 6000);
+
+  /* image lightbox — click any static image to magnify; backdrop / close / Esc dismiss */
+  var lb = document.getElementById('lightbox');
+  if (lb) {
+    var lbimg = lb.querySelector('img');
+    function openLb(src, alt) {
+      lbimg.src = src;
+      lbimg.alt = alt || '';
+      lb.classList.add('open');
+    }
+    function closeLb() {
+      lb.classList.remove('open');
+      lbimg.removeAttribute('src');
+    }
+    document.querySelectorAll('.imgframe img,.annot img,.callout .cimg img').forEach(function (im) {
+      im.addEventListener('click', function (e) {
+        e.stopPropagation();
+        openLb(im.currentSrc || im.src, im.alt);
+      });
+    });
+    lb.addEventListener('click', function (e) {
+      if (e.target === lb || e.target.closest('.lbclose')) closeLb();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lb.classList.contains('open')) closeLb();
+    });
+  }
+  render();
+})();
+})(); } catch (e) { __ds_ns.__errors.push({ path: "factile/deck.js", error: String((e && e.message) || e) }); }
 
 // portfolio/cursor-dots.js
 try { (() => {
@@ -2914,21 +3236,26 @@ try { (() => {
 // portfolio/image-slot.js
 try { (() => {
 // @ds-adherence-ignore -- omelette starter scaffold (raw elements/hex/px by design)
+// Copied omelette starter. Re-running copy_starter_component with this kind overwrites this file with the latest version (page content is unaffected).
 /* BEGIN USAGE */
 /**
  * <image-slot> — user-fillable image placeholder.
  *
- * Drop this into a deck, mockup, or page wherever you want the user to
- * supply an image. You control the slot's shape and size; the user fills it
+ * Drop this into a deck, mockup, or page wherever a design needs an image.
+ * You control the slot's shape; it sizes to its container by default. When the search_stock_photos tool
+ * is available, prefill the slot by default — write the photo's URL into
+ * src (with credit/credit-href); the user can still fill or replace it
  * by dragging an image file onto it (or clicking to browse). The dropped
  * image persists across reloads via a .image-slots.state.json sidecar —
  * same read-via-fetch / write-via-window.omelette pattern as
  * design_canvas.jsx, so the filled slot shows on share links, downloaded
  * zips, and PPTX export. Outside the omelette runtime the slot is read-only.
  *
- * The host bridge only allows sidecar writes at the project root, so the
- * HTML that uses this component is assumed to live at the project root too
- * (same constraint as design_canvas.jsx).
+ * The sidecar is a SIBLING of the HTML file that uses this component: the
+ * read is a document-relative fetch, and the host resolves the bridge's
+ * sidecar writes into the previewed file's directory to match (same
+ * contract as design_canvas.jsx). Pages in the same directory share one
+ * sidecar; keep slot ids distinct across them.
  *
  * Attributes:
  *   id           Persistence key. REQUIRED for the drop to survive reload —
@@ -2940,21 +3267,58 @@ try { (() => {
  *   radius       Corner radius in px for 'rounded'.       (default 12)
  *   mask         Any CSS clip-path value. Overrides `shape` — use this for
  *                hexagons, blobs, arbitrary polygons.
- *   fit          object-fit: cover | contain | fill.       (default 'cover')
- *                With cover (the default) double-clicking the filled slot
- *                enters a reframe mode: the whole image spills past the mask
- *                (translucent outside, opaque inside), drag to reposition,
- *                corner-drag to scale. The crop persists alongside the image
- *                in the sidecar. contain/fill stay static.
- *   position     object-position for fit=contain|fill.     (default '50% 50%')
+ *   fit          Initial framing baseline: cover | contain.   (default 'cover')
+ *                cover starts the image filling the frame (overflow cropped);
+ *                contain starts it fully visible (letterboxed). Either way the
+ *                user can always pan/scale from there — double-click, or the
+ *                Edit control, enters reframe mode (drag to move, scroll or
+ *                corner-handles to scale; Escape / click-out commits). The
+ *                crop persists alongside the image in the sidecar.
  *   placeholder  Empty-state caption.                      (default 'Drop an image')
- *   src          Optional initial/fallback image URL. A user drop overrides
- *                it; clearing the drop reveals src again.
+ *   src          Optional initial/fallback image URL. Prefill it with a real
+ *                photo via search_stock_photos when that tool is available
+ *                (set credit/credit-href from the result). A user drop
+ *                overrides it; clearing the drop reveals src again.
+ *   credit       Attribution text shown as a small overlay at the
+ *                bottom-left of the filled slot. REQUIRED whenever src
+ *                points at any Unsplash host (images.unsplash.com,
+ *                plus.unsplash.com, …): an Unsplash src with no credit
+ *                renders an error tile INSTEAD of the photo (Unsplash
+ *                terms forbid showing their photos unattributed). Use the
+ *                exact form 'Photo by {photographer name} on Unsplash' —
+ *                the overlay then links the name to credit-href and
+ *                'Unsplash' to the Unsplash homepage, and links back to
+ *                unsplash.com automatically get the required utm referral
+ *                params appended at render time. The credit belongs to
+ *                the src image, so it only shows while src is what's
+ *                displayed — a user-dropped image hides it.
+ *   credit-href  Link for the photographer's name in the credit overlay
+ *                (their Unsplash profile URL from the stock-photo search
+ *                results). http(s) URLs only — anything else renders the
+ *                name as plain text.
  *
- * Size and layout come from ordinary CSS on the element — width/height
- * inline or from a parent grid — so it composes with any layout.
+ * Sizing: the slot fills its container by default (width/height 100%).
+ * Put it in a sized wrapper — absolutely positioned, a grid cell, a fixed
+ * frame — and it takes exactly that box. When the parent's height is
+ * indefinite (ordinary flow), it falls back to full width at a 3:2 aspect
+ * ratio instead of collapsing. In a shrink-to-fit parent (a float,
+ * width:max-content, an unsized absolute wrapper), percentages have
+ * nothing to resolve against — size the slot or its wrapper explicitly
+ * there. For a fixed-size slot, set
+ * width/height on the element itself (inline style), which overrides the
+ * default. When
+ * layering content above a slot (full-bleed layouts), make the overlay
+ * click-through — pointer-events: none on scrims/text plates, re-enabled
+ * on interactive children — so the slot's hover controls stay reachable.
+ * Keep the slot's bottom-left corner visually clear as well: the credit
+ * overlay renders there, and a dark fade or text plate covering it hides
+ * the attribution Unsplash's terms require — end the fade above that
+ * corner, or keep it nearly transparent where the credit sits.
  *
  * Usage:
+ *   <div style="position:relative;width:100%;height:100%">      <!-- full-bleed: -->
+ *     <image-slot id="bg" shape="rect"></image-slot>            <!-- fills the wrapper -->
+ *   </div>
  *   <image-slot id="hero"   style="width:800px;height:450px" shape="rounded" radius="20"
  *               placeholder="Drop a hero image"></image-slot>
  *   <image-slot id="avatar" style="width:120px;height:120px" shape="circle"></image-slot>
@@ -2965,6 +3329,57 @@ try { (() => {
 
 (() => {
   const STATE_FILE = '.image-slots.state.json';
+
+  // Unsplash terms require visible attribution wherever their photos
+  // display, and every link back to unsplash.com must carry utm referral
+  // params. Two render-time rules enforce that here:
+  //  - an Unsplash-src slot with NO credit attribute renders an error
+  //    tile INSTEAD of the photo (an uncredited Unsplash photo on screen
+  //    is itself the terms violation, so it never renders bare);
+  //  - rendered credit links pointing at unsplash.com get the referral
+  //    params appended when absent (credit-href values live in page
+  //    content that can't be edited after the fact).
+  // Keep the utm_source value in sync with UTM_SOURCE in
+  // platform/web-agent/unsplash.ts — this file is a project-local
+  // artifact and cannot import it (equality is pinned by tests).
+  const UNSPLASH_HOMEPAGE_HREF = 'https://unsplash.com/?utm_source=claude_design&utm_medium=referral';
+  // Host rule mirrors the hotlink validator that admits Unsplash srcs into
+  // pages in the first place (cdn$ in unsplash.ts: apex or any subdomain)
+  // — Unsplash+ results serve from plus.unsplash.com, not just images.*,
+  // and an admitted-but-uncredited photo must error whatever unsplash
+  // host it rides on.
+  // Trailing-dot FQDNs (images.unsplash.com.) are the same host to the
+  // browser but would miss the regex — strip one dot so the check fails
+  // CLOSED (unrecognized-but-real Unsplash srcs must error, not render).
+  const isUnsplashHost = u => {
+    try {
+      return /(^|\.)unsplash\.com$/.test(new URL(u, document.baseURI).hostname.replace(/\.$/, ''));
+    } catch {
+      return false;
+    }
+  };
+  // Render-time referral normalization for links back to Unsplash:
+  // appends utm_source/utm_medium when absent, preserves every existing
+  // query param, never overwrites an existing utm_source, and passes
+  // non-Unsplash URLs through untouched. Input is an ABSOLUTE validated
+  // http(s) URL (the credit render funnel resolves + validates first).
+  const withReferral = href => {
+    try {
+      const u = new URL(href);
+      if (!/(^|\.)unsplash\.com$/.test(u.hostname.replace(/\.$/, ''))) {
+        return href;
+      }
+      if (!u.searchParams.has('utm_source')) {
+        u.searchParams.set('utm_source', 'claude_design');
+      }
+      if (!u.searchParams.has('utm_medium')) {
+        u.searchParams.set('utm_medium', 'referral');
+      }
+      return u.toString();
+    } catch (e) {
+      return href;
+    }
+  };
   // 2× a ~600px slot in a 1920-wide deck — retina-sharp without making the
   // sidecar enormous. A 1200px WebP at q=0.85 is ~150-300KB.
   const MAX_DIM = 1200;
@@ -3019,6 +3434,25 @@ try { (() => {
   // completion with the then-current slots.
   let saving = false;
   let saveDirty = false;
+  // Unload-time flush: save()'s serialization defers a mid-RTT re-fire to a
+  // .then that never runs in an unloading document, silently dropping a
+  // pagehide commit. Post the current slots immediately instead — content
+  // is a superset snapshot of any in-flight save's, the write is a
+  // whole-file last-writer-wins replace, and postMessage FIFO delivers it
+  // to the host after the in-flight one, so a backend-side reorder at
+  // worst reproduces the dropped-commit outcome this flush improves on.
+  // Guarded on the initial sidecar read: pre-hydration slots can miss
+  // other slots' persisted entries, and flushing it would clobber them —
+  // that narrow case stays best-effort (the in-memory merge in load()
+  // cannot happen in an unloading document anyway).
+  function flushNow() {
+    if (!loaded) return;
+    const w = window.omelette && window.omelette.writeFile;
+    if (!w) return;
+    try {
+      Promise.resolve(w(STATE_FILE, JSON.stringify(slots))).catch(() => {});
+    } catch (e) {}
+  }
   function save() {
     if (saving) {
       saveDirty = true;
@@ -3089,7 +3523,17 @@ try { (() => {
   }
 
   // ── Custom element ──────────────────────────────────────────────────────
-  const stylesheet = ':host{display:inline-block;position:relative;vertical-align:top;' + '  font:13px/1.3 system-ui,-apple-system,sans-serif;color:rgba(0,0,0,.55);width:240px;height:160px}' + '.frame{position:absolute;inset:0;overflow:hidden;background:rgba(0,0,0,.04)}' +
+  const stylesheet =
+  // Fill the container by default: slots are usually placed inside a
+  // sized wrapper (a hero frame, a grid cell, an inset:0 layer) and are
+  // expected to take that box — a fixed intrinsic size would render as
+  // a small tile in the corner of a full-bleed wrapper instead.
+  // aspect-ratio is the companion fallback that keeps a bare slot
+  // visible when the parent's height is indefinite: height:100%
+  // resolves to auto there, and the ratio then derives height from
+  // width instead of letting the slot collapse to zero height.
+  // Explicit width/height on the element override all of this.
+  ':host{display:block;position:relative;' + '  font:13px/1.3 system-ui,-apple-system,sans-serif;color:rgba(0,0,0,.55);' + '  width:100%;height:100%;aspect-ratio:3/2}' + '.frame{position:absolute;inset:0;overflow:hidden;background:rgba(0,0,0,.04)}' +
   // .frame img (clipped) and .spill (unclipped ghost + handles) share the
   // same left/top/width/height in frame-%, computed by _applyView(), so the
   // inside-mask crop and the outside-mask spill stay pixel-aligned.
@@ -3098,24 +3542,136 @@ try { (() => {
   // spill layer is sized to the IMAGE bounds so its corners are where the
   // resize handles belong. The ghost <img> inside is translucent; the real
   // clipped <img> underneath shows the opaque in-mask crop.
-  '.spill{position:absolute;transform:translate(-50%,-50%);display:none;z-index:1;' + '  cursor:grab;touch-action:none}' + ':host([data-panning]) .spill{cursor:grabbing}' + '.spill .ghost{position:absolute;inset:0;width:100%;height:100%;opacity:.35;' + '  pointer-events:none;-webkit-user-drag:none;user-select:none;' + '  box-shadow:0 0 0 1px rgba(0,0,0,.2),0 12px 32px rgba(0,0,0,.2)}' + '.spill .handle{position:absolute;width:12px;height:12px;border-radius:50%;' + '  background:#fff;box-shadow:0 0 0 1.5px #c96442,0 1px 3px rgba(0,0,0,.3);' + '  transform:translate(-50%,-50%)}' + '.spill .handle[data-c=nw]{left:0;top:0;cursor:nwse-resize}' + '.spill .handle[data-c=ne]{left:100%;top:0;cursor:nesw-resize}' + '.spill .handle[data-c=sw]{left:0;top:100%;cursor:nesw-resize}' + '.spill .handle[data-c=se]{left:100%;top:100%;cursor:nwse-resize}' + ':host([data-reframe]){z-index:10}' + ':host([data-reframe]) .spill{display:block}' + ':host([data-reframe]) .frame{box-shadow:0 0 0 2px #c96442}' + '.empty{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;' + '  justify-content:center;gap:6px;text-align:center;padding:12px;box-sizing:border-box;' + '  cursor:pointer;user-select:none}' + '.empty svg{opacity:.45}' + '.empty .cap{max-width:90%;font-weight:500;letter-spacing:.01em}' + '.empty .sub{font-size:11px}' + '.empty .sub u{text-underline-offset:2px;text-decoration-color:rgba(0,0,0,.25)}' + '.empty:hover .sub u{color:rgba(0,0,0,.75);text-decoration-color:currentColor}' + ':host([data-over]) .frame{outline:2px solid #c96442;outline-offset:-2px;' + '  background:rgba(201,100,66,.10)}' + '.ring{position:absolute;inset:0;pointer-events:none;border:1.5px dashed rgba(0,0,0,.25);' + '  transition:border-color .12s}' + ':host([data-over]) .ring{border-color:#c96442}' + ':host([data-filled]) .ring{display:none}' +
-  // Controls sit BELOW the mask (top:100%), absolutely positioned so the
-  // author-declared slot height is unaffected. The gap is padding, not a
-  // top offset, so the hover target stays contiguous with the frame.
-  '.ctl{position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:8px;' + '  display:flex;gap:6px;opacity:0;pointer-events:none;transition:opacity .12s;z-index:2;' + '  white-space:nowrap}' + ':host([data-filled][data-editable]:hover) .ctl,:host([data-reframe]) .ctl' + '  {opacity:1;pointer-events:auto}' + '.ctl button{appearance:none;border:0;border-radius:6px;padding:5px 10px;cursor:pointer;' + '  background:rgba(0,0,0,.65);color:#fff;font:11px/1 system-ui,-apple-system,sans-serif;' + '  backdrop-filter:blur(6px)}' + '.ctl button:hover{background:rgba(0,0,0,.8)}' + '.err{position:absolute;left:8px;bottom:8px;right:8px;color:#b3261e;font-size:11px;' + '  background:rgba(255,255,255,.85);padding:4px 6px;border-radius:5px;pointer-events:none}';
+  // popover=manual promotes the spill to the top layer on reframe, so it is
+  // not clipped by any overflow:hidden / clip-path / scroll-container
+  // ancestor (a plain z-index can't escape overflow clipping). UA popover
+  // defaults (inset:0;margin:auto) are reset; _applyView sets viewport px.
+  '.spill{position:fixed;margin:0;inset:auto;border:0;padding:0;background:transparent;' + '  overflow:visible;transform:translate(-50%,-50%);z-index:1;cursor:grab;touch-action:none}' + ':host([data-panning]) .spill{cursor:grabbing}' + '.spill .ghost{position:absolute;inset:0;width:100%;height:100%;opacity:.35;' + '  pointer-events:none;-webkit-user-drag:none;user-select:none;' + '  box-shadow:0 0 0 1px rgba(0,0,0,.2),0 12px 32px rgba(0,0,0,.2)}' + '.spill .handle{position:absolute;width:12px;height:12px;border-radius:50%;' + '  background:#fff;box-shadow:0 0 0 1.5px #c96442,0 1px 3px rgba(0,0,0,.3);' + '  transform:translate(-50%,-50%)}' + '.spill .handle[data-c=nw]{left:0;top:0;cursor:nwse-resize}' + '.spill .handle[data-c=ne]{left:100%;top:0;cursor:nesw-resize}' + '.spill .handle[data-c=sw]{left:0;top:100%;cursor:nesw-resize}' + '.spill .handle[data-c=se]{left:100%;top:100%;cursor:nwse-resize}' + ':host([data-reframe]){z-index:10}' + ':host([data-reframe]) .frame{box-shadow:0 0 0 2px #c96442}' + '.empty{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;' + '  justify-content:center;gap:6px;text-align:center;padding:12px;box-sizing:border-box;' + '  cursor:pointer;user-select:none}' + '.empty svg{opacity:.45}' + '.empty .cap{max-width:90%;font-weight:500;letter-spacing:.01em}' + '.empty .sub{font-size:11px}' + '.empty .sub u{text-underline-offset:2px;text-decoration-color:rgba(0,0,0,.25)}' + '.empty:hover .sub u{color:rgba(0,0,0,.75);text-decoration-color:currentColor}' + ':host([data-over]) .frame{outline:2px solid #c96442;outline-offset:-2px;' + '  background:rgba(201,100,66,.10)}' + '.ring{position:absolute;inset:0;pointer-events:none;border:1.5px dashed rgba(0,0,0,.25);' + '  transition:border-color .12s}' + ':host([data-over]) .ring{border-color:#c96442}' + ':host([data-filled]) .ring{display:none}' +
+  // Controls overlay INSIDE the frame, pinned to the top-right corner, so
+  // a full-bleed slot in an overflow:hidden container still shows them
+  // (the old below-mask placement got clipped). Credit sits bottom-left,
+  // so top-right avoids collision. The blurred pill background keeps them
+  // legible over the image.
+  // The UA [popover] base rule styles the element in EVERY state (only
+  // display:none is gated on :not(:popover-open), and the display:flex
+  // below overrides that) — so the UA resets live HERE, like .spill's,
+  // or the ordinary hover-state strip renders as a bordered Canvas box
+  // centered by margin:auto. inset:auto precedes top/right (shorthand).
+  '.ctl{position:absolute;inset:auto;top:8px;right:8px;margin:0;border:0;padding:0;' + '  background:transparent;overflow:visible;' + '  display:flex;gap:6px;opacity:0;pointer-events:none;transition:opacity .12s;z-index:2;' + '  white-space:nowrap}' +
+  // While reframing, the spill owns the top layer and would swallow every
+  // click on the in-frame controls. Promoting .ctl into the top layer
+  // ABOVE the spill (shown after it — later popovers stack higher) keeps
+  // Edit-as-toggle and Replace clickable mid-reframe. _applyView pins it
+  // to the frame's top-right in viewport px (translateX(-100%)
+  // right-aligns against the computed left edge); inset:auto clears the
+  // base rule's top/right so the inline left/top position it alone.
+  '.ctl:popover-open{position:fixed;inset:auto;transform:translateX(-100%)}' + ':host([data-filled][data-editable]:hover) .ctl,:host([data-reframe]) .ctl' + '  {opacity:1;pointer-events:auto}' + '.ctl button{appearance:none;border:0;border-radius:6px;padding:5px 10px;cursor:pointer;' + '  background:rgba(0,0,0,.65);color:#fff;font:11px/1 system-ui,-apple-system,sans-serif;' + '  backdrop-filter:blur(6px)}' + '.ctl button:hover{background:rgba(0,0,0,.8)}' + '.err{position:absolute;left:8px;bottom:8px;right:8px;color:#b3261e;font-size:11px;' + '  background:rgba(255,255,255,.85);padding:4px 6px;border-radius:5px;pointer-events:none}' +
+  // Replacement in flight: after a src swap the browser keeps painting
+  // the PREVIOUS image until the new one decodes, so a Replace would
+  // flash the old photo and then pop. Hide the stale frame (visibility,
+  // not display — _applyView geometry still applies) and spin until the
+  // new image reports in (load/error clears data-swapping).
+  ':host([data-swapping]) .frame img{visibility:hidden}' + '.loading{position:absolute;inset:0;display:none;align-items:center;' + '  justify-content:center;pointer-events:none}' + ':host([data-swapping]) .loading{display:flex}' + '.loading::after{content:"";width:22px;height:22px;border-radius:50%;' + '  border:2px solid rgba(0,0,0,.12);border-top-color:rgba(0,0,0,.45);' + '  animation:om-slot-spin .7s linear infinite}' + '@keyframes om-slot-spin{to{transform:rotate(360deg)}}' +
+  // Reduced motion: the static two-tone ring still reads as "working".
+  '@media (prefers-reduced-motion:reduce){.loading::after{animation:none}}' + '.credit{position:absolute;left:6px;bottom:6px;max-width:calc(100% - 12px);display:none;' + '  padding:3px 7px;border-radius:5px;background:rgba(0,0,0,.55);color:#fff;' + '  font:10px/1.2 system-ui,-apple-system,sans-serif;text-decoration:none;' + '  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;backdrop-filter:blur(6px)}' +
+  // The credit is a SPAN holding one or two <a>s (Unsplash's prescribed
+  // form links the photographer AND Unsplash) — anchors style inline so
+  // the overlay reads as one line of text.
+  '.credit a{color:inherit;text-decoration:none}' + '.credit a:hover,.credit a:focus-visible{text-decoration:underline}' + ':host([data-filled][data-credit]) .credit{display:block}' +
+  // Exports must ship JUST the image — no hover controls, no credit chip
+  // (the host marks <html data-om-exporting> for the capture window; the
+  // page-level hide script can't reach shadow DOM, this rule can).
+  ':host-context([data-om-exporting]) .ctl,' + ':host-context([data-om-exporting]) .credit{display:none !important}' +
+  // No export-window mask rules here on purpose: the export capture
+  // releases the replacement mask by REMOVING data-swapping (the
+  // shadow-root pass in pages/export/shared.ts HIDE_EXPORT_CHROME_SCRIPT)
+  // — attribute removal works in every engine (:host-context is
+  // Chromium-only), is scoped by construction to slots actually
+  // mid-swap, and hides the spinner through the same gate. A masked img
+  // would otherwise be silently dropped from PPTX decks (the capture
+  // walk skips visibility:hidden imgs).
+  // Attribution error tile: REPLACES the photo when an Unsplash src has
+  // no credit attribute — rendering the photo uncredited is the terms
+  // violation, so the photo must not appear at all.
+  // Calm and neutral on purpose (review feedback): the tile informs the
+  // user; the fix instructions are machine-facing (usage docblock, tool
+  // description, and the turn-end scan's bounce copy name the attributes
+  // for the agent).
+  '.attr-error{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;' + '  justify-content:center;gap:6px;text-align:center;padding:12px;box-sizing:border-box;' + '  background:#f2f1ef;color:#6e6c66;user-select:none;' + '  font:13px/1.45 system-ui,-apple-system,sans-serif}' + '.attr-error svg{opacity:.55}' + '.attr-error .cap{max-width:92%;font-weight:500;letter-spacing:.01em}' + ':host([data-attribution-error]) .attr-error{display:flex}' + ':host([data-attribution-error]) .ring{display:none}';
   const icon = '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' + 'stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">' + '<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>' + '<path d="m21 15-5-5L5 21"/></svg>';
+  const warnIcon = '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' + 'stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">' + '<path d="m21.73 18-8-14a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/>' + '<path d="M12 9v4"/><path d="M12 17h.01"/></svg>';
   class ImageSlot extends HTMLElement {
     static get observedAttributes() {
-      return ['shape', 'radius', 'mask', 'fit', 'position', 'placeholder', 'src', 'id'];
+      return ['shape', 'radius', 'mask', 'fit', 'placeholder', 'src', 'id', 'credit', 'credit-href'];
+    }
+
+    /** Duplicate-slide hook (called by deck-stage, see its
+     *  _remintDuplicateIds): copy this id's stored image, if any, under a
+     *  freshly minted key and return that key — so a duplicated slide's
+     *  slot keeps its dropped photo instead of reverting to the
+     *  placeholder. 'isFree' is the caller's uniqueness check (document
+     *  ids); candidates must ALSO be unused in the sidecar, which can
+     *  hold keys from other pages sharing the project root. (An EMPTY
+     *  slot on another page leaves no sidecar entry, so its id is not
+     *  detectable here — a minted key can collide with it and that slot
+     *  would show this photo. Same blast radius as two pages reusing an
+     *  id by hand, which the shared sidecar already permits.) Returns null
+     *  when no id could be minted (caller strips the id, today's
+     *  behavior). */
+    static cloneSlot(fromId, isFree) {
+      if (typeof fromId !== 'string' || !fromId) return null;
+      // Pre-hydration the store can't veto candidates or source the copy
+      // — degrade to the strip (today's behavior) rather than mint
+      // against keys we can't see yet. Any rendered (= droppable) slot
+      // means load() has already settled.
+      if (!loaded) return null;
+      const stem = fromId.replace(/-\d+$/, '') || fromId;
+      for (let n = 2; n < 100; n++) {
+        const toId = stem + '-' + n;
+        if (toId === fromId) continue;
+        if (slots[toId] !== undefined) {
+          // Reuse a key holding this exact value (bytes AND crop) if no
+          // live element here owns it — a duplicate op the host refused
+          // after minting leaves such a key behind, and reusing keeps
+          // refused retries from accumulating one orphaned copy per
+          // attempt. Full equality (not just bytes) so a byte-identical
+          // key another PAGE owns with its own crop is stepped past, not
+          // adopted or rewritten. (Entries without .u never match.)
+          const prev = getSlot(toId);
+          const cur = getSlot(fromId);
+          if (!(prev && cur && prev.u && prev.u === cur.u && prev.s === cur.s && prev.x === cur.x && prev.y === cur.y && (typeof isFree !== 'function' || isFree(toId)))) continue;
+          return toId;
+        }
+        if (typeof isFree === 'function' && !isFree(toId)) continue;
+        const v = getSlot(fromId);
+        if (v) setSlot(toId, Object.assign({}, v));
+        return toId;
+      }
+      return null;
     }
     constructor() {
       super();
-      const root = this.attachShadow({
-        mode: 'open'
+      // clonable: rail thumbnails deep-clone slides and carry this shadow
+      // along; reuse an already-cloned root so upgrade-after-clone works.
+      // (Deliberately NOT serializable — a getHTML consumer would embed
+      // multi-MB sidecar data-URLs into serialized page HTML.)
+      const root = this.shadowRoot || this.attachShadow({
+        mode: 'open',
+        clonable: true
       });
       // .spill and .ctl sit OUTSIDE .frame so overflow:hidden + border-radius
       // on the frame (circle, pill, rounded) can't clip them.
-      root.innerHTML = '<style>' + stylesheet + '</style>' + '<div class="frame" part="frame">' + '  <img part="image" alt="" draggable="false" style="display:none">' + '  <div class="empty" part="empty">' + icon + '    <div class="cap"></div>' + '    <div class="sub">or <u>browse files</u></div></div>' + '  <div class="ring" part="ring"></div>' + '</div>' + '<div class="spill">' + '  <img class="ghost" alt="" draggable="false">' + '  <div class="handle" data-c="nw"></div><div class="handle" data-c="ne"></div>' + '  <div class="handle" data-c="sw"></div><div class="handle" data-c="se"></div>' + '</div>' + '<div class="ctl"><button data-act="replace" title="Replace image">Replace</button>' + '  <button data-act="clear" title="Remove image">Remove</button></div>' + '<input type="file" accept="' + ACCEPT.join(',') + '" hidden>';
+      root.innerHTML = '<style>' + stylesheet + '</style>' + '<div class="frame" part="frame">' + '  <img part="image" alt="" draggable="false" style="display:none">' + '  <div class="empty" part="empty">' + icon + '    <div class="cap"></div>' + '    <div class="sub">or <u>browse files</u></div></div>' + '  <div class="attr-error" part="attribution-error">' + warnIcon + '    <div class="cap">This photo needs attribution</div></div>' + '  <div class="loading" part="loading"></div>' + '  <div class="ring" part="ring"></div>' + '</div>' +
+      // Outside .frame, like .spill/.ctl — the frame's overflow:hidden +
+      // border-radius/clip-path would cut the credit off on circle/pill/mask.
+      // A SPAN, not an <a>: the prescribed Unsplash credit holds two links
+      // (photographer + Unsplash), built per-render in _render().
+      '<span class="credit" part="credit"></span>' + '<div class="spill" popover="manual" data-dc-edit-transparent>' + '  <img class="ghost" alt="" draggable="false">' + '  <div class="handle" data-c="nw"></div><div class="handle" data-c="ne"></div>' + '  <div class="handle" data-c="sw"></div><div class="handle" data-c="se"></div>' + '</div>' +
+      // data-dc-edit-transparent: the DC editor's edit-mode picker lets
+      // clicks through for chrome marked with it (EDIT_TRANSPARENT_SEL)
+      // — without it, Replace/Edit clicks in Edit mode are swallowed by
+      // element selection and the controls look dead.
+      '<div class="ctl" popover="manual" data-dc-edit-transparent><button data-act="replace" title="Replace image">Replace</button>' + '  <button data-act="edit" title="Reframe image">Edit</button></div>' + '<input type="file" accept="' + ACCEPT.join(',') + '" hidden>';
       this._frame = root.querySelector('.frame');
       this._ring = root.querySelector('.ring');
       this._img = root.querySelector('.frame img');
@@ -3123,11 +3679,36 @@ try { (() => {
       this._cap = root.querySelector('.cap');
       this._sub = root.querySelector('.sub');
       this._spill = root.querySelector('.spill');
+      this._ctl = root.querySelector('.ctl');
+      this._credit = root.querySelector('.credit');
+      this._attrError = root.querySelector('.attr-error');
+      // Credit clicks open the link, not browse/reframe.
+      this._credit.addEventListener('click', e => e.stopPropagation());
+      this._credit.addEventListener('dblclick', e => e.stopPropagation());
       this._ghost = root.querySelector('.ghost');
       this._err = null;
       this._input = root.querySelector('input');
       this._depth = 0;
       this._gen = 0;
+      // Encode-in-flight marker (the owning _ingest generation): while set,
+      // the same-src "nothing in flight" clear in _render must not fire —
+      // the stored value still points at the OLD image until the encode
+      // lands, so that clear would unmask the stale image mid-replace.
+      this._swapGen = 0;
+      // Render-owned swap in flight: set when _render assigns a new src,
+      // cleared only by the img's own load/error (or the empty branch).
+      // img.complete CANNOT stand in for this — setting src only QUEUES
+      // the current-request swap (a microtask), so synchronously after an
+      // assignment, complete still reports the OLD settled request. The
+      // pick path does exactly that: the host sets src, credit, and
+      // credit-href back-to-back in one task, and renders #2/#3 would
+      // read the stale complete === true and drop the mask one render
+      // after it was set.
+      this._loadPending = false;
+      // See _render's empty branch: a transient attribution-error wipe of a
+      // showing image must make the follow-up render a replacement (spinner),
+      // not a first fill (blank frame).
+      this._hidShowing = false;
       this._view = {
         s: 1,
         x: 0,
@@ -3139,15 +3720,25 @@ try { (() => {
       this._empty.addEventListener('click', () => this._input.click());
       root.addEventListener('click', e => {
         const act = e.target && e.target.getAttribute && e.target.getAttribute('data-act');
+        if (!act) return;
+        // The hidden controls are opacity-0 but still tabbable — without
+        // this gate a keyboard user could drive them on a read-only share
+        // link (mirrors the dblclick handler's editable gate).
+        if (!this.hasAttribute('data-editable')) return;
         if (act === 'replace') {
           this._exitReframe(true);
-          this._input.click();
+          // Host-owned picker (Unsplash modal; it also offers local import).
+          this.dispatchEvent(new CustomEvent('image-slot:pick', {
+            bubbles: true,
+            composed: true,
+            detail: {
+              id: this.id || null
+            }
+          }));
         }
-        if (act === 'clear') {
-          this._exitReframe(false);
-          this._gen++;
-          this._local = null;
-          if (this.id) setSlot(this.id, null);else this._render();
+        if (act === 'edit') {
+          if (!this._reframes()) return;
+          if (this.hasAttribute('data-reframe')) this._exitReframe(true);else this._enterReframe();
         }
       });
       this._input.addEventListener('change', () => {
@@ -3157,9 +3748,21 @@ try { (() => {
       });
       // naturalWidth/Height aren't known until load — re-apply so the cover
       // baseline is computed from real dimensions, not the 100%×100% fallback.
-      this._img.addEventListener('load', () => this._applyView());
-      // Gated on editable + fit=cover so share links and contain/fill slots
-      // stay static.
+      // load/error also release the replacement-in-flight mask (via the
+      // single discipline in _releaseMask): the swap is only revealed once
+      // the new image can actually paint (on error the frame shows its
+      // background, same as a fresh slot with a broken src).
+      this._img.addEventListener('load', () => {
+        this._loadPending = false;
+        this._releaseMask(true);
+        this._applyView();
+      });
+      this._img.addEventListener('error', () => {
+        this._loadPending = false;
+        this._releaseMask(true);
+      });
+      // Gated only on editable — any filled slot can be repositioned/scaled,
+      // regardless of fit. Share links (no writeFile) stay static.
       this.addEventListener('dblclick', e => {
         if (!this.hasAttribute('data-editable') || !this._reframes()) return;
         e.preventDefault();
@@ -3185,7 +3788,8 @@ try { (() => {
           // ancestor — deck_stage renders slides scaled-to-fit.
           const iw = this._img.naturalWidth || 1,
             ih = this._img.naturalHeight || 1;
-          const base = Math.max(fw / iw, fh / ih);
+          const contain = (this.getAttribute('fit') || 'cover').toLowerCase() === 'contain';
+          const base = contain ? Math.min(fw / iw, fh / ih) : Math.max(fw / iw, fh / ih);
           const sx = corner.includes('e') ? 1 : -1;
           const sy = corner.includes('s') ? 1 : -1;
           const s0 = this._view.s;
@@ -3273,6 +3877,9 @@ try { (() => {
       this.addEventListener('dragleave', this);
       this.addEventListener('drop', this);
       subs.add(this._subFn);
+      // The host may inject window.omelette.writeFile AFTER the first render;
+      // re-render on hover so the editable-gated controls reliably appear.
+      this.addEventListener('pointerenter', this._subFn);
       // width%/height% in _applyView encode the frame aspect at call time —
       // a host resize (responsive grid, pane divider) would stretch the
       // image until the next _render. Re-render on size change: _render()
@@ -3286,6 +3893,7 @@ try { (() => {
     }
     disconnectedCallback() {
       subs.delete(this._subFn);
+      this.removeEventListener('pointerenter', this._subFn);
       this.removeEventListener('dragenter', this);
       this.removeEventListener('dragover', this);
       this.removeEventListener('dragleave', this);
@@ -3294,11 +3902,56 @@ try { (() => {
         this._ro.disconnect();
         this._ro = null;
       }
+      // commit=false: a disconnect is not a user intent — committing here
+      // would persist whatever half-finished drag a React remount or DOM
+      // splice happened to interrupt. Deliberate exits commit on their own
+      // paths (Escape/click-out/toggle), and unloads commit via pagehide.
       this._exitReframe(false);
     }
     _enterReframe() {
       if (this.hasAttribute('data-reframe')) return;
       this.setAttribute('data-reframe', '');
+      this._signalReframe(true);
+      // Best-effort commit when the document unloads mid-reframe (a host
+      // navigation racing the enter signal, a manual reload, tab close):
+      // the sidecar write rides the host bridge, which outlives this
+      // document, so the crop survives even though the mode dies with the
+      // DOM. Held on the instance so _exitReframe detaches exactly what
+      // was attached.
+      this._pagehide = () => {
+        this._exitReframe(true);
+        flushNow();
+      };
+      window.addEventListener('pagehide', this._pagehide);
+      // Promote spill to the top layer, then keep it pinned over the frame:
+      // scroll/resize cover the common cases, and a per-frame rect check
+      // catches layout shifts that fire neither (an image above finishing
+      // load, streamed DOM pushing the slot down, an ancestor transform
+      // change) so the overlay can't detach from the frame.
+      try {
+        this._spill.showPopover();
+      } catch {}
+      // After the spill, so the controls stack above it in the top layer.
+      try {
+        this._ctl.showPopover();
+      } catch {}
+      this._reposition = () => {
+        if (this.hasAttribute('data-reframe')) this._applyView();
+      };
+      window.addEventListener('scroll', this._reposition, true);
+      window.addEventListener('resize', this._reposition);
+      this._lastRect = '';
+      this._watch = () => {
+        if (!this.hasAttribute('data-reframe')) return;
+        const r = this.getBoundingClientRect();
+        const key = r.left + ',' + r.top + ',' + r.width + ',' + r.height;
+        if (key !== this._lastRect) {
+          this._lastRect = key;
+          this._applyView();
+        }
+        this._watchId = requestAnimationFrame(this._watch);
+      };
+      this._watchId = requestAnimationFrame(this._watch);
       this._applyView();
       // Close on click outside (the spill handler stopPropagation()s so
       // in-image drags don't reach this) and on Escape. Listeners are held
@@ -3322,7 +3975,54 @@ try { (() => {
       if (this._outside) document.removeEventListener('pointerdown', this._outside, true);
       if (this._esc) document.removeEventListener('keydown', this._esc, true);
       this._outside = this._esc = null;
+      if (this._reposition) {
+        window.removeEventListener('scroll', this._reposition, true);
+        window.removeEventListener('resize', this._reposition);
+        this._reposition = null;
+      }
+      if (this._watchId) {
+        cancelAnimationFrame(this._watchId);
+        this._watchId = 0;
+      }
+      if (this._pagehide) {
+        window.removeEventListener('pagehide', this._pagehide);
+        this._pagehide = null;
+      }
+      try {
+        this._spill.hidePopover();
+      } catch {}
+      try {
+        this._ctl.hidePopover();
+      } catch {}
+      this._ctl.style.left = '';
+      this._ctl.style.top = '';
       if (commit) this._commitView();
+      this._signalReframe(false);
+    }
+
+    // Reframe state lives only in this DOM until commit, invisible to the
+    // host's dirty signals — announce enter/exit so the host can hold
+    // auto-reloads for exactly the gesture (the guest bundle forwards
+    // image-slot:reframe to the host as imageSlotReframe). Dispatched on
+    // the element (composed, so it escapes shadow roots) while connected;
+    // a disconnected exit (disconnectedCallback) falls back to document so
+    // the host still hears it.
+    _signalReframe(active) {
+      const target = this.isConnected ? this : document;
+      target.dispatchEvent(new CustomEvent('image-slot:reframe', {
+        bubbles: true,
+        composed: true,
+        detail: {
+          active: active,
+          id: this.id || null
+        }
+      }));
+    }
+
+    // Public: host's "Import from computer" calls this to run local browse.
+    openFilePicker() {
+      this._exitReframe(true);
+      this._input.click();
     }
     attributeChangedCallback() {
       if (this.shadowRoot) this._render();
@@ -3364,6 +4064,18 @@ try { (() => {
       // newer drop during that window would be clobbered when this await
       // resumes — bump + capture a generation so stale encodes bail.
       const gen = ++this._gen;
+      // Replacing a shown image: surface the swap through the encode too,
+      // not just the decode — otherwise the old photo sits there with no
+      // feedback while the canvas re-encode runs. An empty slot keeps its
+      // placeholder (no spinner) until the encode lands, as before.
+      // _swapGen guards the mask against re-renders DURING the encode
+      // (pointerenter, ResizeObserver, another slot's store write): the
+      // stored value still resolves to the old image there, so _render's
+      // same-src clear would otherwise unmask it mid-replace.
+      if (this.hasAttribute('data-filled')) {
+        this.setAttribute('data-swapping', '');
+        this._swapGen = gen;
+      }
       try {
         const w = this.clientWidth || this.offsetWidth || MAX_DIM;
         const url = await toDataUrl(file, w);
@@ -3371,6 +4083,10 @@ try { (() => {
         // Only exit reframe once the new image is in hand — a rejected type
         // or decode failure leaves the in-progress crop untouched.
         this._exitReframe(false);
+        // Clear BEFORE setSlot: its synchronous re-render must see no
+        // pending encode, so a byte-identical re-upload (same data URL, no
+        // load event coming) still clears the mask via the complete branch.
+        this._swapGen = 0;
         const val = {
           u: url,
           s: 1,
@@ -3386,6 +4102,11 @@ try { (() => {
         }
       } catch (err) {
         if (gen !== this._gen) return;
+        this._swapGen = 0;
+        // Reveal the kept old image — unless another replacement (a
+        // remote pick's src swap) is still in flight, in which case the
+        // mask stays until THAT image settles (its load/error releases).
+        this._releaseMask();
         this._setError('Could not read that image.');
         console.warn('<image-slot> ingest failed:', err);
       }
@@ -3409,29 +4130,54 @@ try { (() => {
       }, 3000);
     }
 
-    // Reframing (pan/resize) is only meaningful for fit=cover — contain/fill
-    // keep the old object-fit path and double-click is a no-op.
+    // Reframing (pan/resize) is available on any filled slot — the user can
+    // always reposition/scale. `fit` only sets the initial baseline (see
+    // _geom): contain starts fully-visible, cover starts frame-filling.
     _reframes() {
-      return this.hasAttribute('data-filled') && (this.getAttribute('fit') || 'cover') === 'cover';
+      return this.hasAttribute('data-filled');
     }
 
-    // Cover-baseline geometry, shared by clamp/apply/resize. Null until the
-    // img has loaded (naturalWidth is 0 before that) or when the slot has no
-    // layout box — ResizeObserver fires with a 0×0 rect under display:none,
-    // and clamping against a degenerate 1×1 frame would silently pull the
-    // stored pan toward zero.
+    // The single release discipline for the replacement-in-flight mask
+    // (data-swapping). The mask comes off only when BOTH hold:
+    //  - no encode is pending (_swapGen) — mid-encode the stored value
+    //    still resolves to the old image, so any reveal paints it;
+    //  - the frame img has settled on its current src — an unsettled src
+    //    means some replacement is still in flight (e.g. a remote pick),
+    //    whoever started it, and revealing would paint the previous
+    //    frame. The load/error listeners pass settled=true (the event IS
+    //    the settlement signal, per spec complete is true by then);
+    //    other callers rely on the complete flag (covers loaded AND
+    //    failed).
+    // Every release path funnels through here EXCEPT _render's empty
+    // branch (the img is being cleared — nothing will ever settle).
+    _releaseMask(settled) {
+      if (!this._swapGen && !this._loadPending && (settled || this._img.complete)) {
+        this.removeAttribute('data-swapping');
+      }
+    }
+
+    // Baseline geometry, shared by clamp/apply/resize. `base` is the scale at
+    // view-scale s=1: cover = fill the frame (overflow on the looser axis),
+    // contain = fit fully inside (letterboxed). Zooming a contain image past
+    // s where it overflows naturally becomes a crop. Null until the img has
+    // loaded (naturalWidth is 0 before that) or when the slot has no layout
+    // box — ResizeObserver fires with a 0×0 rect under display:none, and
+    // clamping against a degenerate 1×1 frame would silently pull the stored
+    // pan toward zero.
     _geom() {
       const iw = this._img.naturalWidth,
         ih = this._img.naturalHeight;
       const fw = this.clientWidth,
         fh = this.clientHeight;
       if (!iw || !ih || !fw || !fh) return null;
+      const contain = (this.getAttribute('fit') || 'cover').toLowerCase() === 'contain';
+      const base = contain ? Math.min(fw / iw, fh / ih) : Math.max(fw / iw, fh / ih);
       return {
         iw,
         ih,
         fw,
         fh,
-        base: Math.max(fw / iw, fh / ih)
+        base
       };
     }
     _clampView() {
@@ -3445,22 +4191,42 @@ try { (() => {
     }
     _applyView() {
       const g = this._geom();
-      const fit = this.getAttribute('fit') || 'cover';
-      if (fit !== 'cover' || !g) {
-        // Non-cover, or dimensions not known yet (before img load).
+      // Top-layer controls: pin to the frame's top-right in viewport px
+      // (the same 8px inset as the in-frame layout; unscaled — top-layer UI
+      // reads as chrome, not page content). BEFORE the geometry branch:
+      // placement needs only the frame rect, and a not-yet-loaded or broken
+      // src must not leave the promoted strip floating unpositioned. Gated
+      // on the popover actually being open: without the Popover API,
+      // showPopover() threw (swallowed in _enterReframe), .ctl stays in
+      // its in-frame absolute layout, and viewport-px coordinates would
+      // shove it off-frame — and matches(':popover-open') itself throws
+      // there (unknown pseudo-class), hence the try/catch.
+      if (this.hasAttribute('data-reframe')) {
+        let onTop = false;
+        try {
+          onTop = this._ctl.matches(':popover-open');
+        } catch {}
+        if (onTop) {
+          const r = this.getBoundingClientRect();
+          this._ctl.style.left = r.right - 8 + 'px';
+          this._ctl.style.top = r.top + 8 + 'px';
+        }
+      }
+      if (!g) {
+        // Dimensions not known yet (before img load) — centered fit so there
+        // is no flash of an unpositioned image before the geometry lands.
+        const contain = (this.getAttribute('fit') || 'cover').toLowerCase() === 'contain';
         this._img.style.width = '100%';
         this._img.style.height = '100%';
         this._img.style.left = '50%';
         this._img.style.top = '50%';
-        this._img.style.objectFit = fit;
-        this._img.style.objectPosition = this.getAttribute('position') || '50% 50%';
+        this._img.style.objectFit = contain ? 'contain' : 'cover';
         return;
       }
-      // Cover baseline: img fills the frame on its tighter axis at s=1, so
-      // pan works immediately on the overflowing axis without zooming first.
-      // Width/height and left/top are all frame-% — depends only on the
-      // frame aspect ratio, so a responsive resize keeps the same crop. The
-      // spill layer mirrors the same box so its corners = image corners.
+      // Baseline (cover-fill or contain-fit) × view scale. Width/height and
+      // left/top are all frame-% — depends only on the frame aspect ratio, so
+      // a responsive resize keeps the same crop. The spill layer mirrors the
+      // same box so its corners = image corners.
       const k = g.base * this._view.s;
       const w = g.iw * k / g.fw * 100 + '%';
       const h = g.ih * k / g.fh * 100 + '%';
@@ -3471,10 +4237,21 @@ try { (() => {
       this._img.style.left = l;
       this._img.style.top = t;
       this._img.style.objectFit = '';
-      this._spill.style.width = w;
-      this._spill.style.height = h;
-      this._spill.style.left = l;
-      this._spill.style.top = t;
+      if (this.hasAttribute('data-reframe')) {
+        // Top-layer spill: position in viewport px over the frame. The top
+        // layer escapes ancestor transforms entirely, so EVERY term must be
+        // in viewport units: getBoundingClientRect gives the frame's scaled
+        // origin AND size, and the rect/layout ratio rescales the ghost —
+        // sizing from layout px alone renders it 1/scale too large under a
+        // scaled deck slide. Inner ghost + handles stay box-relative.
+        const r = this.getBoundingClientRect();
+        const sx = g.fw ? r.width / g.fw : 1;
+        const sy = g.fh ? r.height / g.fh : 1;
+        this._spill.style.width = g.iw * k * sx + 'px';
+        this._spill.style.height = g.ih * k * sy + 'px';
+        this._spill.style.left = r.left + (50 + this._view.x) / 100 * r.width + 'px';
+        this._spill.style.top = r.top + (50 + this._view.y) / 100 * r.height + 'px';
+      }
     }
     _commitView() {
       const v = {
@@ -3531,23 +4308,109 @@ try { (() => {
       this._cap.textContent = this.getAttribute('placeholder') || 'Drop an image';
       // Toggle via style.display — the [hidden] attribute alone loses to
       // the display:flex / display:block rules in the stylesheet above.
-      if (url) {
-        if (this._img.getAttribute('src') !== url) {
+      // An Unsplash src with no credit attribute must NOT render — showing
+      // the photo uncredited is the Unsplash-terms violation itself. The
+      // error tile replaces the photo until the credit is written. A
+      // user-dropped image is the user's own content and always renders.
+      // Trimmed: credit is agent/user-editable content, and a whitespace-
+      // only value must count as missing — otherwise it would suppress the
+      // error tile AND render an empty credit box (no text, no links),
+      // exactly the unattributed state this gate exists to prevent.
+      const credit = (this.getAttribute('credit') || '').trim();
+      const attrError = !!(!credit && !this._userUrl && srcAttr && isUnsplashHost(srcAttr));
+      this.toggleAttribute('data-attribution-error', attrError);
+      if (url && !attrError) {
+        const prev = this._img.getAttribute('src');
+        if (prev !== url) {
+          // Replacing an already-shown image: mark the swap BEFORE setting
+          // src so the stale frame is never revealed (see the data-swapping
+          // stylesheet rules). First fill (prev empty) keeps the existing
+          // placeholder-until-load behavior — no spinner. _hidShowing
+          // covers the pick path's transient attribution-error wipe: prev
+          // is gone, but an image WAS showing, so this is a replacement.
+          if (prev || this._hidShowing) this.setAttribute('data-swapping', '');
+          // Mark the swap BEFORE assigning src: complete keeps reporting
+          // the old settled request until the browser's
+          // update-the-image-data microtask runs, so same-task re-renders
+          // (the pick path's credit/credit-href setAttributes) need this
+          // flag, not complete, to know a load is in flight.
+          this._loadPending = true;
           this._img.src = url;
           this._ghost.src = url;
+        } else {
+          // Same-src re-render — release if settled, so an ingest-set
+          // spinner can't stick after a byte-identical re-upload (same
+          // data URL, no further load event ever fires).
+          this._releaseMask();
         }
+        this._hidShowing = false;
         this._img.style.display = 'block';
         this._empty.style.display = 'none';
         this.setAttribute('data-filled', '');
         this._clampView();
         this._applyView();
       } else {
+        this.removeAttribute('data-swapping');
+        // The src is being removed — no load/error will ever fire for it.
+        this._loadPending = false;
+        // A transient attribution-error wipe of a showing image happens on
+        // the pick path: the host sets src one setAttribute before credit,
+        // so render N hides the old image (attrError) and render N+1
+        // restores a URL. Remember the wipe so that restore renders as a
+        // replacement (spinner), not a first fill (blank frame).
+        this._hidShowing = attrError && !!this._img.getAttribute('src');
         this._img.style.display = 'none';
         this._img.removeAttribute('src');
         this._ghost.removeAttribute('src');
-        this._empty.style.display = 'flex';
+        // The error tile owns the blocked-photo state; .empty stays for
+        // the genuinely-empty slot.
+        this._empty.style.display = attrError ? 'none' : 'flex';
         this.removeAttribute('data-filled');
       }
+
+      // Credit belongs to the author src, so a user drop hides it.
+      // textContent + the http(s)-only funnel keep external strings inert.
+      const showCredit = !!(url && credit && !this._userUrl && !attrError);
+      this._credit.textContent = '';
+      if (showCredit) {
+        // Validate once (resolved against the document, http(s) only),
+        // then append the terms-required utm referral params to links
+        // that point back at unsplash.com.
+        let href = '';
+        const rawHref = this.getAttribute('credit-href') || '';
+        if (rawHref) {
+          try {
+            const u = new URL(rawHref, document.baseURI);
+            if (u.protocol === 'http:' || u.protocol === 'https:') {
+              href = withReferral(u.href);
+            }
+          } catch {}
+        }
+        const mkLink = (text, linkHref) => {
+          const a = document.createElement('a');
+          a.setAttribute('target', '_blank');
+          a.setAttribute('rel', 'noopener noreferrer');
+          a.setAttribute('href', linkHref);
+          a.textContent = text;
+          return a;
+        };
+        // Unsplash's prescribed credit is TWO links — the photographer's
+        // name to their profile (credit-href) and 'Unsplash' to the
+        // homepage. Render that split whenever the text has the canonical
+        // shape; other text keeps the legacy single-link rendering.
+        const m = /^Photo by (.+) on Unsplash$/.exec(credit);
+        if (m) {
+          this._credit.appendChild(document.createTextNode('Photo by '));
+          this._credit.appendChild(href ? mkLink(m[1], href) : document.createTextNode(m[1]));
+          this._credit.appendChild(document.createTextNode(' on '));
+          this._credit.appendChild(mkLink('Unsplash', UNSPLASH_HOMEPAGE_HREF));
+        } else if (href) {
+          this._credit.appendChild(mkLink(credit, href));
+        } else {
+          this._credit.textContent = credit;
+        }
+      }
+      this.toggleAttribute('data-credit', showCredit);
     }
   }
   if (!customElements.get('image-slot')) {
@@ -5051,6 +5914,398 @@ try { (() => {
 })();
 })(); } catch (e) { __ds_ns.__errors.push({ path: "portfolio/pf-morph.js", error: String((e && e.message) || e) }); }
 
+// portfolio/pf-sfx.js
+try { (() => {
+/* ============================================================
+   KS Portfolio — SOUND EFFECTS layer (opt-in, persisted)
+   - grass  → grid-morph pointer movement (footstep, distance-gated)
+   - birds  → hover over interactive / content elements (cooldown)
+   - thud   → click / pointerdown on buttons & links
+   Web Audio API: low-latency, overlapping playback, one master gain.
+   Toggle wired by the page; state in localStorage 'pf-sfx'.
+   ============================================================ */
+(function () {
+  'use strict';
+
+  var KEY = 'pf-sfx';
+  var SRC = {
+    grass: 'portfolio/sfx/grass.wav',
+    birds: 'portfolio/sfx/birds.wav',
+    leaves: 'portfolio/sfx/leaves.wav',
+    fish: 'portfolio/sfx/fish.wav',
+    click: 'portfolio/sfx/click.wav',
+    meadow: 'portfolio/sfx/meadow.wav'
+  };
+  var VOL = {
+    grass: 0.28,
+    birds: 0.32,
+    leaves: 0.5,
+    fish: 0.42,
+    click: 0.5,
+    meadow: 0.55
+  };
+  var ctx = null,
+    master = null,
+    buffers = {},
+    ready = false,
+    loading = false;
+  var on = false;
+  function enabled() {
+    return on;
+  }
+
+  /* First-gesture unlock: a fresh page (e.g. returning from a case study, where the
+     Enter gate is skipped) starts with a SUSPENDED AudioContext. pointermove (grass)
+     is not a user gesture, so audio can't start until a real click/tap/key. Resume on
+     the earliest such gesture so the SFX come back to life without re-showing the gate. */
+  function primeAudio() {
+    if (!on) return;
+    boot();
+    if (ctx && ctx.state === 'suspended') {
+      try {
+        ctx.resume();
+      } catch (e) {}
+    }
+  }
+  ['pointerdown', 'touchstart', 'keydown'].forEach(function (ev) {
+    window.addEventListener(ev, primeAudio, {
+      passive: true
+    });
+  });
+  function boot() {
+    if (ctx || loading) return;
+    loading = true;
+    try {
+      ctx = new (window.AudioContext || window.webkitAudioContext)();
+      master = ctx.createGain();
+      master.gain.value = 0.9;
+      master.connect(ctx.destination);
+    } catch (e) {
+      loading = false;
+      return;
+    }
+    Object.keys(SRC).forEach(function (name) {
+      fetch(SRC[name]).then(function (r) {
+        return r.arrayBuffer();
+      }).then(function (buf) {
+        return ctx.decodeAudioData(buf);
+      }).then(function (audio) {
+        buffers[name] = audio;
+        ready = true;
+      }).catch(function () {});
+    });
+  }
+
+  /* play a buffer, optional playbackRate jitter + gain, optional slice length */
+  function play(name, gain, rateJit, maxDur) {
+    if (!on || !ctx || !buffers[name]) return;
+    if (ctx.state === 'suspended') ctx.resume();
+    var src = ctx.createBufferSource();
+    src.buffer = buffers[name];
+    if (rateJit) src.playbackRate.value = 1 + (Math.random() * 2 - 1) * rateJit;
+    var g = ctx.createGain();
+    g.gain.value = (gain != null ? gain : 1) * (VOL[name] || 0.5);
+    src.connect(g);
+    g.connect(master);
+    src.start(0);
+    if (maxDur) {
+      // quick fade-out so a long clip only contributes a short tactile hit
+      var t = ctx.currentTime;
+      g.gain.setValueAtTime(g.gain.value, t + maxDur * 0.7);
+      g.gain.linearRampToValueAtTime(0.0001, t + maxDur);
+      src.stop(t + maxDur + 0.02);
+    }
+  }
+
+  /* ---------- GRASS: footsteps as the pointer crosses the grid (dimmed in the sketchbook) ---------- */
+  var lastX = null,
+    lastY = null,
+    acc = 0,
+    lastStep = 0;
+  var STEP_DIST = 190; // px of travel per footstep
+  var STEP_GAP = 240; // ms min between steps
+  var sketchEl = document.getElementById('sketchbook');
+  function gateVisible() {
+    // the Enter gate blocks grass ONLY while it's actually on screen. On a skip-intro
+    // return the gate is display:none (but has no .hide class), so check real visibility.
+    var g = document.querySelector('.enter');
+    return g && g.offsetParent !== null;
+  }
+  function grassFactor(y) {
+    // 30% volume while the pointer is within the sketchbook section (grass there is distracting)
+    if (!sketchEl) return 1;
+    var r = sketchEl.getBoundingClientRect();
+    return y >= r.top && y <= r.bottom ? 0.3 : 1;
+  }
+  window.addEventListener('pointermove', function (e) {
+    if (!on) {
+      lastX = e.clientX;
+      lastY = e.clientY;
+      return;
+    }
+    if (gateVisible()) {
+      lastX = e.clientX;
+      lastY = e.clientY;
+      return;
+    } // no grass while the Enter gate is on screen
+    if (lastX != null) {
+      acc += Math.hypot(e.clientX - lastX, e.clientY - lastY);
+      var now = performance.now();
+      if (acc >= STEP_DIST && now - lastStep > STEP_GAP) {
+        acc = 0;
+        lastStep = now;
+        play('grass', 0.9 * grassFactor(e.clientY), 0.14, 0.5);
+      }
+    }
+    lastX = e.clientX;
+    lastY = e.clientY;
+  }, {
+    passive: true
+  });
+
+  /* ---------- BIRDS: hover over INTERACTIVE elements (buttons, logo, nav, toggles) ---------- */
+  var HOVER_SEL = 'a,button,[role="button"],.sfxbtn,.themebtn button,.index__i,.workrow,nav a,.nav a';
+  /* ---------- LEAVES: dry-leaf rustle WHILE hovering a skill — loudness & speed track
+     how hard the text is morphing (driven by pointer movement over the label) ---------- */
+  var SKILL_SEL = '[data-skill],.svc .skill,.skill';
+  var lastChirp = 0,
+    CHIRP_GAP = 420;
+  var leafEl = null,
+    leafOn = false,
+    leafTimer = 0;
+  var morphAmt = 0; // 0..1 warp intensity from pointer speed
+
+  /* one short crush of leaves (a slice of the clip, quick attack + decay) */
+  function leafGrain() {
+    if (!on || !ctx || !buffers.leaves) return;
+    var buf = buffers.leaves;
+    var src = ctx.createBufferSource();
+    src.buffer = buf;
+    src.playbackRate.value = 0.82 + Math.random() * 0.5 + morphAmt * 0.4; // faster = harder crush
+    var dur = 0.28 + Math.random() * 0.22; // short crush per grain
+    var off = Math.random() * Math.max(0.001, buf.duration - dur - 0.05); // random slice for variation
+    var g = ctx.createGain();
+    var lvl = VOL.leaves * (0.35 + 0.75 * morphAmt) * (0.7 + Math.random() * 0.3);
+    var t = ctx.currentTime;
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.linearRampToValueAtTime(lvl, t + 0.02); // crisp attack
+    g.gain.setValueAtTime(lvl, t + dur * 0.6);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + dur); // decay
+    src.connect(g);
+    g.connect(master);
+    try {
+      src.start(t, off, dur + 0.02);
+    } catch (e) {
+      src.start(t);
+    }
+  }
+
+  /* self-scheduling loop: grains overlap so it sounds like leaves continuously crushed;
+     denser & louder the harder the text morphs, sparser when the pointer rests */
+  function leafSchedule() {
+    if (!leafOn) {
+      leafTimer = 0;
+      return;
+    }
+    leafGrain();
+    morphAmt *= 0.86; // decay when still
+    var gap = 90 + (1 - morphAmt) * 150; // ~90ms (busy) → ~240ms (calm)
+    gap *= 0.75 + Math.random() * 0.5; // irregular = organic
+    leafTimer = setTimeout(leafSchedule, gap);
+  }
+  function startLeaf() {
+    if (!on || leafOn) return;
+    if (ctx && ctx.state === 'suspended') ctx.resume();
+    leafOn = true;
+    leafSchedule();
+  }
+  function stopLeaf() {
+    leafOn = false;
+    if (leafTimer) {
+      clearTimeout(leafTimer);
+      leafTimer = 0;
+    }
+    morphAmt = 0;
+  }
+  document.addEventListener('pointerover', function (e) {
+    if (!on || !e.target.closest) return;
+    if (e.target.closest('.enter')) return; // no SFX on the Enter gate
+    var sk = e.target.closest(SKILL_SEL);
+    if (sk) {
+      if (sk !== leafEl) {
+        leafEl = sk;
+        morphAmt = Math.max(morphAmt, 0.35);
+        startLeaf();
+      }
+      return;
+    }
+    var now = performance.now();
+    var t = e.target.closest(HOVER_SEL);
+    if (!t) return;
+    if (e.relatedTarget && t.contains(e.relatedTarget)) return;
+    if (now - lastChirp < CHIRP_GAP) return;
+    lastChirp = now;
+    play('birds', 0.6, 0.08, 1.1);
+  }, {
+    passive: true
+  });
+  document.addEventListener('pointerout', function (e) {
+    if (!leafEl || !e.target.closest) return;
+    var sk = e.target.closest(SKILL_SEL);
+    if (!sk) return;
+    if (e.relatedTarget && sk.contains(e.relatedTarget)) return;
+    leafEl = null;
+    stopLeaf();
+  }, {
+    passive: true
+  });
+  /* pointer speed over a skill → morph intensity */
+  var pmX = null,
+    pmY = null;
+  document.addEventListener('pointermove', function (e) {
+    if (!leafEl) {
+      pmX = e.clientX;
+      pmY = e.clientY;
+      return;
+    }
+    if (pmX != null) {
+      var d = Math.hypot(e.clientX - pmX, e.clientY - pmY);
+      morphAmt = Math.min(1, morphAmt + d / 90); // faster movement = bigger warp = louder rustle
+    }
+    pmX = e.clientX;
+    pmY = e.clientY;
+  }, {
+    passive: true
+  });
+
+  /* ---------- FISH: one flap per keyword chip as the journey milestone reveals ---------- */
+  (function () {
+    var mapEl = document.querySelector('[data-journey]');
+    if (!mapEl) return;
+    var steps = [].slice.call(mapEl.querySelectorAll('[data-step]'));
+    var seen = steps.map(function (s) {
+      return s.classList.contains('is-active');
+    });
+    var mo = new MutationObserver(function (muts) {
+      muts.forEach(function (m) {
+        var i = steps.indexOf(m.target);
+        if (i < 0) return;
+        var active = m.target.classList.contains('is-active');
+        if (active && !seen[i]) {
+          seen[i] = true;
+          if (!on) return;
+          // one flap as the role + company name appear, another as the chips start appearing
+          setTimeout(function () {
+            if (on) play('fish', 0.9, 0.08, 0.8);
+          }, 340); // role / org reveal
+          setTimeout(function () {
+            if (on) play('fish', 0.9, 0.08, 0.8);
+          }, 600); // chips begin
+        }
+        if (!active) seen[i] = false;
+      });
+    });
+    steps.forEach(function (s) {
+      mo.observe(s, {
+        attributes: true,
+        attributeFilter: ['class']
+      });
+    });
+  })();
+
+  /* ---------- CLICK: bird-flutter on press of interactive elements ---------- */
+  document.addEventListener('pointerdown', function (e) {
+    if (!on) return;
+    if (e.target.closest && e.target.closest('.enter')) return; // no click SFX on the Enter gate
+    var t = e.target.closest && e.target.closest('a,button,[role="button"],.workrow,.index__i,.sfxbtn,.themebtn button');
+    if (!t) return;
+    play('click', 0.95, 0.08, 0.6);
+  }, {
+    passive: true
+  });
+
+  /* ---------- looping ambience (e.g. meadow wind while hovering) ---------- */
+  var loopSrc = null,
+    loopGain = null;
+  function loopStart(name, gain) {
+    if (!on || !ctx || !buffers[name] || loopSrc) return;
+    if (ctx.state === 'suspended') ctx.resume();
+    loopSrc = ctx.createBufferSource();
+    loopSrc.buffer = buffers[name];
+    loopSrc.loop = true;
+    loopGain = ctx.createGain();
+    loopGain.gain.value = 0.0001;
+    loopSrc.connect(loopGain);
+    loopGain.connect(master);
+    loopSrc.start(0);
+    var t = ctx.currentTime,
+      target = (gain != null ? gain : 1) * (VOL[name] || 0.5);
+    loopGain.gain.linearRampToValueAtTime(target, t + 0.35);
+  }
+  function loopStop() {
+    if (!loopSrc) return;
+    var s = loopSrc,
+      g = loopGain;
+    loopSrc = null;
+    loopGain = null;
+    try {
+      var t = ctx.currentTime;
+      g.gain.cancelScheduledValues(t);
+      g.gain.setValueAtTime(g.gain.value, t);
+      g.gain.linearRampToValueAtTime(0.0001, t + 0.4);
+      s.stop(t + 0.45);
+    } catch (e) {
+      try {
+        s.stop();
+      } catch (e2) {}
+    }
+  }
+
+  /* ---------- public API for the page toggle ---------- */
+  window.KSSound = {
+    loopStart: function (name, gain) {
+      loopStart(name, gain);
+    },
+    loopStop: function () {
+      loopStop();
+    },
+    set: function (v) {
+      on = !!v;
+      if (on) {
+        boot();
+        if (ctx && ctx.state === 'suspended') ctx.resume();
+      } else {
+        leafEl = null;
+        stopLeaf();
+        loopStop();
+      }
+      try {
+        localStorage.setItem(KEY, on ? 'on' : 'off');
+      } catch (e) {}
+      document.documentElement.classList.toggle('sfx-on', on);
+      return on;
+    },
+    toggle: function () {
+      return this.set(!on);
+    },
+    isOn: function () {
+      return on;
+    },
+    initial: function () {
+      var v = 'off';
+      try {
+        v = localStorage.getItem(KEY) || 'off';
+      } catch (e) {}
+      // don't auto-play audio; just reflect stored intent visually and boot lazily on first gesture
+      on = v === 'on';
+      document.documentElement.classList.toggle('sfx-on', on);
+      if (on) boot();
+      return on;
+    }
+  };
+})();
+})(); } catch (e) { __ds_ns.__errors.push({ path: "portfolio/pf-sfx.js", error: String((e && e.message) || e) }); }
+
 // portfolio/pf-skills.js
 try { (() => {
 /* ============================================================
@@ -5085,7 +6340,7 @@ try { (() => {
   if (!skills.length) return;
   var R = 300,
     TEX = 26,
-    GROW = 0.55,
+    GROW = typeof window.KS_SKILL_GROW === 'number' ? window.KS_SKILL_GROW : 0.55,
     PUSH = 30;
   var px = -99999,
     py = -99999,
@@ -5174,8 +6429,32 @@ try { (() => {
   var numEl = document.querySelector('.loader__num');
   document.body.classList.add('loading');
   var _ended = false;
+  var _loaderStart = window.performance && performance.now ? performance.now() : Date.now();
+  /* optional page-scoped HOLD: if a page sets window.KS_LOADER_HOLD = true, the loader
+     waits (no auto-rollout) until KS_releaseLoader() is called — used by an Enter gate
+     so the loader/audio start on a real user gesture. Backwards-compatible: pages that
+     never set it behave exactly as before. */
+  window.KS_releaseLoader = function () {
+    window.KS_LOADER_HOLD = false;
+    _loaderStart = window.performance && performance.now ? performance.now() : Date.now();
+  };
   function endLoader() {
     if (_ended) return;
+    if (window.KS_LOADER_HOLD) {
+      setTimeout(endLoader, 60);
+      return;
+    }
+    /* optional page-scoped minimum loader time (used to sync the rollout with an
+       audio cue). Backwards-compatible: no-op unless a page sets the global. */
+    var minMs = window.KS_LOADER_MIN_MS;
+    if (typeof minMs === 'number' && minMs > 0) {
+      var now = window.performance && performance.now ? performance.now() : Date.now();
+      var el = now - _loaderStart;
+      if (el < minMs) {
+        setTimeout(endLoader, minMs - el);
+        return;
+      }
+    }
     _ended = true;
     document.body.classList.remove('loading');
     if (loader) loader.classList.add('done');
@@ -5185,21 +6464,34 @@ try { (() => {
   }
   /* absolute fail-safe: never leave the page scroll-locked, even if the
      stepped-loader timers are throttled (background tab, slow paint, etc.) */
-  setTimeout(endLoader, 4200);
+  setTimeout(endLoader, 4500);
+  var _reached100 = false;
+  /* the `load` fallback must NOT preempt the stepped counter — otherwise it
+     ends the loader before 100 is ever shown/held. Only let it end once the
+     counter has actually landed on 100. */
   window.addEventListener('load', function () {
-    setTimeout(endLoader, 800);
+    setTimeout(function () {
+      if (_reached100) endLoader();
+    }, 400);
   });
   if (reduce || !numEl) {
     if (numEl) numEl.textContent = '100';
     setTimeout(endLoader, 200);
   } else {
-    /* 9 fixed, jumpy stops — first 0, last 100, held long enough to read */
-    var stops = [0, 46, 13, 72, 34, 91, 58, 84, 100];
+    /* 8 fixed, jumpy stops leading to a clearly-held 100 */
+    var stops = [0, 46, 13, 72, 34, 91, 58, 84];
     var i = 0,
-      HOLD = 175;
+      HOLD = 185;
     (function jump() {
       numEl.textContent = stops[i];
-      if (++i < stops.length) setTimeout(jump, HOLD);else setTimeout(endLoader, 360);
+      if (++i < stops.length) {
+        setTimeout(jump, HOLD);
+        return;
+      }
+      /* land on 100 and hold it long enough to read before rolling out */
+      numEl.textContent = 100;
+      _reached100 = true;
+      setTimeout(endLoader, 232);
     })();
   }
 
@@ -5438,7 +6730,7 @@ try { (() => {
       w = tr.scrollWidth / 2,
       dir = tr.getAttribute('data-dir') === 'r' ? 1 : -1;
     (function tick() {
-      x += 0.5 * dir;
+      x += 0.75 * dir;
       if (dir < 0 && x <= -w) x = 0;
       if (dir > 0 && x >= 0) x = -w;
       tr.style.transform = 'translateX(' + x + 'px)';

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="build-version" content="build-2026-07-11-v2" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Kushagra Sharan — Product Designer</title>
 <meta name="description" content="Kushagra Sharan — senior product designer turning complex workflows into clear, usable products." />
@@ -10,13 +9,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" />
 <link rel="stylesheet" href="/portfolio/pf-facets.css" />
-<script>(function(){try{var t=localStorage.getItem('pf-facets-theme'); if(t!=='dark'){document.documentElement.classList.add('theme-light');}}catch(e){document.documentElement.classList.add('theme-light');}})();</script>
+<script>(function(){try{var t=localStorage.getItem('pf-facets-theme'); if(t==='dark'){/* keep dark */}else{document.documentElement.classList.add('theme-light');}}catch(e){document.documentElement.classList.add('theme-light');}})();</script>
 <style>
-  /* full-page morphing grid background overrides */
-  .bgmorph{ position:fixed; inset:0; z-index:0; pointer-events:none; color:var(--fg); }
+  /* v2: full-page morphing grid background */
+  /* Soft Grid variant: the full-page morph is dialled back for calmer contrast,
+     and dims further while the pointer is over readable content so text stays legible. */
+  .bgmorph{ position:fixed; inset:0; z-index:0; pointer-events:none; color:var(--fg);
+    opacity:0.75; transition:opacity .45s ease; }
+  /* dim ONLY while hovering actual readable content — not empty section space */
+  body:has(:is(h1,h2,h3,h4,p,li,a,span,.lab,.hero__title,.hero__lead,.sechead,.skill,.jrow):hover) .bgmorph{ opacity:0.32; }
   .bgmorph canvas{ position:absolute; inset:0; }
   .hero, .mq, .section, .contact{ position:relative; z-index:1; }
   body{ --grid-line:transparent; background-image:none; }
+  .hero{ padding:130px 0 20vh; }
   .sketch{ background:transparent; color:var(--fg); }
   .sketch .sechead__title{ color:var(--fg); }
   .sketch .lab{ color:color-mix(in srgb, var(--fg) 62%, transparent); }
@@ -25,11 +30,65 @@
   .themebtn .kitlink{ display:inline-flex; align-items:center; font-family:var(--sans); font-weight:800; font-size:11px; letter-spacing:0.14em; text-transform:uppercase;
     padding:8px 15px; border-radius:100px; color:color-mix(in srgb, var(--fg) 70%, transparent); text-decoration:none; transition:color .25s, background .25s; }
   .themebtn .kitlink:hover{ background:color-mix(in srgb, var(--fg) 10%, transparent); color:var(--fg); }
+  /* toolbar wraps the sound + theme toggles so they align and size together */
+  .topbar{ position:fixed; top:var(--edge); right:var(--edge); left:auto; z-index:130; display:inline-flex; align-items:stretch; gap:8px; }
+  .topbar .themebtn{ position:static; top:auto; right:auto; left:auto; }
+  /* sound toggle — round icon button, matches theme-toggle height. Muted by default. */
+  .sfxbtn{ flex:0 0 auto; width:39px; height:39px; align-self:center; padding:0; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; cursor:pointer;
+    background:color-mix(in srgb, var(--bg) 72%, transparent); border:1.5px solid color-mix(in srgb, var(--fg) 20%, transparent);
+    backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+    color:color-mix(in srgb, var(--fg) 62%, transparent); transition:color .25s, background .25s, border-color .25s; }
+  .sfxbtn:hover{ color:var(--fg); }
+  .sfxbtn svg{ width:16px; height:16px; display:block; }
+  .sfxbtn .i-on{ display:none; }
+  .sfxbtn .i-off{ display:block; }
+  html.sfx-on .sfxbtn{ color:#fff; background:var(--hot); border-color:transparent; }
+  html.sfx-on .sfxbtn .i-on{ display:block; }
+  html.sfx-on .sfxbtn .i-off{ display:none; }
+  /* scroll-cue line: keep it pink in BOTH themes (violet --hot is invisible on the light grid) */
+  .hero__scrollcue i::after{ background:#E01E8F !important; }
+  /* Factile card uses its own line-art thumbnail (same interaction model as the flagship card) */
+  .workfeat__art--factile{ -webkit-mask-image:url(portfolio/img/factile-abstract.svg); mask-image:url(portfolio/img/factile-abstract.svg); }
+  /* COMING SOON — marquee band; speeds up + plays meadow wind on hover */
+  .soon{ position:relative; margin-top:clamp(20px,3vh,34px); border:1.5px dashed color-mix(in srgb, var(--fg) 26%, transparent); border-radius:12px;
+    overflow:hidden; padding:clamp(20px,2.8vw,32px) 0; cursor:default; background:color-mix(in srgb, var(--bg) 55%, transparent);
+    transition:border-color .4s, background .4s; -webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent); mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent); }
+  .soon:hover{ border-color:var(--hot); background:color-mix(in srgb, var(--hot) 7%, transparent); }
+  .soon__track{ display:flex; align-items:center; gap:38px; width:max-content; animation:soonscroll 30s linear infinite; will-change:transform; }
+  .soon:hover .soon__track{ animation-duration:6s; }
+  .soon__track span{ font-family:var(--disp); font-weight:700; font-size:clamp(28px,4.2vw,62px); line-height:1; letter-spacing:-0.03em; white-space:nowrap;
+    color:color-mix(in srgb, var(--fg) 28%, transparent); transition:color .4s; }
+  .soon:hover .soon__track span{ color:color-mix(in srgb, var(--fg) 74%, transparent); }
+  .soon__dot{ color:var(--hot) !important; font-size:clamp(18px,2.4vw,32px) !important; }
+  @keyframes soonscroll{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+  @media (prefers-reduced-motion:reduce){ .soon__track{ animation:none; } }
+  /* MOBILE: don't let the whole feature card navigate on first tap. First tap "arms"
+     the card (glow) and highlights the Explore CTA; the CTA tap actually navigates. */
+  @media (max-width:760px){
+    .workfeat.is-armed{ outline:2px solid var(--hot); outline-offset:2px; box-shadow:0 0 0 1px var(--hot), 0 24px 60px -24px color-mix(in srgb, var(--hot) 60%, transparent); }
+    .workfeat.is-armed .workfeat__cta{ color:#fff; background:var(--hot); border-radius:100px; padding:10px 18px; }
+    .workfeat.is-armed .workfeat__cta svg{ stroke:#fff; }
+  }
+  /* ENTER gate */
+  .enter{ position:fixed; inset:0; z-index:11000; background:#100D08; color:#F1EEE7; display:flex; align-items:center; justify-content:center;
+    text-align:center; transition:opacity .5s ease; cursor:auto; }
+  .enter *{ cursor:inherit; }
+  .enter__btn{ cursor:pointer; }
+  .enter.hide{ opacity:0; pointer-events:none; }
+  .enter__inner{ display:flex; flex-direction:column; align-items:center; gap:26px; padding:24px; }
+  .enter__eyebrow{ font-family:var(--sans); font-weight:700; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(241,238,231,.55); }
+  .enter__btn{ display:inline-flex; align-items:center; gap:14px; font-family:var(--disp); font-weight:700; font-size:clamp(34px,7vw,64px);
+    letter-spacing:-0.03em; color:#100D08; background:#F1EEE7; border:none; border-radius:100px; padding:clamp(16px,2.4vw,26px) clamp(34px,5vw,58px);
+    cursor:pointer; transition:background .25s, color .25s, transform .25s; }
+  .enter__btn:hover{ background:#E01E8F; color:#fff; transform:translateY(-2px); }
+  .enter__btn svg{ width:0.7em; height:0.7em; }
+  .enter__note{ font-family:var(--sans); font-weight:600; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(241,238,231,.4); }
+  /* returning within the same session: no gate, no loader flash */
+  html.skip-intro .enter, html.skip-intro .loader{ display:none !important; }
 </style>
 </head>
 <body class="loading">
 <div id="root"></div>
-<script>console.log("PORTFOLIO BUILD: build-2026-07-11-v2");</script>
 <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>

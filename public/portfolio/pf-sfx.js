@@ -10,18 +10,32 @@
   'use strict';
   var KEY = 'pf-sfx';
   var SRC = {
-    grass: '/portfolio/sfx/grass.wav',
-    birds: '/portfolio/sfx/birds.wav',
-    leaves:'/portfolio/sfx/leaves.wav',
-    fish:  '/portfolio/sfx/fish.wav',
-    click: '/portfolio/sfx/click.wav'
+    grass: 'portfolio/sfx/grass.wav',
+    birds: 'portfolio/sfx/birds.wav',
+    leaves:'portfolio/sfx/leaves.wav',
+    fish:  'portfolio/sfx/fish.wav',
+    click: 'portfolio/sfx/click.wav',
+    meadow:'portfolio/sfx/meadow.wav'
   };
-  var VOL = { grass: 0.28, birds: 0.32, leaves: 0.5, fish: 0.42, click: 0.5 };
+  var VOL = { grass: 0.28, birds: 0.32, leaves: 0.5, fish: 0.42, click: 0.5, meadow: 0.55 };
 
   var ctx = null, master = null, buffers = {}, ready = false, loading = false;
   var on = false;
 
   function enabled() { return on; }
+
+  /* First-gesture unlock: a fresh page (e.g. returning from a case study, where the
+     Enter gate is skipped) starts with a SUSPENDED AudioContext. pointermove (grass)
+     is not a user gesture, so audio can't start until a real click/tap/key. Resume on
+     the earliest such gesture so the SFX come back to life without re-showing the gate. */
+  function primeAudio() {
+    if (!on) return;
+    boot();
+    if (ctx && ctx.state === 'suspended') { try { ctx.resume(); } catch (e) {} }
+  }
+  ['pointerdown', 'touchstart', 'keydown'].forEach(function (ev) {
+    window.addEventListener(ev, primeAudio, { passive: true });
+  });
 
   function boot() {
     if (ctx || loading) return;
@@ -65,6 +79,12 @@
   var STEP_DIST = 190;     // px of travel per footstep
   var STEP_GAP = 240;      // ms min between steps
   var sketchEl = document.getElementById('sketchbook');
+  function gateVisible() {
+    // the Enter gate blocks grass ONLY while it's actually on screen. On a skip-intro
+    // return the gate is display:none (but has no .hide class), so check real visibility.
+    var g = document.querySelector('.enter');
+    return g && g.offsetParent !== null;
+  }
   function grassFactor(y) {
     // 30% volume while the pointer is within the sketchbook section (grass there is distracting)
     if (!sketchEl) return 1;
@@ -73,7 +93,7 @@
   }
   window.addEventListener('pointermove', function (e) {
     if (!on) { lastX = e.clientX; lastY = e.clientY; return; }
-    if (document.querySelector('.enter:not(.hide)')) { lastX = e.clientX; lastY = e.clientY; return; }   // no grass on the Enter gate
+    if (gateVisible()) { lastX = e.clientX; lastY = e.clientY; return; }   // no grass while the Enter gate is on screen
     if (lastX != null) {
       acc += Math.hypot(e.clientX - lastX, e.clientY - lastY);
       var now = performance.now();
@@ -202,12 +222,41 @@
     play('click', 0.95, 0.08, 0.6);
   }, { passive: true });
 
+  /* ---------- looping ambience (e.g. meadow wind while hovering) ---------- */
+  var loopSrc = null, loopGain = null;
+  function loopStart(name, gain) {
+    if (!on || !ctx || !buffers[name] || loopSrc) return;
+    if (ctx.state === 'suspended') ctx.resume();
+    loopSrc = ctx.createBufferSource();
+    loopSrc.buffer = buffers[name];
+    loopSrc.loop = true;
+    loopGain = ctx.createGain();
+    loopGain.gain.value = 0.0001;
+    loopSrc.connect(loopGain); loopGain.connect(master);
+    loopSrc.start(0);
+    var t = ctx.currentTime, target = (gain != null ? gain : 1) * (VOL[name] || 0.5);
+    loopGain.gain.linearRampToValueAtTime(target, t + 0.35);
+  }
+  function loopStop() {
+    if (!loopSrc) return;
+    var s = loopSrc, g = loopGain; loopSrc = null; loopGain = null;
+    try {
+      var t = ctx.currentTime;
+      g.gain.cancelScheduledValues(t);
+      g.gain.setValueAtTime(g.gain.value, t);
+      g.gain.linearRampToValueAtTime(0.0001, t + 0.4);
+      s.stop(t + 0.45);
+    } catch (e) { try { s.stop(); } catch (e2) {} }
+  }
+
   /* ---------- public API for the page toggle ---------- */
   window.KSSound = {
+    loopStart: function (name, gain) { loopStart(name, gain); },
+    loopStop: function () { loopStop(); },
     set: function (v) {
       on = !!v;
       if (on) { boot(); if (ctx && ctx.state === 'suspended') ctx.resume(); }
-      else { leafEl = null; stopLeaf(); }
+      else { leafEl = null; stopLeaf(); loopStop(); }
       try { localStorage.setItem(KEY, on ? 'on' : 'off'); } catch (e) {}
       document.documentElement.classList.toggle('sfx-on', on);
       return on;

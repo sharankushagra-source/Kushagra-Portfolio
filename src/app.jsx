@@ -82,17 +82,23 @@ const MARKUP = `<!-- ENTER gate: a single tap that unlocks audio, then the loade
         <filter id="warp6" x="-40%" y="-90%" width="180%" height="280%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.009 0.021" numOctaves="1" seed="27" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter>
       </defs></svg>
       <p class="svc__intro"><i></i> Hover a strength</p>
-      <div class="skill" data-skill style="left:22%; top:5%"> <span class="skill__n">01</span><h3 class="skill__t" style="filter:url(#warp1)" tabindex="0">UX Design</h3><span class="skill__desc">Flows so clear the interface feels inevitable.</span></div>
-      <div class="skill" data-skill style="left:42%; top:21%"> <span class="skill__n">02</span><h3 class="skill__t" style="filter:url(#warp2)" tabindex="0">Design Systems</h3><span class="skill__desc">One system — every screen consistent, faster to build.</span></div>
-      <div class="skill" data-skill style="left:18%; top:37%"> <span class="skill__n">03</span><h3 class="skill__t" style="filter:url(#warp3)" tabindex="0">Problem Framing</h3><span class="skill__desc">The real problem, found before the first screen.</span></div>
-      <div class="skill" data-skill style="left:40%; top:53%"> <span class="skill__n">04</span><h3 class="skill__t" style="filter:url(#warp4)" tabindex="0">Accessibility</h3><span class="skill__desc">Software that welcomes the people it usually intimidates.</span></div>
-      <div class="skill" data-skill style="left:22%; top:69%"> <span class="skill__n">05</span><h3 class="skill__t" style="filter:url(#warp5)" tabindex="0">Rapid Execution</h3><span class="skill__desc">High craft, shipped fast when the timeline is tight.</span></div>
-      <div class="skill" data-skill style="left:40%; top:85%"> <span class="skill__n">06</span><h3 class="skill__t" style="filter:url(#warp6)" tabindex="0">Communication</h3><span class="skill__desc">Narrating the “why” so product, design and eng move as one.</span></div>
+      <div class="skill" data-skill style="left:22%; top:5%"> <span class="skill__n">01</span><h3 class="skill__t" style="filter:url(#warp1)" tabindex="0">UX Design</h3></div>
+      <div class="skill" data-skill style="left:42%; top:21%"> <span class="skill__n">02</span><h3 class="skill__t" style="filter:url(#warp2)" tabindex="0">Design Systems</h3></div>
+      <div class="skill" data-skill style="left:18%; top:37%"> <span class="skill__n">03</span><h3 class="skill__t" style="filter:url(#warp3)" tabindex="0">Problem Framing</h3></div>
+      <div class="skill" data-skill style="left:40%; top:53%"> <span class="skill__n">04</span><h3 class="skill__t" style="filter:url(#warp4)" tabindex="0">Accessibility</h3></div>
+      <div class="skill" data-skill style="left:22%; top:69%"> <span class="skill__n">05</span><h3 class="skill__t" style="filter:url(#warp5)" tabindex="0">Rapid Execution</h3></div>
+      <div class="skill" data-skill style="left:40%; top:85%"> <span class="skill__n">06</span><h3 class="skill__t" style="filter:url(#warp6)" tabindex="0">Communication</h3></div>
     </div>
   </div>
+<!-- strength stat overlay -->
+<div class="skmodal" id="skmodal" aria-hidden="true" role="region" aria-labelledby="skmodal-title">
+  <div class="skmodal__card">
+    <span class="skmodal__ey" id="skmodal-ey">01</span>
+    <h3 class="skmodal__title" id="skmodal-title">UX Design</h3>
+    <div class="skmodal__grid" id="skmodal-grid"></div>
+  </div>
+</div>
 </section>
-
-<!-- ============ SELECTED WORK ============ -->
 <section class="section" id="work">
   <div class="wrap">
     <div class="sechead">
@@ -104,7 +110,7 @@ const MARKUP = `<!-- ENTER gate: a single tap that unlocks audio, then the loade
     </div>
   </div>
   <div class="wrap">
-    <a class="workfeat" href="Case Study - Factile (scroll).html" data-view="Explore">
+    <a class="workfeat" href="case-study-factile.html" data-view="Explore">
       <div class="workfeat__media"><span class="workfeat__art workfeat__art--factile" role="img" aria-label="Abstract illustration — the Factile customize flow, untangled from overloaded settings into a clear guided experience"></span></div>
       <div class="workfeat__body">
         <span class="workfeat__badge"><i></i> Case study · Product</span>
@@ -343,6 +349,7 @@ const SEQ = [
   { type:'src', src:'/portfolio/pf-collage.js' },
   { type:'src', src:'/portfolio/pf-morph.js' },
   { type:'src', src:'/portfolio/pf-skills.js' },
+  { type:'src', src:'/portfolio/pf-skillmodal.js' },
   { type:'src', src:'/portfolio/pf-journey.js' },
   { type:'src', src:'/portfolio/pf-sfx.js' },
   { type:'inline', code:`(function(){
@@ -408,16 +415,8 @@ export default function App() {
     (async () => {
       for (const s of SEQ) {
         if (cancelled) return;
-        if (s.type === 'src') {
-          await new Promise((res) => {
-            const el = document.createElement('script');
-            el.src = s.src; el.async = false; el.onload = res; el.onerror = res;
-            document.body.appendChild(el);
-          });
-        } else {
-          const el = document.createElement('script');
-          el.textContent = s.code; document.body.appendChild(el);
-        }
+        if (s.type === 'src') { await new Promise((res) => { const el = document.createElement('script'); el.src = s.src; el.async = false; el.onload = res; el.onerror = res; document.body.appendChild(el); }); }
+        else { const el = document.createElement('script'); el.textContent = s.code; document.body.appendChild(el); }
       }
     })();
     return () => { cancelled = true; };

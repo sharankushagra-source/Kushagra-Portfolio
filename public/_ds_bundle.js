@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"AccessibleFoundationsDesignSystem_87ff79","components":[{"name":"Button","sourcePath":"components/buttons/Button.jsx"},{"name":"IconButton","sourcePath":"components/buttons/IconButton.jsx"},{"name":"Chip","sourcePath":"components/chips/Chip.jsx"},{"name":"Accordion","sourcePath":"components/disclosure/Accordion.jsx"},{"name":"Modal","sourcePath":"components/feedback/Modal.jsx"},{"name":"Progress","sourcePath":"components/feedback/Progress.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"RadioGroup","sourcePath":"components/forms/Radio.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Toggle","sourcePath":"components/forms/Toggle.jsx"},{"name":"List","sourcePath":"components/lists/List.jsx"},{"name":"ListItem","sourcePath":"components/lists/List.jsx"},{"name":"Icon","sourcePath":"components/media/Icon.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"MenuItem","sourcePath":"components/overlays/Menu.jsx"},{"name":"Menu","sourcePath":"components/overlays/Menu.jsx"},{"name":"Tooltip","sourcePath":"components/overlays/Tooltip.jsx"},{"name":"TierPill","sourcePath":"components/status/TierPill.jsx"},{"name":"Card","sourcePath":"components/surfaces/Card.jsx"},{"name":"Divider","sourcePath":"components/surfaces/Divider.jsx"}],"sourceHashes":{"assets/icons.js":"0adaee824e24","components/buttons/Button.jsx":"716d592ce026","components/buttons/IconButton.jsx":"cb8f44feffc4","components/chips/Chip.jsx":"455653fa2c77","components/disclosure/Accordion.jsx":"254fedda242f","components/feedback/Modal.jsx":"83b70538ea36","components/feedback/Progress.jsx":"bc8143d66d5a","components/feedback/Toast.jsx":"3fbbfec6a148","components/forms/Checkbox.jsx":"d009567e4a85","components/forms/Input.jsx":"aebefd2ca4df","components/forms/Radio.jsx":"98dcd384fbba","components/forms/Select.jsx":"f42880b636ae","components/forms/Toggle.jsx":"41edfedfdb56","components/lists/List.jsx":"f89c6d241a86","components/media/Icon.jsx":"154e092fc780","components/navigation/Tabs.jsx":"234d9adc4676","components/overlays/Menu.jsx":"2fffce2e5f4f","components/overlays/Tooltip.jsx":"06c2445c12ea","components/status/TierPill.jsx":"35f0b019e41e","components/surfaces/Card.jsx":"ec7bf07789ee","components/surfaces/Divider.jsx":"d5748bd027a6","design-system/gallery.jsx":"1efb1b1b4845","factile/case.js":"a8b5b9ea018a","factile/deck.js":"6090f929b22a","portfolio/cursor-dots.js":"9c0a3a3947f2","portfolio/facets.js":"d889b4b3a681","portfolio/image-slot.js":"0394ad34f685","portfolio/ll-cursor.js":"36d81d56d00a","portfolio/ll.js":"fd1d9c5e7c80","portfolio/motion.js":"75f3200dd915","portfolio/pf-collage.js":"b8936a4ec7be","portfolio/pf-facets.js":"acd24f813118","portfolio/pf-hero-ascii.js":"2aa89ca366b9","portfolio/pf-journey.js":"5f496f930246","portfolio/pf-morph.js":"62a5efdc2cb5","portfolio/pf-sfx.js":"96801431727f","portfolio/pf-skills.js":"054d3c5420bb","portfolio/pf.js":"fb768a216ad4","portfolio/portfolio-v3.js":"18efe3d1c3df","portfolio/portfolio.js":"623cf3171ced","portfolio/scenes.js":"52f2dde141fe","ui_kits/my-library/App.jsx":"1c61e2e2b127","ui_kits/my-library/ItemGrid.jsx":"6e72364ab045","ui_kits/my-library/LibraryHeader.jsx":"9ff8d1b94c50","ui_kits/my-library/SettingsPanel.jsx":"40ec9df767c1","ui_kits/my-library/Sidebar.jsx":"f564832236e9","ui_kits/my-library/WelcomeScreen.jsx":"c9a12fbae6ba"},"inlinedExternals":[],"unexposedExports":[{"name":"iconNames","sourcePath":"components/media/Icon.jsx"}]} */
+/* @ds-bundle: {"format":4,"namespace":"AccessibleFoundationsDesignSystem_87ff79","components":[{"name":"Button","sourcePath":"components/buttons/Button.jsx"},{"name":"IconButton","sourcePath":"components/buttons/IconButton.jsx"},{"name":"Chip","sourcePath":"components/chips/Chip.jsx"},{"name":"Accordion","sourcePath":"components/disclosure/Accordion.jsx"},{"name":"Modal","sourcePath":"components/feedback/Modal.jsx"},{"name":"Progress","sourcePath":"components/feedback/Progress.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"RadioGroup","sourcePath":"components/forms/Radio.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Toggle","sourcePath":"components/forms/Toggle.jsx"},{"name":"List","sourcePath":"components/lists/List.jsx"},{"name":"ListItem","sourcePath":"components/lists/List.jsx"},{"name":"Icon","sourcePath":"components/media/Icon.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"MenuItem","sourcePath":"components/overlays/Menu.jsx"},{"name":"Menu","sourcePath":"components/overlays/Menu.jsx"},{"name":"Tooltip","sourcePath":"components/overlays/Tooltip.jsx"},{"name":"TierPill","sourcePath":"components/status/TierPill.jsx"},{"name":"Card","sourcePath":"components/surfaces/Card.jsx"},{"name":"Divider","sourcePath":"components/surfaces/Divider.jsx"}],"sourceHashes":{"assets/icons.js":"0adaee824e24","components/buttons/Button.jsx":"716d592ce026","components/buttons/IconButton.jsx":"cb8f44feffc4","components/chips/Chip.jsx":"455653fa2c77","components/disclosure/Accordion.jsx":"254fedda242f","components/feedback/Modal.jsx":"83b70538ea36","components/feedback/Progress.jsx":"bc8143d66d5a","components/feedback/Toast.jsx":"3fbbfec6a148","components/forms/Checkbox.jsx":"d009567e4a85","components/forms/Input.jsx":"aebefd2ca4df","components/forms/Radio.jsx":"98dcd384fbba","components/forms/Select.jsx":"f42880b636ae","components/forms/Toggle.jsx":"41edfedfdb56","components/lists/List.jsx":"f89c6d241a86","components/media/Icon.jsx":"154e092fc780","components/navigation/Tabs.jsx":"234d9adc4676","components/overlays/Menu.jsx":"2fffce2e5f4f","components/overlays/Tooltip.jsx":"06c2445c12ea","components/status/TierPill.jsx":"35f0b019e41e","components/surfaces/Card.jsx":"ec7bf07789ee","components/surfaces/Divider.jsx":"d5748bd027a6","design-system/gallery.jsx":"1efb1b1b4845","factile/case.js":"a8b5b9ea018a","factile/deck.js":"6090f929b22a","portfolio/cursor-dots.js":"9c0a3a3947f2","portfolio/facets.js":"d889b4b3a681","portfolio/image-slot.js":"0394ad34f685","portfolio/ll-cursor.js":"36d81d56d00a","portfolio/ll.js":"fd1d9c5e7c80","portfolio/motion.js":"75f3200dd915","portfolio/pf-collage.js":"b8936a4ec7be","portfolio/pf-facets.js":"acd24f813118","portfolio/pf-hero-ascii.js":"2aa89ca366b9","portfolio/pf-journey.js":"5f496f930246","portfolio/pf-morph.js":"62a5efdc2cb5","portfolio/pf-sfx.js":"96801431727f","portfolio/pf-skillmodal.js":"bf00e7976530","portfolio/pf-skills.js":"054d3c5420bb","portfolio/pf.js":"fb768a216ad4","portfolio/portfolio-v3.js":"18efe3d1c3df","portfolio/portfolio.js":"623cf3171ced","portfolio/scenes.js":"52f2dde141fe","ui_kits/my-library/App.jsx":"1c61e2e2b127","ui_kits/my-library/ItemGrid.jsx":"6e72364ab045","ui_kits/my-library/LibraryHeader.jsx":"9ff8d1b94c50","ui_kits/my-library/SettingsPanel.jsx":"40ec9df767c1","ui_kits/my-library/Sidebar.jsx":"f564832236e9","ui_kits/my-library/WelcomeScreen.jsx":"c9a12fbae6ba"},"inlinedExternals":[],"unexposedExports":[{"name":"iconNames","sourcePath":"components/media/Icon.jsx"}]} */
 
 (() => {
 
@@ -6305,6 +6305,143 @@ try { (() => {
   };
 })();
 })(); } catch (e) { __ds_ns.__errors.push({ path: "portfolio/pf-sfx.js", error: String((e && e.message) || e) }); }
+
+// portfolio/pf-skillmodal.js
+try { (() => {
+/* Strength stat overlay — reveals a facets-style card on hover, anchored to a screen edge so the skills stay visible */
+(function () {
+  'use strict';
+
+  var DATA = {
+    'UX Design': {
+      ey: '01',
+      side: 'left',
+      stats: [{
+        f: '2M+',
+        l: 'users designed for on Factile'
+      }, {
+        f: '+22.5%',
+        l: 'new paid users'
+      }]
+    },
+    'Design Systems': {
+      ey: '02',
+      side: 'left',
+      stats: [{
+        f: '24',
+        l: 'components in one system'
+      }, {
+        f: '100+',
+        l: 'design tokens'
+      }]
+    },
+    'Problem Framing': {
+      ey: '03',
+      side: 'left',
+      stats: [{
+        f: '23 → 15',
+        l: 'steps to onboard a seller'
+      }, {
+        f: '3',
+        l: 'roles mapped end-to-end'
+      }]
+    },
+    'Accessibility': {
+      ey: '04',
+      side: 'left',
+      stats: [{
+        f: 'AA / AAA',
+        l: 'WCAG conformance across the product'
+      }]
+    },
+    'Rapid Execution': {
+      ey: '05',
+      side: 'left',
+      stats: [{
+        f: '1,104',
+        l: 'screens across Vesta’s 3 roles'
+      }, {
+        f: '25+',
+        l: 'Vesta flows in 6 months'
+      }, {
+        f: '100+',
+        l: 'Factile screens'
+      }, {
+        f: '9+',
+        l: 'Factile flows'
+      }]
+    },
+    'Communication': {
+      ey: '06',
+      side: 'left',
+      stats: [{
+        f: '4',
+        l: 'juniors mentored'
+      }, {
+        f: 'Eng · PM · Founders',
+        l: 'aligned around one shared “why”'
+      }]
+    }
+  };
+  var modal = document.getElementById('skmodal');
+  if (!modal) return;
+  var ey = document.getElementById('skmodal-ey');
+  var title = document.getElementById('skmodal-title');
+  var grid = document.getElementById('skmodal-grid');
+  var card = modal.querySelector('.skmodal__card');
+  function open(name, sk) {
+    var d = DATA[name];
+    if (!d) return;
+    ey.textContent = d.ey;
+    title.textContent = name;
+    grid.innerHTML = '';
+    d.stats.forEach(function (s) {
+      var cell = document.createElement('div');
+      cell.className = 'skstat' + (s.f.length > 12 ? ' skstat--wide' : '');
+      var fig = document.createElement('span');
+      fig.className = 'skstat__fig';
+      fig.textContent = s.f;
+      var lab = document.createElement('span');
+      lab.className = 'skstat__lab';
+      lab.textContent = s.l;
+      cell.appendChild(fig);
+      cell.appendChild(lab);
+      grid.appendChild(cell);
+    });
+    modal.className = 'skmodal open skmodal--' + d.side;
+    modal.setAttribute('aria-hidden', 'false');
+    if (sk && card) {
+      var r = sk.getBoundingClientRect();
+      var top = Math.min(Math.max(r.top - 20, 12), window.innerHeight - card.offsetHeight - 12);
+      card.style.top = top + 'px';
+    }
+  }
+  function close() {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+  }
+  document.querySelectorAll('.skill').forEach(function (sk) {
+    var t = sk.querySelector('.skill__t');
+    if (!t) return;
+    var name = t.textContent.trim();
+    var svc = sk.closest('.svc');
+    sk.addEventListener('mouseenter', function () {
+      open(name, sk);
+      if (svc) {
+        svc.classList.add('svc-dim');
+        sk.classList.add('is-active');
+      }
+    });
+    sk.addEventListener('mouseleave', function () {
+      close();
+      if (svc) {
+        svc.classList.remove('svc-dim');
+        sk.classList.remove('is-active');
+      }
+    });
+  });
+})();
+})(); } catch (e) { __ds_ns.__errors.push({ path: "portfolio/pf-skillmodal.js", error: String((e && e.message) || e) }); }
 
 // portfolio/pf-skills.js
 try { (() => {

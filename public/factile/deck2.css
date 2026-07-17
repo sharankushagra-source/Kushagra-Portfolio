@@ -1,0 +1,110 @@
+/* ============================================================
+   Factile Case Study v2 — refinements over deck.css
+   (imports the base, then overrides + adds annotation/flowchart)
+   ============================================================ */
+@import url('deck.css');
+
+/* ---- tighter margins, more usable real estate ---- */
+.pad{padding:60px 88px 104px}
+.divider .pad{padding:60px 88px 104px;justify-content:center}
+
+/* ---- calmer hierarchy: titles important but not oversized ---- */
+h2.head{font-size:48px;line-height:1.08;letter-spacing:-.02em}
+h3.head{font-size:38px}
+.head.sm{font-size:42px}
+.divider h2.head{font-size:56px}
+.eyebrow{font-size:19px;letter-spacing:.16em;gap:12px}
+.lead{font-size:27px;line-height:1.38}
+.sub{font-size:23px;line-height:1.48}
+.track{font-size:20px;padding:9px 18px}
+.track .dot{width:13px;height:13px}
+.divider .act{font-size:22px;margin-bottom:22px}
+
+/* ---- quieter, corner-pinned branding ---- */
+.brandmark{top:34px;right:44px;font-size:16px;font-weight:700;opacity:.8}
+.pagenum{bottom:38px;right:44px;font-size:16px;opacity:.7}
+.slide.divider .pagenum{bottom:44px}
+.divider .rail{display:none}
+
+/* ============================================================
+   ANNOTATED SCREENSHOT — big image, pins on the real problem,
+   numbered pointers mapped alongside
+   ============================================================ */
+.annotwrap{display:grid;grid-template-columns:1.45fr 1fr;gap:52px;align-items:center}
+.annot{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);background:#fff}
+.annot img{display:block;width:100%;height:auto}
+.annot .ring{position:absolute;border:3px solid var(--ui);border-radius:8px;box-shadow:0 0 0 4px rgba(18,107,152,.18),0 0 0 2px rgba(255,255,255,.7) inset;z-index:2;pointer-events:none}
+.annot .pinmark{position:absolute;width:42px;height:42px;border-radius:50%;background:var(--ui);color:#fff;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center;transform:translate(-50%,-50%);box-shadow:0 0 0 5px rgba(18,107,152,.22),0 4px 12px rgba(0,0,0,.28);z-index:3}
+.ptrs{display:flex;flex-direction:column;gap:26px}
+.ptr{display:flex;gap:18px;align-items:flex-start}
+.ptr .pn{width:44px;height:44px;border-radius:50%;background:var(--ui);color:#fff;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center;flex:none}
+.ptr .ptt{font-size:25px;font-weight:800;color:var(--title);line-height:1.22}
+.ptr .ptd{font-size:19px;color:var(--helper);margin-top:5px;line-height:1.4;text-wrap:pretty}
+
+/* zoom-crop detail cards (2x2) */
+.callgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:8px}
+.callout{background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column}
+.callout .cimg{height:150px;background:var(--tint);border-bottom:1px solid var(--border);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.callout .cimg img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.callout.wide .cimg img{object-fit:contain;padding:14px}
+.callout .cbody{padding:18px 22px;display:flex;gap:14px;align-items:flex-start}
+.callout .cn{width:36px;height:36px;border-radius:50%;background:var(--ui);color:#fff;font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center;flex:none}
+.callout .cttl{font-size:22px;font-weight:800;color:var(--title);line-height:1.2}
+.callout .cdsc{font-size:17px;color:var(--helper);margin-top:3px;line-height:1.4}
+
+/* ============================================================
+   FLOWCHART — decision diamond + branching paths with spine
+   ============================================================ */
+.fchart{display:flex;align-items:center;gap:40px}
+.fdiamond{flex:none;width:280px;height:200px;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--model);color:#fff;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);font-weight:800;font-size:23px;line-height:1.25;padding:0 44px}
+.fbranches{position:relative;display:flex;flex-direction:column;gap:44px;padding-left:34px}
+.fbranches::before{content:"";position:absolute;left:0;top:14%;bottom:14%;width:3px;background:var(--model);border-radius:2px}
+.fpath{position:relative;display:flex;align-items:center;gap:14px}
+.fpath::before{content:"";position:absolute;left:-34px;top:50%;width:34px;height:3px;background:var(--model)}
+.fcond{flex:none;font-family:var(--mono);font-size:20px;font-weight:600;padding:8px 16px;border-radius:99px}
+.fcond.g1{color:var(--blue-dark);background:var(--blue-tint)}
+.fcond.g2{color:var(--model);background:var(--model-bg)}
+.fnode{flex:none;background:#fff;border:1.5px solid var(--border);border-radius:10px;padding:14px 20px;font-size:21px;font-weight:700;color:var(--body);text-align:center;line-height:1.2}
+.fnode.end{background:var(--blue-tint);border-color:var(--blue-light);color:var(--blue-dark);font-weight:800}
+.farr{flex:none;color:var(--model);font-size:24px;font-weight:800}
+.fsteps{flex:none;font-family:var(--mono);font-size:17px;font-weight:600;margin-left:6px;padding:4px 12px;border-radius:99px}
+.fsteps.few{color:var(--success);background:var(--success-bg)}
+.fsteps.many{color:var(--error);background:var(--error-bg)}
+.fstart{display:flex;flex-direction:column;align-items:center;gap:0;margin-bottom:8px}
+.fstart .fnode{background:#fff;border-color:var(--blue-light)}
+.fstart .down{width:3px;height:26px;background:var(--helper);opacity:.4}
+
+/* ============================================================
+   REFLECTION v2 — grouped by debt layer, balanced grid
+   ============================================================ */
+.refl2{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-top:12px}
+.rc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-top:5px solid var(--model);border-radius:14px;padding:26px 26px 28px;display:flex;flex-direction:column;gap:12px}
+.rc .rtag{font-family:var(--mono);font-size:15px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#8fa6b4}
+.rc .rtt{font-size:24px;font-weight:800;color:#fff;line-height:1.2}
+.rc .rdd{font-size:19px;line-height:1.45;color:#B7C7D2;text-wrap:pretty}
+.rc.ui{border-top-color:var(--ui)}.rc.ui .rtag{color:#7db8d6}
+.rc.inter{border-top-color:var(--inter)}.rc.inter .rtag{color:#e0a955}
+.rc.model{border-top-color:var(--model)}.rc.model .rtag{color:#e070a8}
+
+/* small helper: concise pointer list (no chunky paragraphs) */
+.plist{display:flex;flex-direction:column;gap:16px}
+.pli{display:flex;gap:14px;align-items:flex-start;font-size:23px;line-height:1.4;color:var(--body)}
+.pli .pb{flex:none;width:11px;height:11px;border-radius:3px;margin-top:9px;background:var(--blue)}
+.pli b{font-weight:800;color:var(--title)}
+
+/* ===== v2.1 refinements ===== */
+/* clean images — no overlaid tags */
+.tagafter,.tagbefore{display:none!important}
+/* click any static image to magnify */
+.imgframe img,.annot img,.callout .cimg img{cursor:zoom-in}
+/* bigger before/after viewport — use the white space */
+.ba{max-width:1580px;max-height:650px}
+.balabels{max-width:1580px;justify-content:flex-start;gap:46px}
+.balabels .cap{text-align:left}
+/* lightbox (fullscreen image with backdrop + close) */
+.lightbox{position:fixed;inset:0;z-index:200;background:rgba(8,15,20,.93);display:none;align-items:center;justify-content:center;padding:56px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:94vw;max-height:90vh;border-radius:12px;box-shadow:0 30px 90px rgba(0,0,0,.6);background:#fff}
+.lightbox .lbclose{position:fixed;top:26px;right:32px;width:56px;height:56px;border-radius:50%;border:none;background:rgba(255,255,255,.15);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s}
+.lightbox .lbclose:hover{background:rgba(255,255,255,.28)}
+.lightbox .lbclose svg{width:26px;height:26px}

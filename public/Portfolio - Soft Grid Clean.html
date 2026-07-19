@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" />
-<link rel="stylesheet" href="/portfolio/pf-facets.css" />
+<link rel="stylesheet" href="portfolio/pf-facets.css" />
 <script>(function(){try{var t=localStorage.getItem('pf-facets-theme'); if(t==='dark'){/* keep dark */}else{document.documentElement.classList.add('theme-light');}}catch(e){document.documentElement.classList.add('theme-light');}})();</script>
 <template id="__bundler_thumbnail">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
@@ -58,7 +58,7 @@
   /* scroll-cue line: keep it pink in BOTH themes (violet --hot is invisible on the light grid) */
   .hero__scrollcue i::after{ background:#E01E8F !important; }
   /* Factile card uses its own line-art thumbnail (same interaction model as the flagship card) */
-  .workfeat__art--factile{ -webkit-mask-image:url(/portfolio/img/factile-abstract.svg); mask-image:url(/portfolio/img/factile-abstract.svg); }
+  .workfeat__art--factile{ -webkit-mask-image:url(portfolio/img/factile-abstract.svg); mask-image:url(portfolio/img/factile-abstract.svg); }
   /* COMING SOON — marquee band; speeds up + plays meadow wind on hover */
   .soon{ position:relative; margin-top:clamp(20px,3vh,34px); border:1.5px dashed color-mix(in srgb, var(--fg) 26%, transparent); border-radius:12px;
     overflow:hidden; padding:clamp(20px,2.8vw,32px) 0; cursor:default; background:color-mix(in srgb, var(--bg) 55%, transparent);
@@ -124,10 +124,10 @@
   .wcard:hover::before{ opacity:1; }
   .wcard__media{ grid-column:2; grid-row:1; align-self:start; display:block; border-radius:9px; overflow:hidden; aspect-ratio:924/540; background:transparent; }
   .wcard__media .workfeat__art{ display:block; width:100%; height:100%; background:var(--fg);
-    -webkit-mask:url(/portfolio/img/design-system-abstract.svg) center/contain no-repeat;
-    mask:url(/portfolio/img/design-system-abstract.svg) center/contain no-repeat;
+    -webkit-mask:url(portfolio/img/design-system-abstract.svg) center/contain no-repeat;
+    mask:url(portfolio/img/design-system-abstract.svg) center/contain no-repeat;
     transition:background .4s, transform .6s cubic-bezier(.16,1,.3,1); }
-  .wcard__media .workfeat__art--factile{ -webkit-mask:url(/portfolio/img/factile-abstract.svg) center/contain no-repeat; mask:url(/portfolio/img/factile-abstract.svg) center/contain no-repeat; }
+  .wcard__media .workfeat__art--factile{ -webkit-mask:url(portfolio/img/factile-abstract.svg) center/contain no-repeat; mask:url(portfolio/img/factile-abstract.svg) center/contain no-repeat; }
   .wcard:hover .workfeat__art{ background:var(--hot); transform:scale(1.03); }
   .wcard__intro{ grid-column:1; grid-row:1; min-width:0; }
   .wcard__lower{ grid-column:1 / -1; min-width:0; }
@@ -197,7 +197,7 @@
   <div class="wrap">
     <span class="phero__eyebrow"><span class="d"></span> Product Designer · New Delhi</span>
     <div class="phero__intro">
-      <p class="phero__line">I'm a <b>Product Designer</b> with 2+ years of experience across <b>SaaS</b> and platform tools for <b>enterprises</b>. I lead end-to-end design for <a href="/Case Study - Factile (scroll).html">Factile</a> (<b>2M+ users</b>) at Deligence Technologies.</p>
+      <p class="phero__line">I'm a <b>Product Designer</b> with 2+ years of experience across <b>SaaS</b> and platform tools for <b>enterprises</b>. I lead end-to-end design for <a href="Case Study - Factile (scroll).html">Factile</a> (<b>2M+ users</b>) at Deligence Technologies.</p>
       <p class="phero__note">Before this, I was working on web design across e-commerce, healthcare, and logistics.</p>
     </div>
   </div>
@@ -216,7 +216,7 @@
   <div class="wrap">
     <div class="pwork__stack">
       <article class="wcard">
-        <a class="wcard__media" href="/Case Study - Factile (scroll).html" data-view="Explore" aria-label="Open the Factile Customize case study">
+        <a class="wcard__media" href="Case Study - Factile (scroll).html" data-view="Explore" aria-label="Open the Factile Customize case study">
           <span class="workfeat__art workfeat__art--factile" role="img" aria-label="Abstract illustration — the Factile customize flow, untangled from overloaded settings into a clear, guided experience"></span>
         </a>
         <div class="wcard__intro">
@@ -243,12 +243,12 @@
           </div>
           <div class="wcard__foot">
             <span class="wcard__tags"><span class="wcard__tag">Product Design</span><span class="wcard__tag">Interaction</span><span class="wcard__tag">Systems Thinking</span></span>
-            <a class="wcard__cta" href="/Case Study - Factile (scroll).html" data-view="Explore">Read the case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+            <a class="wcard__cta" href="Case Study - Factile (scroll).html" data-view="Explore">Read the case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
           </div>
         </div>
       </article>
       <article class="wcard">
-        <a class="wcard__media" href="/design-system/index.html" data-view="Explore" aria-label="Open the Accessible Foundations design system">
+        <a class="wcard__media" href="design-system/index.html" data-view="Explore" aria-label="Open the Accessible Foundations design system">
           <span class="workfeat__art" role="img" aria-label="Abstract illustration — tokens combining into components and full screens"></span>
         </a>
         <div class="wcard__intro">
@@ -275,7 +275,7 @@
           </div>
           <div class="wcard__foot">
             <span class="wcard__tags"><span class="wcard__tag">Design System</span><span class="wcard__tag">Accessibility</span><span class="wcard__tag">WCAG AA / AAA</span></span>
-            <a class="wcard__cta" href="/design-system/index.html" data-view="Explore">Explore the system <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+            <a class="wcard__cta" href="design-system/index.html" data-view="Explore">Explore the system <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
           </div>
         </div>
       </article>
@@ -387,15 +387,15 @@
     <div class="gallery" data-gallery>
       <div class="collage-frame" aria-hidden="true"></div>
       <div class="gallery__stack">
-        <figure class="gcard" data-view="Drag"><img src="/portfolio/img/sk-knight2.jpg" alt="A Knight of the Seven Kingdoms — poster illustration" loading="lazy" /></figure>
-        <figure class="gcard" data-view="Drag"><img src="/portfolio/img/sk-onepiece.jpg" alt="One Piece — Zoro" loading="lazy" /></figure>
-        <figure class="gcard" data-view="Drag"><img src="/portfolio/img/sk-peaky2.jpg" alt="Peaky Blinders — The Immortal Man" loading="lazy" /></figure>
-        <figure class="gcard" data-view="Drag"><img src="/portfolio/img/sk-surfer.jpg" alt="Silver Surfer" loading="lazy" /></figure>
-        <figure class="gcard" data-view="Drag"><img src="/portfolio/img/sk-mj.png" alt="Michael Jackson" loading="lazy" /></figure>
-        <figure class="gcard" data-view="Drag"><img src="/portfolio/img/sk-frieren2.jpg" alt="Frieren — Beyond Journey's End" loading="lazy" /></figure>
-        <figure class="gcard" data-view="Drag"><img src="/portfolio/img/sk-rivers.jpg" alt="Festival — three rivers" loading="lazy" /></figure>
-        <figure class="gcard" data-view="Drag"><img src="/portfolio/img/sk-canyoudo2.jpg" alt="Can you do — portrait study" loading="lazy" /></figure>
-        <figure class="gcard" data-view="Drag"><img src="/portfolio/img/sk-weak.jpg" alt="Weak? — graffiti study" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-knight2.jpg" alt="A Knight of the Seven Kingdoms — poster illustration" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-onepiece.jpg" alt="One Piece — Zoro" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-peaky2.jpg" alt="Peaky Blinders — The Immortal Man" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-surfer.jpg" alt="Silver Surfer" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-mj.png" alt="Michael Jackson" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-frieren2.jpg" alt="Frieren — Beyond Journey's End" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-rivers.jpg" alt="Festival — three rivers" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-canyoudo2.jpg" alt="Can you do — portrait study" loading="lazy" /></figure>
+        <figure class="gcard" data-view="Drag"><img src="portfolio/img/sk-weak.jpg" alt="Weak? — graffiti study" loading="lazy" /></figure>
       </div>
       <div class="gallery__zoom" aria-label="Resize selected piece">
         <button type="button" data-zoom="out" aria-label="Shrink" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/><line x1="8" y1="11" x2="14" y2="11"/></svg></button>
@@ -436,7 +436,7 @@
       <div class="contact__col">
         <span class="lab">Direct</span>
         <a href="tel:+919305664633">+91 93056 64633</a>
-        <a href="/portfolio/Kushagra-Sharan-Resume.pdf" target="_blank" rel="noopener">Résumé (PDF) ↓</a>
+        <a href="portfolio/Kushagra-Sharan-Resume.pdf" target="_blank" rel="noopener">Résumé (PDF) ↓</a>
       </div>
       <div class="contact__col">
         <span class="lab">Based in</span>
@@ -444,7 +444,7 @@
         <a href="#top">Available for roles</a>
       </div>
     </div>
-    <a class="foot__kit" href="/Facets UI Kit.html" data-view="Explore">
+    <a class="foot__kit" href="Facets UI Kit.html" data-view="Explore">
       <span class="foot__kit-t">UI Facets Kit <span aria-hidden="true">↗</span></span>
       <span class="foot__kit-d">The tokens, components and interaction patterns this entire site is built from — open the kit to see the parts.</span>
     </a>
@@ -519,14 +519,14 @@
     <div class="skmodal__grid" id="skmodal-grid"></div>
   </div>
 </div>
-<script src="/portfolio/pf.js"></script>
-<script src="/portfolio/pf-facets.js"></script>
-<script src="/portfolio/pf-collage.js"></script>
-<script src="/portfolio/pf-morph.js"></script>
-<script src="/portfolio/pf-skills.js"></script>
-<script src="/portfolio/pf-skillmodal.js"></script>
-<script src="/portfolio/pf-journey.js"></script>
-<script src="/portfolio/pf-sfx.js"></script>
+<script src="portfolio/pf.js"></script>
+<script src="portfolio/pf-facets.js"></script>
+<script src="portfolio/pf-collage.js"></script>
+<script src="portfolio/pf-morph.js"></script>
+<script src="portfolio/pf-skills.js"></script>
+<script src="portfolio/pf-skillmodal.js"></script>
+<script src="portfolio/pf-journey.js"></script>
+<script src="portfolio/pf-sfx.js"></script>
 <script>(function(){
   if(!window.KSSound) return;
   var btn = document.querySelector('.sfxbtn'); if(!btn) return;
@@ -583,8 +583,5 @@
     b.addEventListener('click', function(){ apply(b.getAttribute('data-theme-set')); });
   });
 })();</script>
-
-<div id="react-root"></div>
-<script type="module" src="/src/main.jsx"></script>
 </body>
 </html>

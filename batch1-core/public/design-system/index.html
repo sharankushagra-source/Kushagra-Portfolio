@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Accessible Foundations — Design System</title>
+<meta name="description" content="Accessible Foundations — a design system for products serving older adults. Foundations, components, products and docs." />
+<link rel="stylesheet" href="../styles.css" />
+<link rel="stylesheet" href="ds-site.css" />
+<script defer src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script defer src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script defer src="../_ds_bundle.js"></script>
+</head>
+<body>
+
+<button class="dss-toggle" aria-label="Open navigation">☰ Menu</button>
+<div class="dss-scrim"></div>
+<button class="dss-navclose" aria-label="Close navigation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+
+<div class="dss-shell">
+  <nav class="dss-nav" aria-label="Documentation">
+    <a class="dss-brand" href="#overview"><span class="dss-brand__logo"></span><span class="dss-brand__t"><b>Accessible Foundations</b><span>Design System · v2.0</span></span></a>
+    <div class="dss-nav__scroll">
+      <div class="dss-nav__label">Start</div>
+      <a class="dss-link is-active" href="#overview">Overview</a>
+      <div class="dss-nav__label">Foundations</div>
+      <a class="dss-link" href="#foundations">Color, type &amp; scale</a>
+      <div class="dss-navsub is-open">
+        <a href="#f-color">Color &amp; type</a>
+        <a href="#f-spacing">Spacing</a>
+        <a href="#f-radius">Radius</a>
+        <a href="#f-elevation">Elevation</a>
+        <a href="#f-sizing">Sizing</a>
+        <a href="#f-focus">Focus &amp; motion</a>
+      </div>
+      <div class="dss-nav__label">Components</div>
+      <a class="dss-link" href="#components">Component library</a>
+      <div class="dss-navsub is-open" id="dss-navsub">
+        <a href="#g-buttons">Buttons</a>
+        <a href="#g-forms">Forms</a>
+        <a href="#g-nav">Navigation</a>
+        <a href="#g-chips">Chips &amp; Status</a>
+        <a href="#g-surfaces">Surfaces</a>
+        <a href="#g-overlays">Overlays</a>
+        <a href="#g-feedback">Feedback</a>
+        <a href="#g-disclosure">Disclosure</a>
+        <a href="#g-icons">Iconography</a>
+      </div>
+      <div class="dss-nav__label">In use</div>
+      <a class="dss-link" href="#products">Products</a>
+      <a class="dss-link" href="#start">Handoff</a>
+    </div>
+    <div class="dss-nav__foot"><a class="dss-back" href="../Portfolio%20-%20Soft%20Grid%20Clean.html#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Kushagra Sharan</a></div>
+  </nav>
+
+  <main class="dss-main">
+
+    <!-- OVERVIEW -->
+    <header class="dss-hero" id="overview">
+      <div class="dss-hero__grid"></div>
+      <div class="dss-hero__in">
+        <span class="dss-chip">Design System · <b>v2.0 stable</b></span>
+        <h1 class="dss-h1">Accessible <em>Foundations</em></h1>
+        <p class="dss-sub">A token-driven UI system for products serving older adults. Large by default, high-contrast everywhere, and exactly one color for everything you can act on.</p>
+        <div class="dss-stats">
+          <div class="dss-stat"><b>AA→AAA</b><span>WCAG contrast</span></div>
+          <div class="dss-stat"><b>44px</b><span>touch targets</span></div>
+          <div class="dss-stat"><b>1</b><span>interactive color</span></div>
+          <div class="dss-stat"><b>20+</b><span>components</span></div>
+        </div>
+        <div class="dss-cta">
+          <a class="dss-btn dss-btn--primary" href="#components">Explore components</a>
+          <a class="dss-btn dss-btn--ghost" href="#products">See it in a product</a>
+        </div>
+        <div class="dss-princ">
+          <div class="dss-pr"><b>Accessibility first</b><span>AA is the floor; primary text and structure target AAA.</span></div>
+          <div class="dss-pr"><b>One interactive color</b><span>One hue means "you can act on this" — affordance, unambiguous.</span></div>
+          <div class="dss-pr"><b>Structure over color</b><span>White canvas; separation from spacing, borders and elevation.</span></div>
+          <div class="dss-pr"><b>Generous by default</b><span>Large type and roomy targets absorb reduced acuity and tremor.</span></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- FOUNDATIONS -->
+    <section class="dss-sec" id="foundations">
+      <span class="dss-eyebrow">Foundations</span>
+      <h2 class="dss-h2">The tokens everything inherits</h2>
+      <p class="dss-lede">Color, type, spacing, radius and elevation as variables — change one, and it ripples everywhere, accessibly.</p>
+      <div class="dss-fgrid">
+
+        <div class="dss-fcard dss-fcard--wide" id="f-color">
+          <div class="dss-fcard__h">Color</div>
+          <div class="dss-csub">Brand · the only interactive hue</div>
+          <div class="dss-cgrid">
+            <div class="dss-c"><div class="dss-c__chip" style="background:var(--brand-700)"></div><b>brand-700</b><span>#4F46E5 · AA</span></div>
+            <div class="dss-c"><div class="dss-c__chip" style="background:var(--brand-900)"></div><b>brand-900</b><span>#4338CA · AAA</span></div>
+            <div class="dss-c"><div class="dss-c__chip" style="background:var(--surface-active)"></div><b>surface-active</b><span>#E7E5F7</span></div>
+            <div class="dss-c"><div class="dss-c__chip" style="background:var(--surface-hover)"></div><b>surface-hover</b><span>#F4F3FC</span></div>
+          </div>
+          <div class="dss-csub">Neutrals · text &amp; structure</div>
+          <div class="dss-cgrid dss-cgrid--n">
+            <div class="dss-c"><div class="dss-c__chip" style="background:var(--neutral-950)"></div><b>950</b><span>#1D1C22 · titles</span></div>
+            <div class="dss-c"><div class="dss-c__chip" style="background:var(--neutral-800)"></div><b>800</b><span>#2E2D34 · icons</span></div>
+            <div class="dss-c"><div class="dss-c__chip" style="background:var(--neutral-700)"></div><b>700</b><span>#36353D · body</span></div>
+            <div class="dss-c"><div class="dss-c__chip" style="background:var(--neutral-500)"></div><b>500</b><span>#66656E · helper</span></div>
+            <div class="dss-c"><div class="dss-c__chip" style="background:var(--neutral-300)"></div><b>300</b><span>#E4E3E8 · borders</span></div>
+            <div class="dss-c"><div class="dss-c__chip" style="background:var(--neutral-200)"></div><b>200</b><span>#EFEFF2 · fills</span></div>
+          </div>
+          <div class="dss-csub">Status · indicate only, never interactive</div>
+          <div class="dss-cgrid">
+            <div class="dss-c"><div class="dss-c__chip" style="background:var(--danger)"></div><b>danger</b><span>#E03A3A</span></div>
+            <div class="dss-c"><div class="dss-c__chip" style="background:var(--tier-pro-bg)"></div><b>tier-0</b><span>highest</span></div>
+            <div class="dss-c"><div class="dss-c__chip" style="background:var(--tier-upgrade-bg)"></div><b>tier-1/2/3</b><span>#FFFABC</span></div>
+          </div>
+        </div>
+
+        <div class="dss-fcard dss-fcard--wide">
+          <div class="dss-fcard__h">Type · Instrument Sans / Google Sans Flex</div>
+          <div class="dss-type">
+            <div class="dss-type__row"><span class="spec t-h1">Read it clearly</span><span class="meta">H1 · 72 / 700</span></div>
+            <div class="dss-type__row"><span class="spec t-h2">Section title</span><span class="meta">H2 · 48 / 600</span></div>
+            <div class="dss-type__row"><span class="spec t-h3">Section heading</span><span class="meta">H3 · 24 / 600</span></div>
+            <div class="dss-type__row"><span class="spec t-h4">Card title / nav item</span><span class="meta">H4 · 16 / 600</span></div>
+            <div class="dss-type__row"><span class="spec t-body">Primary body reads at 16px with a generous line height — comfortable for older eyes without zooming.</span><span class="meta">Body · 16 / 400</span></div>
+            <div class="dss-type__row"><span class="spec t-label">Form label</span><span class="meta">Label · 14 / 500</span></div>
+            <div class="dss-type__row"><span class="spec t-meta">Helper &amp; meta — the 12px minimum, never smaller.</span><span class="meta">Meta · 12 / 400</span></div>
+          </div>
+        </div>
+
+        <div class="dss-fcard dss-fcard--wide" id="f-spacing">
+          <div class="dss-fcard__h">Spacing · 4px base grid</div>
+          <div class="dss-bars">
+            <div class="b"><i style="height:4px"></i><span>4</span></div>
+            <div class="b"><i style="height:8px"></i><span>8</span></div>
+            <div class="b"><i style="height:12px"></i><span>12</span></div>
+            <div class="b"><i style="height:16px"></i><span>16</span></div>
+            <div class="b"><i style="height:24px"></i><span>24</span></div>
+            <div class="b"><i style="height:32px"></i><span>32</span></div>
+            <div class="b"><i style="height:48px"></i><span>48</span></div>
+            <div class="b"><i style="height:64px"></i><span>64</span></div>
+            <div class="b"><i style="height:80px"></i><span>80</span></div>
+          </div>
+        </div>
+
+        <div class="dss-fcard dss-fcard--wide" id="f-radius">
+          <div class="dss-fcard__h">Radius</div>
+          <div class="dss-radii">
+            <div class="r"><div class="box" style="border-radius:var(--radius-sm)"></div><span class="lab">sm · 4</span></div>
+            <div class="r"><div class="box" style="border-radius:var(--radius-item)"></div><span class="lab">item · 6</span></div>
+            <div class="r"><div class="box" style="border-radius:var(--radius-btn)"></div><span class="lab">btn · 10</span></div>
+            <div class="r"><div class="box" style="border-radius:var(--radius-lg)"></div><span class="lab">lg · 14</span></div>
+            <div class="r"><div class="box" style="width:56px;border-radius:var(--radius-full)"></div><span class="lab">full</span></div>
+          </div>
+        </div>
+
+        <div class="dss-fcard dss-fcard--wide" id="f-elevation">
+          <div class="dss-fcard__h">Elevation</div>
+          <div class="dss-elev">
+            <div class="e"><div class="card" style="box-shadow:var(--shadow-sm)"></div><span class="lab">shadow-sm</span><span class="use">controls, hover</span></div>
+            <div class="e"><div class="card" style="box-shadow:var(--shadow-md)"></div><span class="lab">shadow-md</span><span class="use">cards &amp; tabs, field focus</span></div>
+            <div class="e"><div class="card" style="box-shadow:var(--shadow-lg)"></div><span class="lab">shadow-lg</span><span class="use">menus, tooltips, toasts</span></div>
+            <div class="e"><div class="card" style="box-shadow:var(--shadow-modal)"></div><span class="lab">shadow-modal</span><span class="use">dialogs</span></div>
+          </div>
+        </div>
+
+        <div class="dss-fcard dss-fcard--wide" id="f-sizing">
+          <div class="dss-fcard__h">Sizing · touch</div>
+          <div class="dss-sizes">
+            <div class="s"><div class="blk" style="height:36px"></div><span class="lab">min · 36</span></div>
+            <div class="s"><div class="blk" style="height:44px"></div><span class="lab">control · 44</span></div>
+            <div class="s"><div class="blk" style="height:48px"></div><span class="lab">field · 48</span></div>
+          </div>
+        </div>
+
+        <div class="dss-fcard dss-fcard--wide" id="f-focus">
+          <div class="dss-fcard__h">Focus &amp; motion</div>
+          <div class="dss-fm">
+            <button class="dss-focusbtn" type="button">Focused</button>
+            <span style="font-size:13.5px;color:var(--neutral-500);max-width:200px">2px ring · 2px offset — on every interactive element.</span>
+            <div class="dss-mo">
+              <span class="m">fast · 100ms · normal · 200ms · slow · 300ms</span>
+              <div class="track"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMPONENTS -->
+    <section class="dss-sec" id="components">
+      <span class="dss-eyebrow">Components</span>
+      <h2 class="dss-h2">A live component library</h2>
+      <p class="dss-lede">Real, interactive components — every one already meets the floor: 44px targets, AAA text, one interactive color, a visible focus ring. Click around.</p>
+      <div id="dss-components"></div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="dss-sec" id="products">
+      <span class="dss-eyebrow">In use</span>
+      <h2 class="dss-h2">From system to product</h2>
+      <p class="dss-lede">The same tokens and components, composed into a real, accessible app — <strong>My Library</strong>. Nothing here is bespoke; it's all the system.</p>
+      <div class="dss-product" id="dss-product">
+        <div class="dss-product__bar"><span>My Library — built entirely from Accessible Foundations</span><button class="dss-btn dss-btn--ghost" id="dss-full" style="height:34px;padding:0 14px;font-size:13px;cursor:pointer">Open fullscreen</button></div>
+        <iframe src="../ui_kits/my-library/index.html" title="My Library product" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- GET STARTED -->
+    <section class="dss-sec" id="start">
+      <span class="dss-eyebrow">Handoff · documentation</span>
+      <h2 class="dss-h2">Developer handoff</h2>
+      <p class="dss-lede">How the system is documented and handed to engineering: link one stylesheet and the bundle, then compose with the components — every token, spec and state already defined, so there's no accessibility audit bolted on at the end. <em>(<code>AccessibleFoundations</code> below is an illustrative alias for the bundle's namespace.)</em></p>
+      <div class="dss-code"><span class="c">// link the system</span><br/>&lt;<span class="t">link</span> rel=<span class="s">"stylesheet"</span> href=<span class="s">"styles.css"</span> /&gt;<br/>&lt;<span class="t">script</span> src=<span class="s">"_ds_bundle.js"</span>&gt;&lt;/<span class="t">script</span>&gt;<br/><br/><span class="c">// read components off the namespace, then compose</span><br/><span class="t">const</span> { Button, Input, Toggle, Card } = window.AccessibleFoundations;<br/>&lt;<span class="t">Button</span> variant=<span class="s">"primary"</span>&gt;Create New&lt;/<span class="t">Button</span>&gt;</div>
+      <div class="dss-rules">
+        <div class="dss-rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>One interactive color</b><span>Only the brand hue is clickable. Status colors indicate, never afford a tap.</span></div></div>
+        <div class="dss-rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>14px floor · 44px targets</b><span>Never smaller. Generous sizing absorbs reduced acuity and dexterity.</span></div></div>
+        <div class="dss-rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>Never color alone</b><span>State is always paired with text, icon, weight or position.</span></div></div>
+        <div class="dss-rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>Visible focus, always</b><span>A 2px ring with 2px offset on every interactive element.</span></div></div>
+      </div>
+    </section>
+
+    <footer class="dss-foot">
+      <span>Accessible Foundations — a design system by Kushagra Sharan.</span>
+      <span>Accessibility-first · WCAG AA → AAA</span>
+    </footer>
+  </main>
+</div>
+
+<script>
+  (function(){
+    var nav = document.querySelector('.dss-nav'), scrim = document.querySelector('.dss-scrim'), navClose = document.querySelector('.dss-navclose');
+    function setNav(o){ nav.classList.toggle('is-open',o); scrim.classList.toggle('is-open',o); document.body.classList.toggle('dss-nav-open',o); }
+    document.querySelector('.dss-toggle').addEventListener('click', function(){ setNav(true); });
+    scrim.addEventListener('click', function(){ setNav(false); });
+    if (navClose) navClose.addEventListener('click', function(){ setNav(false); });
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape' && nav.classList.contains('is-open')) setNav(false); });
+    var cl = document.getElementById('dss-complink'), sub = document.getElementById('dss-navsub');
+    if (cl) { cl.addEventListener('click', function(e){ e.preventDefault(); var open = !sub.classList.contains('is-open'); sub.classList.toggle('is-open', open); cl.classList.toggle('is-expanded', open); cl.setAttribute('aria-expanded', String(open)); if (open) { links.forEach(function(l){ l.classList.toggle('is-active', l === cl); }); } }); }
+    [].slice.call(document.querySelectorAll('.dss-navsub a')).forEach(function(a){ a.addEventListener('click', function(){ if(window.innerWidth<=980) setNav(false); }); });
+    var links = [].slice.call(document.querySelectorAll('.dss-link'));
+    links.forEach(function(l){ l.addEventListener('click', function(){ if(window.innerWidth<=980) setNav(false); }); });
+    var secs = links.map(function(l){ return document.getElementById(l.getAttribute('href').slice(1)); }).filter(Boolean);
+    function updateSpy(){
+      var line = window.innerHeight * 0.32, best = null, bestTop = -1e9;
+      for (var i = 0; i < secs.length; i++){ var t = secs[i].getBoundingClientRect().top; if (t <= line && t > bestTop){ bestTop = t; best = secs[i]; } }
+      if (best){ var id = '#' + best.id; links.forEach(function(l){ l.classList.toggle('is-active', l.getAttribute('href') === id); }); }
+    }
+    window.addEventListener('scroll', updateSpy, { passive: true });
+    window.addEventListener('resize', updateSpy);
+    updateSpy();
+
+    /* trackpad/wheel bridge: claim the wheel for the inner nav scroller so
+       two-finger scrolling over the sidebar scrolls the nav, not the page */
+    (function(){
+      var sc = document.querySelector('.dss-nav__scroll');
+      if (!sc) return;
+      sc.addEventListener('wheel', function(e){
+        var dy = e.deltaY; if (!dy) return;
+        var canUp = sc.scrollTop > 0;
+        var canDown = sc.scrollTop + sc.clientHeight < sc.scrollHeight - 1;
+        if ((dy < 0 && canUp) || (dy > 0 && canDown)) { sc.scrollTop += dy; e.preventDefault(); }
+      }, { passive: false });
+    })();
+
+    /* product fullscreen overlay — reuses the already-loaded iframe (no new-tab token issue) */
+    var prod = document.getElementById('dss-product'), fullBtn = document.getElementById('dss-full');
+    var EXPAND = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>';
+    var XICON = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
+    function setFull(o){ prod.classList.toggle('is-full', o); document.body.classList.toggle('dss-locked', o); fullBtn.innerHTML = o ? (XICON + '<span>Close</span>') : (EXPAND + '<span>Open fullscreen</span>'); }
+    if(fullBtn){ fullBtn.innerHTML = EXPAND + '<span>Open fullscreen</span>'; fullBtn.addEventListener('click', function(){ setFull(!prod.classList.contains('is-full')); }); }
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape' && prod.classList.contains('is-full')) setFull(false); });
+  })();
+</script>
+</body>
+</html>

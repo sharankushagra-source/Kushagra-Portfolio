@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 924 540" role="img" aria-label="Abstract illustration — tokens combining into components and screens">
+  <defs>
+    <pattern id="gr" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#FFFFFF" stroke-opacity="0.08"></path>
+    </pattern>
+  </defs>
+  <circle cx="445" cy="266" r="172" fill="none" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="2" stroke-dasharray="2 9"></circle>
+
+  
+  <g fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 7" opacity="0.5">
+    <path d="M195 140 C262 140, 282 214, 330 214"></path>
+    <path d="M197 228 C252 228, 272 252, 330 252"></path>
+    <path d="M199 310 C262 310, 282 298, 330 298"></path>
+    <path d="M560 270 C596 270, 604 270, 640 270"></path>
+  </g>
+
+  
+  <circle cx="165" cy="140" r="16" fill="none" stroke="#FFFFFF" stroke-width="3"></circle>
+  <rect x="147" y="210" width="36" height="36" rx="7" fill="none" stroke="#FFFFFF" stroke-width="3"></rect>
+  <line x1="141" y1="310" x2="189" y2="310" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"></line>
+  <text x="165" y="412" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="46" fill="#FFFFFF">Aa</text>
+
+  
+  <g fill="none" stroke="#FFFFFF">
+    <rect x="330" y="168" width="230" height="202" rx="14" stroke-width="3"></rect>
+    <circle cx="372" cy="216" r="11" stroke-width="3"></circle>
+    <line x1="398" y1="210" x2="530" y2="210" stroke-width="4" stroke-linecap="round"></line>
+    <line x1="398" y1="228" x2="492" y2="228" stroke-width="4" stroke-linecap="round" opacity="0.4"></line>
+    <line x1="354" y1="265" x2="418" y2="265" stroke-width="7" stroke-linecap="round"></line>
+    <rect x="354" y="296" width="112" height="36" rx="18" stroke-width="3"></rect>
+    <line x1="378" y1="314" x2="442" y2="314" stroke-width="4" stroke-linecap="round"></line>
+  </g>
+
+  
+  <g fill="none" stroke="#FFFFFF">
+    <rect x="640" y="100" width="240" height="340" rx="16" stroke-width="3"></rect>
+    <rect x="662" y="124" width="196" height="26" rx="9" stroke-width="2" opacity="0.5"></rect>
+    <circle cx="676" cy="137" r="5" stroke-width="2"></circle>
+    <rect x="662" y="170" width="92" height="88" rx="10" stroke-width="2"></rect>
+    <circle cx="684" cy="194" r="7" stroke-width="2"></circle>
+    <line x1="676" y1="222" x2="738" y2="222" stroke-width="3" stroke-linecap="round"></line>
+    <line x1="676" y1="238" x2="722" y2="238" stroke-width="3" stroke-linecap="round" opacity="0.4"></line>
+    <rect x="766" y="170" width="92" height="88" rx="10" stroke-width="2"></rect>
+    <circle cx="788" cy="194" r="7" stroke-width="2"></circle>
+    <line x1="780" y1="222" x2="842" y2="222" stroke-width="3" stroke-linecap="round"></line>
+    <line x1="780" y1="238" x2="826" y2="238" stroke-width="3" stroke-linecap="round" opacity="0.4"></line>
+    <g stroke-linecap="round">
+      <circle cx="674" cy="288" r="5" stroke-width="2"></circle>
+      <line x1="690" y1="288" x2="846" y2="288" stroke-width="3" opacity="0.6"></line>
+      <circle cx="674" cy="316" r="5" stroke-width="2"></circle>
+      <line x1="690" y1="316" x2="822" y2="316" stroke-width="3" opacity="0.6"></line>
+      <circle cx="674" cy="344" r="5" stroke-width="2"></circle>
+      <line x1="690" y1="344" x2="834" y2="344" stroke-width="3" opacity="0.6"></line>
+    </g>
+    <rect x="662" y="382" width="122" height="34" rx="17" stroke-width="3"></rect>
+    <line x1="686" y1="399" x2="760" y2="399" stroke-width="4" stroke-linecap="round"></line>
+  </g>
+
+  
+  <g font-family="Archivo, system-ui, sans-serif" font-size="19" font-weight="700" letter-spacing="3" fill="#FFFFFF" fill-opacity="0.55" text-anchor="middle">
+    <text x="165" y="492">TOKENS</text>
+    <text x="445" y="492">COMPONENTS</text>
+    <text x="760" y="492">SYSTEM</text>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+/* ============================================================
+   KS Portfolio — DARK THEME
+   Imports the base system, then overrides the neutral ramp.
+   Accent (indigo) and gradient cards are inherited as-is.
+   ============================================================ */
+
+@import url('portfolio.css');
+
+:root {
+  /* Warm-dark neutral ramp */
+  --paper:      #131119;
+  --surface:    #1C1A25;
+  --ink:        #F4F0EA;
+  --ink-soft:   #CBC5BC;
+  --muted:      #8E867B;
+  --line:       #2B2838;
+  --line-soft:  #232030;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.45);
+  --shadow:    0 2px 4px rgba(0,0,0,.45), 0 12px 34px rgba(0,0,0,.55);
+  --shadow-lg: 0 28px 64px rgba(0,0,0,.62);
+}
+
+/* Indigo accent — dark-tuned tint/ink so chips sit on the dark ground */
+[data-accent="indigo"] { --accent: #7B73F0; --accent-strong: #5A50E0; --accent-tint: rgba(123,115,240,.16); --accent-ink: #BDB7F7; }
+[data-accent="clay"]   { --accent: #E0764F; --accent-strong: #C75D3C; --accent-tint: rgba(224,118,79,.16); --accent-ink: #F0B49B; }
+[data-accent="forest"] { --accent: #43A578; --accent-strong: #2F7A57; --accent-tint: rgba(67,165,120,.16); --accent-ink: #9BD9BC; }
+[data-accent="ink"]    { --accent: #B9B6C8; --accent-strong: #8E8AA0; --accent-tint: rgba(185,182,200,.16); --accent-ink: #D8D6E2; }
+
+/* Slightly lift the hero grid lines on dark */
+.hero__grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px) !important;
+}
+
+/* Mono code/system chips read better with a faint surface tint */
+.swatch span { background: rgba(0,0,0,.45); color: #fff; }
+
+/* Active nav link tint */
+.docnav__link.is-active { background: var(--accent-tint); }

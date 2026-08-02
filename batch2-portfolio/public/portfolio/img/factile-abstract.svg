@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 924 540" role="img" aria-label="Abstract illustration — a customize flow untangled from overloaded settings into a clear, guided experience">
+  <circle cx="462" cy="270" r="176" fill="none" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="2" stroke-dasharray="2 9"></circle>
+
+  
+  <g fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 7" opacity="0.5">
+    <path d="M232 268 C300 268, 320 250, 366 250"></path>
+    <path d="M232 300 C300 300, 320 320, 366 320"></path>
+    <path d="M582 285 C620 285, 628 285, 664 285"></path>
+  </g>
+
+  
+  <g fill="none" stroke="#FFFFFF">
+    <rect x="60" y="120" width="172" height="300" rx="14" stroke-width="3"></rect>
+    <rect x="80" y="146" width="112" height="24" rx="8" stroke-width="2" opacity="0.5"></rect>
+    <line x1="78" y1="200" x2="82" y2="200" stroke-width="10" stroke-linecap="round"></line>
+    <g stroke-linecap="round" stroke-width="3">
+      <line x1="82" y1="216" x2="212" y2="216"></line>
+      <line x1="82" y1="216" x2="82" y2="216"></line>
+    </g>
+    <g stroke-width="3" stroke-linecap="round" opacity="0.85">
+      <line x1="86" y1="216" x2="200" y2="216"></line>
+      <line x1="86" y1="248" x2="188" y2="248"></line>
+      <line x1="86" y1="280" x2="204" y2="280"></line>
+      <line x1="86" y1="312" x2="176" y2="312"></line>
+      <line x1="86" y1="344" x2="196" y2="344"></line>
+      <line x1="86" y1="376" x2="168" y2="376"></line>
+    </g>
+    <rect x="72" y="232" width="6" height="32" rx="3" fill="#FFFFFF" stroke="none"></rect>
+  </g>
+
+  
+  <g fill="none" stroke="#FFFFFF">
+    <rect x="366" y="150" width="230" height="240" rx="16" stroke-width="3"></rect>
+    
+    <rect x="388" y="180" width="186" height="42" rx="21" stroke-width="3"></rect>
+    <rect x="392" y="184" width="90" height="34" rx="17" fill="#FFFFFF" stroke="none"></rect>
+    <line x1="410" y1="201" x2="464" y2="201" stroke-width="4" stroke-linecap="round" stroke="#100D08"></line>
+    <line x1="500" y1="201" x2="556" y2="201" stroke-width="4" stroke-linecap="round" opacity="0.5"></line>
+    
+    <rect x="388" y="244" width="186" height="40" rx="10" stroke-width="2.5"></rect>
+    <circle cx="410" cy="264" r="7" stroke-width="2.5"></circle>
+    <line x1="416" y1="270" x2="422" y2="276" stroke-width="2.5" stroke-linecap="round"></line>
+    
+    <g stroke-linecap="round">
+      <circle cx="404" cy="316" r="5" stroke-width="2.5"></circle>
+      <line x1="420" y1="316" x2="560" y2="316" stroke-width="3" opacity="0.6"></line>
+      <circle cx="404" cy="348" r="5" stroke-width="2.5"></circle>
+      <line x1="420" y1="348" x2="536" y2="348" stroke-width="3" opacity="0.6"></line>
+    </g>
+  </g>
+
+  
+  <g fill="none" stroke="#FFFFFF">
+    <rect x="664" y="110" width="200" height="320" rx="16" stroke-width="3"></rect>
+    <rect x="686" y="134" width="156" height="26" rx="9" stroke-width="2" opacity="0.5"></rect>
+    <rect x="686" y="176" width="70" height="70" rx="10" stroke-width="2.5"></rect>
+    <circle cx="708" cy="200" r="7" stroke-width="2"></circle>
+    <line x1="700" y1="228" x2="742" y2="228" stroke-width="3" stroke-linecap="round"></line>
+    <rect x="772" y="176" width="70" height="70" rx="10" stroke-width="2.5"></rect>
+    <circle cx="794" cy="200" r="7" stroke-width="2"></circle>
+    <line x1="786" y1="228" x2="828" y2="228" stroke-width="3" stroke-linecap="round"></line>
+    
+    <g stroke="none" fill="#FFFFFF">
+      <circle cx="694" cy="280" r="9" opacity="0.9"></circle>
+      <circle cx="720" cy="280" r="9" opacity="0.7"></circle>
+      <circle cx="746" cy="280" r="9" opacity="0.5"></circle>
+      <circle cx="772" cy="280" r="9" opacity="0.35"></circle>
+    </g>
+    
+    <rect x="686" y="318" width="156" height="34" rx="10" stroke-width="2.5"></rect>
+    <circle cx="706" cy="335" r="5" fill="#FFFFFF" stroke="none"></circle>
+    <line x1="720" y1="335" x2="812" y2="335" stroke-width="3" stroke-linecap="round" opacity="0.6"></line>
+    
+    <rect x="686" y="374" width="118" height="36" rx="18" stroke-width="3"></rect>
+    <line x1="710" y1="392" x2="780" y2="392" stroke-width="4" stroke-linecap="round"></line>
+  </g>
+
+  <g font-family="Archivo, system-ui, sans-serif" font-size="19" font-weight="700" letter-spacing="3" fill="#FFFFFF" fill-opacity="0.55" text-anchor="middle">
+    <text x="146" y="470">SCAN</text>
+    <text x="481" y="470">DECIDE</text>
+    <text x="764" y="470">APPLY</text>
+  </g>
+</svg>

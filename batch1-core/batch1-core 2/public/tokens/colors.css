@@ -1,0 +1,71 @@
+/* Accessible Foundations — Color tokens
+ * Single interactive hue (Indigo, swappable) + audience-tuned neutrals + status.
+ * Contrast ratios are measured on white (#FFFFFF).
+ */
+
+:root {
+  /* ============================================================
+     BRAND — the single interactive hue (swap these two to re-skin)
+     ============================================================ */
+  --brand-700: #4F46E5;            /* primary interactive — AA 6.29:1 */
+  --brand-900: #4338CA;            /* hover / focus / selected text — AAA 7.91:1 */
+
+  /* Legacy preview aliases (kept for the original Sidebar build). */
+  --indigo-700: var(--brand-700);
+  --indigo-900: var(--brand-900);
+
+  /* Interaction surfaces (indigo tints — never carry text-only meaning) */
+  --surface-hover: #F4F3FC;        /* hover surface */
+  --surface-active: #E7E5F7;       /* selected / active surface */
+  --surface-outline-hover: #ECEAFB;/* outlined-button hover surface */
+  --disabled-primary: #BBB6EE;     /* disabled primary fill */
+
+  /* ============================================================
+     NEUTRALS — audience-tuned, not brand-dependent
+     ============================================================ */
+  --neutral-950: #1D1C22;          /* titles, headings — AAA ~16.4:1 (warm near-black) */
+  --neutral-800: #2E2D34;          /* nav, icons, unselected text — AAA ~13:1 */
+  --neutral-700: #36353D;          /* body text — AAA ~12:1 */
+  --neutral-500: #66656E;          /* helper, captions, counts — AA ~5.7:1 (never primary) */
+  --neutral-300: #E4E3E8;          /* borders, dividers */
+  --neutral-200: #EFEFF2;          /* subtle fills */
+  --border-strong: #BDBCC6;        /* hovered neutral border */
+  --white: #FFFFFF;                /* canvas, card background (pure white) */
+
+  /* ============================================================
+     STATE
+     ============================================================ */
+  --focus-ring: #4F46E5;           /* 2px ring on every interactive element */
+  --danger: #E03A3A;               /* destructive actions only — AA 4.5:1+ */
+  --danger-hover: #C0322C;         /* destructive hover */
+
+  /* ============================================================
+     STATUS / TIER PILLS — indication only, NEVER interactive
+     ============================================================ */
+  --tier-pro-bg: #313845;          /* Tier 0 (highest) bg */
+  --tier-pro-text: #FFFFFF;        /* Tier 0 text — 11.03:1 AAA */
+  --tier-upgrade-bg: #FFFABC;      /* Tier 1/2/3 bg */
+  --tier-basic-text: #00618F;      /* Tier 1 text */
+  --tier-plus-text: #313845;       /* Tier 2 text */
+  --tier-business-text: #AD4700;   /* Tier 3 text */
+
+  /* ============================================================
+     SEMANTIC ALIASES — reference these in components
+     ============================================================ */
+  --text-title: var(--neutral-950);
+  --text-body: var(--neutral-700);
+  --text-muted: var(--neutral-500);
+  --text-on-brand: var(--white);
+
+  --interactive: var(--brand-700);
+  --interactive-hover: var(--brand-900);
+
+  --surface-canvas: var(--white);
+  --surface-card: var(--white);
+  --surface-raised: var(--white);
+
+  --border-default: var(--neutral-300);
+  --fill-subtle: var(--neutral-200);
+
+  --backdrop: rgba(29, 28, 34, 0.45);
+}

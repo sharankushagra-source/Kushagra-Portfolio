@@ -1,0 +1,41 @@
+/* Accessible Foundations — Typography tokens
+ * Typeface: Google Sans Flex (variable; 400/500/600/700 used).
+ * 14px floor everywhere; 12px permitted only for collapsed-nav icon labels.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,400..700&display=swap');
+
+:root {
+  /* Family + stack */
+  --font-sans: 'Google Sans Flex', 'Google Sans', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Weights */
+  --fw-regular: 400;   /* @kind font */
+  --fw-medium: 500;    /* @kind font */
+  --fw-semibold: 600;  /* @kind font */
+  --fw-bold: 700;      /* @kind font */
+
+  /* Type scale (px) */
+  --fs-h1: 72px;        /* hero titles */
+  --fs-h2: 48px;        /* section titles */
+  --fs-h3: 24px;        /* section headings */
+  --fs-h4: 16px;        /* card titles, nav items */
+  --fs-body-lg: 16px;   /* primary body */
+  --fs-body-sm: 14px;   /* secondary body, labels, helper */
+  --fs-meta: 12px;      /* absolute minimum — collapsed-nav labels / stats */
+
+  /* Line heights */
+  --lh-tight: 1.15;     /* @kind font */
+  --lh-heading: 1.25;   /* @kind font */
+  --lh-body: 1.55;      /* @kind font */
+
+  /* Letter spacing */
+  --ls-display: -0.02em; /* @kind font */
+  --ls-heading: -0.01em; /* @kind font */
+  --ls-label: 0.01em;    /* @kind font */
+  --ls-caps: 0.06em;     /* @kind font */
+
+  /* Semantic role sizes */
+  --text-label-size: var(--fs-body-sm);
+  --text-helper-size: var(--fs-body-sm);
+}

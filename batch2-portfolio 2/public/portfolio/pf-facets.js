@@ -111,6 +111,29 @@
     }
     seedStack();
     setTop();
+    /* opt-in: deal every piece out on load (no restack tool) */
+    function dealAll() {
+      /* open collage — irregular positions across the whole frame, no column banding */
+      var spread = [
+        [-30,-20,-6,1.03],[-6,-26,5,0.97],[24,-23,-4,1.05],
+        [-36,8,7,0.99],[-14,2,-5,1.06],[10,-4,4,0.95],[34,-2,-7,1.02],
+        [-24,26,6,1.04],[6,24,-4,0.98],[30,22,5,1.0]
+      ];
+      while (revealed < cards.length) {
+        var c = cards[revealed], sl = spread[revealed % spread.length];
+        c._st = { x: sl[0] / 100 * window.innerWidth, y: sl[1] / 100 * window.innerHeight, rot: sl[2], scale: sl[3] || 1 };
+        c.classList.add('is-out'); c.classList.remove('is-top');
+        c.style.zIndex = ++topZ;
+        applyOut(c);
+        revealed++;
+      }
+      g.classList.add('gallery--started', 'gallery--done');
+      layoutStack(); setTop();
+    }
+    if (g.hasAttribute('data-auto-deal')) {
+      if (document.readyState === 'complete') dealAll();
+      else window.addEventListener('load', dealAll);
+    }
 
     /* lift a card straight off the pile into a draggable state */
     function dealCard(c) {

@@ -52,19 +52,12 @@
         t.style.transform = '';
         t.style.transformOrigin = '';
         s.el.style.zIndex = '';
-        if (s.disp) s.disp.setAttribute('scale', '0');
         continue;
       }
-      /* push along the same vector as the grid points (away from pointer) */
-      var cx = L + ow / 2, cy = T + oh / 2;
-      var a = Math.atan2(cy - py, cx - px);
-      var txp = Math.cos(a) * PUSH * s.inf, typ = Math.sin(a) * PUSH * s.inf;
-      /* stretch anchored where the pointer meets the label */
-      var originX = clamp(px - L, 0, ow), originY = clamp(py - T, 0, oh);
-      t.style.transformOrigin = originX.toFixed(1) + 'px ' + originY.toFixed(1) + 'px';
-      t.style.transform = 'translate(' + txp.toFixed(1) + 'px,' + typ.toFixed(1) + 'px) scale(' + (1 + s.inf * GROW).toFixed(3) + ')';
+      /* stretch anchored at a fixed left origin (never pointer-based) — scaling only ever grows rightward, so long labels can't push past the left edge */
+      t.style.transformOrigin = '0% 50%';
+      t.style.transform = 'scale(' + (1 + s.inf * GROW).toFixed(3) + ')';
       s.el.style.zIndex = 6;
-      if (s.disp) s.disp.setAttribute('scale', (s.inf * TEX).toFixed(2));
     }
   }
   requestAnimationFrame(loop);

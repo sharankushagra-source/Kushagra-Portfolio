@@ -75,7 +75,7 @@
     <line x1="710" y1="392" x2="780" y2="392" stroke-width="4" stroke-linecap="round"></line>
   </g>
 
-  <g font-family="Archivo, system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="3" fill="#FFFFFF" fill-opacity="0.55" text-anchor="middle">
+  <g font-family="Archivo, system-ui, sans-serif" font-size="19" font-weight="700" letter-spacing="3" fill="#FFFFFF" fill-opacity="0.55" text-anchor="middle">
     <text x="146" y="470">SCAN</text>
     <text x="481" y="470">DECIDE</text>
     <text x="764" y="470">APPLY</text>

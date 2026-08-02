@@ -2,12 +2,11 @@
 (function(){
   'use strict';
   var DATA = {
-    'UX Design':        { ey:'02', side:'left', stats:[ {f:'2M+', l:'users designed for on Factile'}, {f:'+22.5%', l:'new paid users'} ] },
-    'Design Systems':   { ey:'03', side:'left',  stats:[ {f:'24', l:'components in one system'}, {f:'100+', l:'design tokens'} ] },
-    'Problem Framing':  { ey:'01', side:'left', stats:[ {f:'23 → 15', l:'steps to onboard a seller'}, {f:'3', l:'roles mapped end-to-end'} ] },
-    'Accessibility':    { ey:'05', side:'left',  stats:[ {f:'AA / AAA', l:'WCAG conformance across the product'} ] },
-    'Rapid Execution':  { ey:'04', side:'left', stats:[ {f:'1,104', l:'screens across Vesta’s 3 roles'}, {f:'25+', l:'Vesta flows in 6 months'}, {f:'100+', l:'Factile screens'}, {f:'9+', l:'Factile flows'} ] },
-    'Communication':    { ey:'06', side:'left',  stats:[ {f:'4', l:'juniors mentored'}, {f:'Eng · PM · Founders', l:'aligned around one shared “why”'} ] }
+    'UX Design':        { ey:'02', side:'right', brief:'End-to-end flows for Factile’s 2M+ users, from first draft to shipped feature.', stats:[ {f:'2M+', l:'users designed for on Factile'}, {f:'+22.5%', l:'new paid users'} ] },
+    'Design Systems':   { ey:'03', side:'right', brief:'A living component library that keeps every screen consistent as the product grows.', stats:[ {f:'24', l:'components in one system'}, {f:'100+', l:'design tokens'} ] },
+    'Problem Framing':  { ey:'01', side:'right', brief:'Untangling ambiguous asks into clear, buildable direction, before any screen gets drawn.', stats:[ {f:'23 → 15', l:'steps to onboard a seller'}, {f:'3', l:'roles mapped end-to-end'} ] },
+    'Rapid Execution':  { ey:'04', side:'right', brief:'25+ flows shipped across Vesta in 6 months, without cutting craft.', stats:[ {f:'1,104', l:'screens across Vesta’s 3 roles'}, {f:'25+', l:'Vesta flows in 6 months'}, {f:'100+', l:'Factile screens'}, {f:'9+', l:'Factile flows'} ] },
+    'Communication':    { ey:'05', side:'right', brief:'Keeping engineering, PM, and founders aligned around one shared reason.', stats:[ {f:'4', l:'juniors mentored'}, {f:'Eng · PM · Founders', l:'aligned around one shared “why”'} ] }
   };
   var modal = document.getElementById('skmodal');
   if(!modal) return;
@@ -20,6 +19,8 @@
     var d = DATA[name]; if(!d) return;
     ey.textContent = d.ey;
     title.textContent = name;
+    var briefEl = modal.querySelector('.skmodal__brief');
+    if(briefEl) briefEl.textContent = d.brief || '';
     grid.innerHTML = '';
     d.stats.forEach(function(s){
       var cell = document.createElement('div');

@@ -1,29 +1,15 @@
-# Kushagra Sharan — Portfolio (React + Vite)
+# Kushagra Sharan — Portfolio
 
-Vercel-ready. This project was split into 3 upload batches to stay under GitHub's 100-file web-upload limit.
-Merge all three into ONE repo root (same folder), preserving paths:
+Static multi-page site (plain HTML/CSS/JS) wrapped in a Vite + React shell for Vercel deploys.
 
-- **batch1-core/**  -> repo root (index.html, config, src/, public/design-system, public/ui_kits, public root files)
-- **batch2-portfolio/** -> merge its `public/portfolio/` into `public/`
-- **batch3-factile/**   -> merge its `public/factile/` into `public/`
+- `index.html` — the live portfolio (Soft Grid + Sound)
+- `public/` — every other page (case studies, design system, UI kit) plus all shared assets, served as-is
 
-Final layout:
+## Run locally
 ```
-index.html  package.json  vite.config.js  vercel.json  .gitignore
-src/main.jsx
-public/portfolio/  public/factile/  public/design-system/  public/ui_kits/my-library/
-public/_ds_bundle.js  public/styles.css
-public/Portfolio - Soft Grid Clean.html
-public/Case Study - Factile (scroll).html
-public/Facets UI Kit.html
-```
-
-## Run / build
-```bash
 npm install
 npm run dev
-npm run build   # -> dist/
 ```
 
-## Deploy
-Push the merged repo to GitHub, import into Vercel (auto-detects Vite: build `vite build`, output `dist`).
+## Deploy to Vercel
+Push to a Git repo and import it in Vercel — framework preset "Vite", build command `npm run build`, output directory `dist`. No env vars needed.

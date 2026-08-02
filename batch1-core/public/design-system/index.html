@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Accessible Foundations — Design System</title>
-<meta name="description" content="Accessible Foundations — a design system for products serving older adults. Foundations, components, products and docs." />
+<meta name="description" content="Accessible Foundations, a design system for products serving older adults. Foundations, components, products and docs." />
 <link rel="stylesheet" href="../styles.css" />
 <link rel="stylesheet" href="ds-site.css" />
 <script defer src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
@@ -22,6 +22,7 @@
     <a class="dss-brand" href="#overview"><span class="dss-brand__logo"></span><span class="dss-brand__t"><b>Accessible Foundations</b><span>Design System · v2.0</span></span></a>
     <div class="dss-nav__scroll">
       <div class="dss-nav__label">Start</div>
+      <a class="dss-link" href="#problem">Problem statement</a>
       <a class="dss-link is-active" href="#overview">Overview</a>
       <div class="dss-nav__label">Foundations</div>
       <a class="dss-link" href="#foundations">Color, type &amp; scale</a>
@@ -50,10 +51,21 @@
       <a class="dss-link" href="#products">Products</a>
       <a class="dss-link" href="#start">Handoff</a>
     </div>
-    <div class="dss-nav__foot"><a class="dss-back" href="../Portfolio%20-%20Soft%20Grid%20Clean.html#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Kushagra Sharan</a></div>
+    <div class="dss-nav__foot"><a class="dss-back" href="../Portfolio%20-%20Soft%20Grid%20Clean.html#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Back to Work</a></div>
   </nav>
 
   <main class="dss-main">
+
+    <!-- PROBLEM STATEMENT -->
+    <section class="dss-sec" id="problem" style="padding-bottom:clamp(28px,4vw,44px)">
+      <span class="dss-eyebrow">Problem statement</span>
+      <h2 class="dss-h2">Why this system exists</h2>
+      <p class="dss-lede">Factile was built straight in code by developers, feature by feature, with no shared foundation: the context that made a design system necessary.</p>
+      <div class="dss-princ" style="grid-template-columns:1fr 1fr">
+        <div class="dss-pr"><b>Why it was needed</b><span>Factile grew feature by feature with no shared foundation. Colour, spacing, components and states diverged across the app, and every new build re-litigated the basics — a real consistency problem.</span></div>
+        <div class="dss-pr"><b>What I did</b><span>Reverse-engineered the product into tokens, components and patterns (WCAG AA/AAA by default), and rolled it out incrementally rather than as a big-bang redesign. Documented live with an interactive demo built in.</span></div>
+      </div>
+    </section>
 
     <!-- OVERVIEW -->
     <header class="dss-hero" id="overview">
@@ -121,9 +133,9 @@
             <div class="dss-type__row"><span class="spec t-h2">Section title</span><span class="meta">H2 · 48 / 600</span></div>
             <div class="dss-type__row"><span class="spec t-h3">Section heading</span><span class="meta">H3 · 24 / 600</span></div>
             <div class="dss-type__row"><span class="spec t-h4">Card title / nav item</span><span class="meta">H4 · 16 / 600</span></div>
-            <div class="dss-type__row"><span class="spec t-body">Primary body reads at 16px with a generous line height — comfortable for older eyes without zooming.</span><span class="meta">Body · 16 / 400</span></div>
+            <div class="dss-type__row"><span class="spec t-body">Primary body reads at 16px with a generous line height, comfortable for older eyes without zooming.</span><span class="meta">Body · 16 / 400</span></div>
             <div class="dss-type__row"><span class="spec t-label">Form label</span><span class="meta">Label · 14 / 500</span></div>
-            <div class="dss-type__row"><span class="spec t-meta">Helper &amp; meta — the 12px minimum, never smaller.</span><span class="meta">Meta · 12 / 400</span></div>
+            <div class="dss-type__row"><span class="spec t-meta">Helper &amp; meta: the 12px minimum, never smaller.</span><span class="meta">Meta · 12 / 400</span></div>
           </div>
         </div>
 
@@ -176,7 +188,7 @@
           <div class="dss-fcard__h">Focus &amp; motion</div>
           <div class="dss-fm">
             <button class="dss-focusbtn" type="button">Focused</button>
-            <span style="font-size:13.5px;color:var(--neutral-500);max-width:200px">2px ring · 2px offset — on every interactive element.</span>
+            <span style="font-size:13.5px;color:var(--neutral-500);max-width:200px">2px ring · 2px offset, on every interactive element.</span>
             <div class="dss-mo">
               <span class="m">fast · 100ms · normal · 200ms · slow · 300ms</span>
               <div class="track"></div>
@@ -191,7 +203,7 @@
     <section class="dss-sec" id="components">
       <span class="dss-eyebrow">Components</span>
       <h2 class="dss-h2">A live component library</h2>
-      <p class="dss-lede">Real, interactive components — every one already meets the floor: 44px targets, AAA text, one interactive color, a visible focus ring. Click around.</p>
+      <p class="dss-lede">Real, interactive components. Every one already meets the floor: 44px targets, AAA text, one interactive color, a visible focus ring. Click around.</p>
       <div id="dss-components"></div>
     </section>
 
@@ -199,9 +211,9 @@
     <section class="dss-sec" id="products">
       <span class="dss-eyebrow">In use</span>
       <h2 class="dss-h2">From system to product</h2>
-      <p class="dss-lede">The same tokens and components, composed into a real, accessible app — <strong>My Library</strong>. Nothing here is bespoke; it's all the system.</p>
+      <p class="dss-lede">The same tokens and components, composed into a real, accessible app: <strong>My Library</strong>. Nothing here is bespoke; it's all the system.</p>
       <div class="dss-product" id="dss-product">
-        <div class="dss-product__bar"><span>My Library — built entirely from Accessible Foundations</span><button class="dss-btn dss-btn--ghost" id="dss-full" style="height:34px;padding:0 14px;font-size:13px;cursor:pointer">Open fullscreen</button></div>
+        <div class="dss-product__bar"><span>My Library, built entirely from Accessible Foundations</span><button class="dss-btn dss-btn--ghost" id="dss-full" style="height:34px;padding:0 14px;font-size:13px;cursor:pointer">Open fullscreen</button></div>
         <iframe src="../ui_kits/my-library/index.html" title="My Library product" loading="lazy"></iframe>
       </div>
     </section>
@@ -210,8 +222,7 @@
     <section class="dss-sec" id="start">
       <span class="dss-eyebrow">Handoff · documentation</span>
       <h2 class="dss-h2">Developer handoff</h2>
-      <p class="dss-lede">How the system is documented and handed to engineering: link one stylesheet and the bundle, then compose with the components — every token, spec and state already defined, so there's no accessibility audit bolted on at the end. <em>(<code>AccessibleFoundations</code> below is an illustrative alias for the bundle's namespace.)</em></p>
-      <div class="dss-code"><span class="c">// link the system</span><br/>&lt;<span class="t">link</span> rel=<span class="s">"stylesheet"</span> href=<span class="s">"styles.css"</span> /&gt;<br/>&lt;<span class="t">script</span> src=<span class="s">"_ds_bundle.js"</span>&gt;&lt;/<span class="t">script</span>&gt;<br/><br/><span class="c">// read components off the namespace, then compose</span><br/><span class="t">const</span> { Button, Input, Toggle, Card } = window.AccessibleFoundations;<br/>&lt;<span class="t">Button</span> variant=<span class="s">"primary"</span>&gt;Create New&lt;/<span class="t">Button</span>&gt;</div>
+      <p class="dss-lede">Every token, spec and state is already defined, so there's no accessibility audit bolted on at the end.</p>
       <div class="dss-rules">
         <div class="dss-rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>One interactive color</b><span>Only the brand hue is clickable. Status colors indicate, never afford a tap.</span></div></div>
         <div class="dss-rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>14px floor · 44px targets</b><span>Never smaller. Generous sizing absorbs reduced acuity and dexterity.</span></div></div>
@@ -221,7 +232,7 @@
     </section>
 
     <footer class="dss-foot">
-      <span>Accessible Foundations — a design system by Kushagra Sharan.</span>
+      <span>Accessible Foundations, a design system by Kushagra Sharan.</span>
       <span>Accessibility-first · WCAG AA → AAA</span>
     </footer>
   </main>

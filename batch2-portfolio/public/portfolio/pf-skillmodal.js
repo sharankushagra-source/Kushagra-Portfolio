@@ -4,7 +4,7 @@
   var DATA = {
     'UX Design':        { ey:'02', side:'right', brief:'End-to-end flows for Factile’s 2M+ users, from first draft to shipped feature.', stats:[ {f:'2M+', l:'users designed for on Factile'}, {f:'+22.5%', l:'new paid users'} ] },
     'Design Systems':   { ey:'03', side:'right', brief:'A living component library that keeps every screen consistent as the product grows.', stats:[ {f:'24', l:'components in one system'}, {f:'100+', l:'design tokens'} ] },
-    'Problem Framing':  { ey:'01', side:'right', brief:'Untangling ambiguous asks into clear, buildable direction, before any screen gets drawn.', stats:[ {f:'23 → 15', l:'steps to onboard a seller'}, {f:'3', l:'roles mapped end-to-end'} ] },
+    'Problem Framing':  { ey:'01', side:'right', brief:'I ask why before how, then work back from the expected outcome, since that changes what form and function should be.', outcome:'A new-flow request is a symptom until proven otherwise, so I trace it upstream before sketching anything.' },
     'Rapid Execution':  { ey:'04', side:'right', brief:'25+ flows shipped across Vesta in 6 months, without cutting craft.', stats:[ {f:'1,104', l:'screens across Vesta’s 3 roles'}, {f:'25+', l:'Vesta flows in 6 months'}, {f:'100+', l:'Factile screens'}, {f:'9+', l:'Factile flows'} ] },
     'Communication':    { ey:'05', side:'right', brief:'Keeping engineering, PM, and founders aligned around one shared reason.', stats:[ {f:'4', l:'juniors mentored'}, {f:'Eng · PM · Founders', l:'aligned around one shared “why”'} ] }
   };
@@ -22,13 +22,20 @@
     var briefEl = modal.querySelector('.skmodal__brief');
     if(briefEl) briefEl.textContent = d.brief || '';
     grid.innerHTML = '';
-    d.stats.forEach(function(s){
-      var cell = document.createElement('div');
-      cell.className = 'skstat' + (s.f.length > 12 ? ' skstat--wide' : '');
-      var fig = document.createElement('span'); fig.className = 'skstat__fig'; fig.textContent = s.f;
-      var lab = document.createElement('span'); lab.className = 'skstat__lab'; lab.textContent = s.l;
-      cell.appendChild(fig); cell.appendChild(lab); grid.appendChild(cell);
-    });
+    if(d.outcome){
+      var out = document.createElement('p');
+      out.className = 'skmodal__outcome';
+      out.textContent = d.outcome;
+      grid.appendChild(out);
+    } else if(d.stats){
+      d.stats.forEach(function(s){
+        var cell = document.createElement('div');
+        cell.className = 'skstat' + (s.f.length > 12 ? ' skstat--wide' : '');
+        var fig = document.createElement('span'); fig.className = 'skstat__fig'; fig.textContent = s.f;
+        var lab = document.createElement('span'); lab.className = 'skstat__lab'; lab.textContent = s.l;
+        cell.appendChild(fig); cell.appendChild(lab); grid.appendChild(cell);
+      });
+    }
     modal.className = 'skmodal open skmodal--' + d.side;
     modal.setAttribute('aria-hidden','false');
     if(sk && card){
